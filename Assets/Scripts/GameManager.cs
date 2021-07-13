@@ -2,6 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEditor;
+using Yarn.Unity;
+
+public class OnSemaphoreAnimationFinishEventArgs : EventArgs
+{
+    public List<string> ChosenLetters;
+}
 
 public class GameManager : MonoBehaviour
 {
@@ -33,16 +41,39 @@ public class GameManager : MonoBehaviour
     public GameObject UI;
     public GameObject RailOperatorCamera;
     private GameObject mainCamera;
-    public event EventHandler OnSemaphoreAnimationFinish;
+    public event EventHandler<OnSemaphoreAnimationFinishEventArgs> OnSemaphoreAnimationFinish;
+    public GameObject PreviousAttemptsScrollView;
+    public GameObject PreviousAttemptTextPrefab;
+    public GameObject EasyModeButton;
+    [SerializeField] private int numberOfAttempts;
+    public int EasyModeShowAttemptNo = 2;
+    public int EasyModeEnableAttemptNo = 7;
+    public bool EasyModeIsAvailable = false;
+
+    public DialogueRunner DialogueRunner;
+    public string DebugLettersForDialogue = "";    
+    // To do: backspace button for adding semaphore signs
 
     void Start()
     {
         GMChosenLetters = new List<string>();
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        mainCamera = Camera.main.gameObject; // grab a reference for later
+        mainCamera = Camera.main.gameObject; // grab a reference for later        
 
-        // Events
-        OnSemaphoreAnimationFinish += BeginRailControllerResponse;
+        // Clear the previous attempts scrollview
+        var attempts = PreviousAttemptsScrollView.GetComponentsInChildren<Transform>();
+        for (int i = 1; i < attempts.Length; i++)
+        {
+            Destroy(attempts[i].gameObject);
+        }
+
+        // Subscribe listeners
+        OnSemaphoreAnimationFinish += addPreviousAttemptToScrollView;
+        OnSemaphoreAnimationFinish += incrementNumberOfAttempts;
+        OnSemaphoreAnimationFinish += decrementEasyModeButtonAttemptsRemaining;
+
+        // Set Easymode button to inactive
+        EasyModeButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -77,6 +108,31 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SemaphoreAnimationSteps(0.85f));
     }
 
+    void incrementNumberOfAttempts(object sender, EventArgs e)
+    {
+        numberOfAttempts++;
+
+        // Easy Mode Button stuff
+        if (numberOfAttempts >= EasyModeShowAttemptNo)
+        {
+            EasyModeButton.SetActive(true);
+        }
+    }
+
+    void decrementEasyModeButtonAttemptsRemaining(object sender, EventArgs e)
+    {
+        if (EasyModeButton.activeSelf)
+        {
+            if (numberOfAttempts >= EasyModeEnableAttemptNo)
+            {
+                EasyModeButton.transform.GetChild(1).GetComponent<Text>().text = "EASY MODE UNLOCKED";
+                EasyModeIsAvailable = true;
+            }
+            else
+                EasyModeButton.transform.GetChild(1).GetComponent<Text>().text = (EasyModeEnableAttemptNo - numberOfAttempts).ToString() + " more attempts to unlock EASY MODE";
+        }
+    }
+
     IEnumerator SemaphoreAnimationSteps(float time)
     {
         playerAnimator.SetBool("NotTransmitting", true);
@@ -105,20 +161,54 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        OnSemaphoreAnimationFinish?.Invoke(this, EventArgs.Empty);
-    }    
-
-    void BeginRailControllerResponse(object sender, EventArgs e)
+        OnSemaphoreAnimationFinish?.Invoke(this, new OnSemaphoreAnimationFinishEventArgs { ChosenLetters = GMChosenLetters });
+    }
+    
+    void addPreviousAttemptToScrollView(object sender, EventArgs e)
     {
-        Debug.Log("Here the yarn stuff will happen with extras.");
-        // Look at GMChosenLetters and choose the corresponding yarn script
+        GameObject attemptGO = Instantiate(PreviousAttemptTextPrefab, PreviousAttemptsScrollView.transform);
 
+        string attemptString = "";
+
+        foreach (var letter in GMChosenLetters)
+        {
+            attemptString += (letter + " ");
+        }
+
+        attemptGO.GetComponent<Text>().text = attemptString;
+    }
+
+    public void EndRailControllerResponse()
+    {
         RailOperatorCamera.SetActive(false);
         mainCamera.SetActive(true);
 
         GMChosenLetters.Clear(); // Clear the GMs version of the chosen letters (the UI is cleared in the SemaphoreButtonManager)        
         SetUIVisible(true);
     }
+
+#if UNITY_EDITOR
+
+    [CustomEditor(typeof(GameManager))]
+    public class CustomYarnCommandsEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
+
+            GameManager YC = (GameManager)target;
+
+            if (GUILayout.Button("Start Dialogue"))
+            {
+                if (Instance.DebugLettersForDialogue == "")                
+                    Instance.DialogueRunner.StartDialogue("PlayerToEddChat");
+                else
+                    Instance.DialogueRunner.StartDialogue("PlayerToEddChat." + Instance.DebugLettersForDialogue);
+            }
+        }
+    }
+
+#endif
 }
 
 
