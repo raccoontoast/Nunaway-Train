@@ -14,7 +14,7 @@ public class TerrainAnimation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         foreach (var terrain in TerrainTransforms)
         {

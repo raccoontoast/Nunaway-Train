@@ -16,13 +16,13 @@ public class SemaphoreButtonManager : MonoBehaviour
         GameManager.Instance.OnSemaphoreAnimationFinish += resetChosenLetters;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void resetChosenLetters()
     {
-        
+        chosenLetters = "";
+        ChosenLettersText.text = "";
     }
 
-    void resetChosenLetters(object sender, EventArgs e)
+    public void resetChosenLetters(object sender, EventArgs e)
     {
         chosenLetters = "";
         ChosenLettersText.text = "";        
