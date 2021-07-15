@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     Animator playerAnimator;
     public GameObject UI;
     public GameObject RailOperatorCamera;
-    private GameObject mainCamera;
+    public GameObject mainCamera;
     public event EventHandler<OnSemaphoreAnimationFinishEventArgs> OnSemaphoreAnimationFinish;
     public GameObject PreviousAttemptsScrollView;
     public GameObject PreviousAttemptTextPrefab;
@@ -58,7 +58,11 @@ public class GameManager : MonoBehaviour
     {
         GMChosenLetters = new List<string>();
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        mainCamera = Camera.main.gameObject; // grab a reference for later        
+
+        if (Camera.main != null) // grab a reference for later
+        {
+            mainCamera = Camera.main.gameObject;
+        }
 
         // Clear the previous attempts scrollview
         var attempts = PreviousAttemptsScrollView.GetComponentsInChildren<Transform>();
@@ -181,7 +185,7 @@ public class GameManager : MonoBehaviour
     public void EndRailControllerResponse()
     {
         RailOperatorCamera.SetActive(false);
-        mainCamera.SetActive(true);
+        if (mainCamera != null) mainCamera.SetActive(true);
 
         GMChosenLetters.Clear(); // Clear the GMs version of the chosen letters (the UI is cleared in the SemaphoreButtonManager)        
         SetUIVisible(true);
