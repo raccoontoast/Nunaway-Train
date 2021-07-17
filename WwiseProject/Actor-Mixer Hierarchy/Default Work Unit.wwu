@@ -377,97 +377,41 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SignalReply" ID="{BEFC13B2-428F-4B57-BE8C-843E195A244D}" ShortID="173125033">
+								<SwitchContainer Name="SignalReply" ID="{A4314AE8-8583-4598-8E7B-8D01B2D5BC2D}" ShortID="1037247232">
 									<PropertyList>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="DOG" ID="{C097223A-F39F-41AF-A85C-268C1011AC12}" WorkUnitID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise Guitar Distortion (Custom)" ID="{16810F2D-2B47-4D0F-B0B2-A6955500178D}" ShortID="473379491" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Endings" ID="{3988505F-5C8B-4650-9F05-DB62CD698F6D}" WorkUnitID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SignalReply1Dog" ID="{B35715D0-40B1-47E2-917B-1A1ED6EBCE65}" ShortID="943568054">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply1Dog" ID="{A0435974-87E9-4936-83D2-EF7D5248F739}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply1Dog.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1070585752"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply1Dog" ID="{A0435974-87E9-4936-83D2-EF7D5248F739}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SignalReply2Ego" ID="{B0956D39-2210-4370-9AC0-494BDF0DD9A1}" ShortID="807277319">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply2Ego" ID="{D66C0BAD-A833-4350-AB52-CF7DF0EF646E}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply2Ego.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="358217073"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply2Ego" ID="{D66C0BAD-A833-4350-AB52-CF7DF0EF646E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SignalReply3Odd" ID="{525B9584-4E77-4A19-A3C9-40AE98891CB8}" ShortID="499928539">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply3Odd_1" ID="{D9342C5D-986F-458B-A4FB-017DBA22F8A0}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply3Odd_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="477384002"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply3Odd_1" ID="{D9342C5D-986F-458B-A4FB-017DBA22F8A0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="SignalReply4Doge" ID="{EE83BC02-3A98-423A-B714-2A47F452FC50}" ShortID="365730044">
 											<PropertyList>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -477,7 +421,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -494,7 +438,7 @@
 												<ActiveSource Name="SignalReply4Doge" ID="{4B6276DC-6250-40D3-9D32-2AE36460D4C4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SignalReply5Go" ID="{A459DBED-C174-495D-A812-3C47DBBCCD4B}" ShortID="78620586">
+										<Sound Name="SignalReply1Dog" ID="{B35715D0-40B1-47E2-917B-1A1ED6EBCE65}" ShortID="943568054">
 											<PropertyList>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
@@ -503,21 +447,47 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SignalReply5Go" ID="{A17BA289-869A-473F-B150-31122711FB27}">
+												<AudioFileSource Name="SignalReply1Dog" ID="{A0435974-87E9-4936-83D2-EF7D5248F739}">
 													<Language>English(US)</Language>
-													<AudioFile>SignalReply5Go.wav</AudioFile>
+													<AudioFile>SignalReply1Dog.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="599864457"/>
+														<MediaID ID="1070585752"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="SignalReply5Go" ID="{A17BA289-869A-473F-B150-31122711FB27}" Platform="Linked"/>
+												<ActiveSource Name="SignalReply1Dog" ID="{A0435974-87E9-4936-83D2-EF7D5248F739}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply3Odd" ID="{525B9584-4E77-4A19-A3C9-40AE98891CB8}" ShortID="499928539">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply3Odd_1" ID="{D9342C5D-986F-458B-A4FB-017DBA22F8A0}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply3Odd_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="477384002"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply3Odd_1" ID="{D9342C5D-986F-458B-A4FB-017DBA22F8A0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SignalReply6Eddo" ID="{E508C7DE-6486-4D31-98D8-2CDDD3C32F75}" ShortID="476221586">
@@ -529,7 +499,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -546,84 +516,6 @@
 												<ActiveSource Name="SignalReply6Eddo" ID="{84CEDCE9-0109-4C3D-A0C1-6FE1492C6A78}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SignalReply7Doe" ID="{6FBE8B7F-B5DD-462B-8CD2-546C15DC862A}" ShortID="714214474">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply7Doe" ID="{1B89D1D6-C8DB-4E2C-9B79-1898875382D7}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply7Doe.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="681414363"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply7Doe" ID="{1B89D1D6-C8DB-4E2C-9B79-1898875382D7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SignalReply8Edo" ID="{EC448BCD-888D-4346-BF6F-CBF40ACB2323}" ShortID="454184194">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply8Edo" ID="{9563058C-0822-4047-8403-8F56326F5F14}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply8Edo.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1060422370"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply8Edo" ID="{9563058C-0822-4047-8403-8F56326F5F14}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SignalReply9Edd" ID="{6A273CFC-4DCF-4C06-84F9-721F6DC0267A}" ShortID="882797240">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply9Edd" ID="{C450F926-1B7F-4B3B-B38F-EE21E02F9912}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply9Edd.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="799626147"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply9Edd" ID="{C450F926-1B7F-4B3B-B38F-EE21E02F9912}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="SignalReply10Do" ID="{8A3A4E42-8133-4FEF-A1E8-2FF09507B4F4}" ShortID="200376595">
 											<PropertyList>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -633,7 +525,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -659,7 +551,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -676,7 +568,7 @@
 												<ActiveSource Name="SignalReply11Ode" ID="{4F30EAA3-5498-4BD9-B3F3-ABE7102662E8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SignalReply12Odged" ID="{41ED3B40-9A2C-4216-A121-683F20B731CD}" ShortID="24886355">
+										<Sound Name="SignalReply9Edd" ID="{6A273CFC-4DCF-4C06-84F9-721F6DC0267A}" ShortID="882797240">
 											<PropertyList>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
@@ -685,21 +577,73 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SignalReply12Odged" ID="{73C8B4E3-76EF-432B-966E-7B0850526CAB}">
+												<AudioFileSource Name="SignalReply9Edd" ID="{C450F926-1B7F-4B3B-B38F-EE21E02F9912}">
 													<Language>English(US)</Language>
-													<AudioFile>SignalReply12Odged.wav</AudioFile>
+													<AudioFile>SignalReply9Edd.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="968316968"/>
+														<MediaID ID="799626147"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="SignalReply12Odged" ID="{73C8B4E3-76EF-432B-966E-7B0850526CAB}" Platform="Linked"/>
+												<ActiveSource Name="SignalReply9Edd" ID="{C450F926-1B7F-4B3B-B38F-EE21E02F9912}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply8Edo" ID="{EC448BCD-888D-4346-BF6F-CBF40ACB2323}" ShortID="454184194">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply8Edo" ID="{9563058C-0822-4047-8403-8F56326F5F14}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply8Edo.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1060422370"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply8Edo" ID="{9563058C-0822-4047-8403-8F56326F5F14}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply5Go" ID="{A459DBED-C174-495D-A812-3C47DBBCCD4B}" ShortID="78620586">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply5Go" ID="{A17BA289-869A-473F-B150-31122711FB27}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply5Go.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="599864457"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply5Go" ID="{A17BA289-869A-473F-B150-31122711FB27}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="SignalReply13ExclamationMark" ID="{530FD447-083B-4AC4-96B6-8D6D930906CF}" ShortID="361309555">
@@ -711,7 +655,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -728,32 +672,6 @@
 												<ActiveSource Name="SignalReply13ExclamationMark" ID="{46199382-FABF-4025-B3E0-23EF33C1C67D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SignalReply14TimeLimit1" ID="{DBF52A81-A111-4824-B72B-048E53015F2F}" ShortID="4432736">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SignalReply14TimeLimit1" ID="{EB57B92C-8D49-47E7-AC41-BA35F1284435}">
-													<Language>English(US)</Language>
-													<AudioFile>SignalReply14TimeLimit1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="13945470"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="SignalReply14TimeLimit1" ID="{EB57B92C-8D49-47E7-AC41-BA35F1284435}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="SignalReply15TimeLimit2" ID="{EE906480-7EA6-4390-BC00-AFA427050E75}" ShortID="638008849">
 											<PropertyList>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -763,7 +681,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -780,9 +698,236 @@
 												<ActiveSource Name="SignalReply15TimeLimit2" ID="{01BDFD88-39F6-4772-8D6C-B310A5F20F0B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="SignalReply7Doe" ID="{6FBE8B7F-B5DD-462B-8CD2-546C15DC862A}" ShortID="714214474">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply7Doe" ID="{1B89D1D6-C8DB-4E2C-9B79-1898875382D7}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply7Doe.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="681414363"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply7Doe" ID="{1B89D1D6-C8DB-4E2C-9B79-1898875382D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply12Odged" ID="{41ED3B40-9A2C-4216-A121-683F20B731CD}" ShortID="24886355">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply12Odged" ID="{73C8B4E3-76EF-432B-966E-7B0850526CAB}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply12Odged.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="968316968"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply12Odged" ID="{73C8B4E3-76EF-432B-966E-7B0850526CAB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply2Ego" ID="{B0956D39-2210-4370-9AC0-494BDF0DD9A1}" ShortID="807277319">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply2Ego" ID="{D66C0BAD-A833-4350-AB52-CF7DF0EF646E}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply2Ego.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="358217073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply2Ego" ID="{D66C0BAD-A833-4350-AB52-CF7DF0EF646E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SignalReply14TimeLimit1" ID="{DBF52A81-A111-4824-B72B-048E53015F2F}" ShortID="4432736">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SignalReply14TimeLimit1" ID="{EB57B92C-8D49-47E7-AC41-BA35F1284435}">
+													<Language>English(US)</Language>
+													<AudioFile>SignalReply14TimeLimit1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="13945470"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SignalReply14TimeLimit1" ID="{EB57B92C-8D49-47E7-AC41-BA35F1284435}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-								</RandomSequenceContainer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply4Doge" ID="{EE83BC02-3A98-423A-B714-2A47F452FC50}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply11Ode" ID="{10DAE411-7229-40C6-BADE-15A450F56D2B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply2Ego" ID="{B0956D39-2210-4370-9AC0-494BDF0DD9A1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply12Odged" ID="{41ED3B40-9A2C-4216-A121-683F20B731CD}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply10Do" ID="{8A3A4E42-8133-4FEF-A1E8-2FF09507B4F4}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply13ExclamationMark" ID="{530FD447-083B-4AC4-96B6-8D6D930906CF}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply7Doe" ID="{6FBE8B7F-B5DD-462B-8CD2-546C15DC862A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply15TimeLimit2" ID="{EE906480-7EA6-4390-BC00-AFA427050E75}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply14TimeLimit1" ID="{DBF52A81-A111-4824-B72B-048E53015F2F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply3Odd" ID="{525B9584-4E77-4A19-A3C9-40AE98891CB8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply8Edo" ID="{EC448BCD-888D-4346-BF6F-CBF40ACB2323}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply1Dog" ID="{B35715D0-40B1-47E2-917B-1A1ED6EBCE65}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply6Eddo" ID="{E508C7DE-6486-4D31-98D8-2CDDD3C32F75}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply5Go" ID="{A459DBED-C174-495D-A812-3C47DBBCCD4B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SignalReply9Edd" ID="{6A273CFC-4DCF-4C06-84F9-721F6DC0267A}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="EDD" ID="{2D399A11-1FBC-4004-B4EC-3A4E280D1E15}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply9Edd" ID="{6A273CFC-4DCF-4C06-84F9-721F6DC0267A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EDDO" ID="{F568E825-63A9-44B2-824B-0BB1F42E53F1}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply6Eddo" ID="{E508C7DE-6486-4D31-98D8-2CDDD3C32F75}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DO" ID="{EA06EF2F-D8E8-4743-B5A0-03FCB615EABF}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply10Do" ID="{8A3A4E42-8133-4FEF-A1E8-2FF09507B4F4}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOG" ID="{C097223A-F39F-41AF-A85C-268C1011AC12}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply1Dog" ID="{B35715D0-40B1-47E2-917B-1A1ED6EBCE65}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EDO" ID="{BF070454-EBDB-4194-B683-B53B915B5DD7}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply8Edo" ID="{EC448BCD-888D-4346-BF6F-CBF40ACB2323}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOE" ID="{1A715654-63B1-4627-A383-761CBAAB8B19}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply7Doe" ID="{6FBE8B7F-B5DD-462B-8CD2-546C15DC862A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOGE" ID="{DEB6356F-7A5E-47E7-B083-3C57D7D3D0E6}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply4Doge" ID="{EE83BC02-3A98-423A-B714-2A47F452FC50}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EGO" ID="{9BE9807E-C828-4E78-9E75-4B867172B9BF}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply2Ego" ID="{B0956D39-2210-4370-9AC0-494BDF0DD9A1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ODE" ID="{AB1CC482-048C-42B4-BD67-38E3A573DBAB}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply11Ode" ID="{10DAE411-7229-40C6-BADE-15A450F56D2B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ODD" ID="{05E33B85-093F-4410-90CE-4BD0217CE984}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply3Odd" ID="{525B9584-4E77-4A19-A3C9-40AE98891CB8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="GO" ID="{1F854EC0-8F8E-41F3-9B60-FA13BAB1F96F}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply5Go" ID="{A459DBED-C174-495D-A812-3C47DBBCCD4B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="NearlyCorrect" ID="{7AA3CBFF-2811-4944-A73B-7CBE68F3DDD3}"/>
+												<ItemList>
+													<ItemRef Name="SignalReply12Odged" ID="{41ED3B40-9A2C-4216-A121-683F20B731CD}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Nuns" ID="{B45FB263-5224-4373-AF69-6C4CDAC20D6F}" ShortID="186587647">
@@ -1003,9 +1148,6 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="NarratorFailstates" ID="{4BDDDE98-4F20-4988-8DF2-C4FCB6A3862B}" WorkUnitID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1748,98 +1890,6 @@
 												<ItemRef Name="NarratorFailstateUnique11" ID="{7E960BDF-B70F-4A23-A2CE-99443DBE1548}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique8" ID="{2E68470F-3BAC-4DEA-950D-B1FD37057D00}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique8" ID="{C9A833C5-4E01-4DA9-B594-E69AE40F4592}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique13" ID="{ECFE5B17-8642-4954-95D2-98F8268BAE2B}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique13" ID="{0B6DFD49-BB44-4ADD-9193-6CD7BA82864F}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique2" ID="{23ED6619-7CD3-4573-B447-0B8C65998291}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique2" ID="{B7D08291-6101-4721-AD2C-A39A74417A4F}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique9" ID="{2C5CC12D-7AC4-41B8-9DDD-6A4CF72ED3DD}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique9" ID="{90CA300B-4A87-4E32-A8A3-4DD687327717}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique12" ID="{369B943A-25C3-4D5A-A8EB-2E2BD4A3598A}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique12" ID="{D85B25DE-3077-4C50-A492-7AFFD2A25AD5}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique3" ID="{D7A9D651-0E1E-438A-B806-121EDD4F9257}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique3" ID="{CF6E8A6A-2A45-45F8-BBB2-9BC4C903FCA6}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique6" ID="{57C6BD79-06EC-499E-81C6-838237C45C0B}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique6" ID="{00CBA118-213F-4D53-9042-DC0AC913E2FE}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique7" ID="{AD971A7B-ED95-48CC-A798-3F0BB885B928}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique7" ID="{0F123F37-3EF1-47C9-A8AC-8DE77C4FA1E0}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique14" ID="{2A80A3A6-FCA4-493A-A9F3-4641EE36102D}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique14" ID="{31FA1C62-9CBA-4FD9-B8BC-0BEB4A7F0D95}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique5" ID="{6083C2A6-B1D2-4754-8976-9FF8226C4129}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique5" ID="{25AE278E-FCA8-402D-BEE3-4C0AA68A18D0}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique11" ID="{D42C13BA-46D5-42C4-813E-8F015181A5B5}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique11" ID="{7E960BDF-B70F-4A23-A2CE-99443DBE1548}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique4" ID="{0B246DBD-C72C-485A-B60D-D47092AF1701}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique4" ID="{C497A44A-B66D-47A4-9551-F73857BD891B}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateGeneric" ID="{639CEBC1-C633-4A92-B708-4E1E2620C4B5}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateGeneric" ID="{1CA716A9-A60C-448F-9302-AA4E593259DB}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique1" ID="{A454A4D9-EF79-4CED-A579-D363AC359692}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique1" ID="{3AD41B6B-ABB2-49E2-A677-134C1F6D9A3C}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="NarratorFailstateUnique10" ID="{E53579F1-CC51-4994-99AA-F625D15D55DE}"/>
-												<ItemList>
-													<ItemRef Name="NarratorFailstateUnique10" ID="{3BDAB94A-A41D-41DC-AC53-11730F7D9AE7}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<RandomSequenceContainer Name="NarratorTimeLimit" ID="{863CACE6-B02D-4EF1-9FAC-C354DA165C4F}" ShortID="665693855">
@@ -1848,7 +1898,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1985,32 +2035,6 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
-								<Sound Name="NarratorOpeningSpiel" ID="{AEFFD3B6-1A40-4FB8-8132-FDBE73B8B488}" ShortID="319267936">
-									<PropertyList>
-										<Property Name="IsVoice" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="NarratorOpeningSpiel1" ID="{A8BE17C1-1DB0-47CA-852C-408F5553F9DB}">
-											<Language>English(US)</Language>
-											<AudioFile>NarratorOpeningSpiel1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="545023606"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="NarratorOpeningSpiel1" ID="{A8BE17C1-1DB0-47CA-852C-408F5553F9DB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="NarratorVictoryFirstTry1" ID="{A882C7DA-0A97-4FF5-9461-70A30DD08874}" ShortID="308602916">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
@@ -2043,7 +2067,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2128,6 +2152,1163 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="NarratorOpeningSpiel" ID="{4E0D7387-3DC1-4D88-B7F5-2A0E5169B92F}" ShortID="975110648">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="NarratorOpeningSpiel" ID="{AEFFD3B6-1A40-4FB8-8132-FDBE73B8B488}" ShortID="319267936">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1" ID="{A8BE17C1-1DB0-47CA-852C-408F5553F9DB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.276361489717837"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.884"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>NarratorOpeningSpiel1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="545023606"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1" ID="{A8BE17C1-1DB0-47CA-852C-408F5553F9DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel_01" ID="{F8947D00-F14C-4499-8552-7C2308E3CA19}" ShortID="222477686">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1" ID="{7780F280-CB4D-4C1A-AD8D-8D0E3133368B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.197401064084172"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.236881276901006"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.745"/>
+														<Property Name="TrimEnd" Type="Real64" Value="19.725"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>NarratorOpeningSpiel1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="881210073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1" ID="{7780F280-CB4D-4C1A-AD8D-8D0E3133368B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel_02" ID="{E42B181A-AB2C-463C-99CB-72854FA9D1D8}" ShortID="812222192">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1" ID="{2D473E45-68E7-44F7-9A68-F486C1B5766D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.197401064084172"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.236881276901006"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="19.727"/>
+														<Property Name="TrimEnd" Type="Real64" Value="24.443"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>NarratorOpeningSpiel1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="82582368"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1" ID="{2D473E45-68E7-44F7-9A68-F486C1B5766D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel_03" ID="{7D586383-C67E-41EF-9D51-BDA3E098E238}" ShortID="20268028">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1" ID="{5DF2BAD3-C7F8-4C66-9436-96E0279D9876}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.197401064084172"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.236881276901006"/>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="24.262"/>
+													</PropertyList>
+													<Language>English(US)</Language>
+													<AudioFile>NarratorOpeningSpiel1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="220297192"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1" ID="{5DF2BAD3-C7F8-4C66-9436-96E0279D9876}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel1c" ID="{09BDC6B4-14BD-42A9-BCC8-9B1599B22E2A}" ShortID="270991389">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1c" ID="{981BE51D-2E1F-4E9D-9817-A4C3406A85E2}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.195239867288379"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.14636"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>NarratorOpeningSpiel1c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="137064179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1c" ID="{981BE51D-2E1F-4E9D-9817-A4C3406A85E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel1c_01" ID="{4E658449-5504-49FB-BAC2-B6DB2F807CB0}" ShortID="949591228">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1c" ID="{9120E57B-A0DE-4228-A629-983F4CE04286}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.195239867288379"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.146"/>
+														<Property Name="TrimEnd" Type="Real64" Value="15.75636"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>NarratorOpeningSpiel1c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1037387966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1c" ID="{9120E57B-A0DE-4228-A629-983F4CE04286}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel1c_02" ID="{1D0551C5-7CE6-49BC-80D9-493C951A917A}" ShortID="540770463">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1c" ID="{8F7BA125-272B-447F-AE82-B0E708D96925}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.195239867288379"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0650799557627941"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="16.24436"/>
+														<Property Name="TrimEnd" Type="Real64" Value="19.89836"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>NarratorOpeningSpiel1c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="549204084"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1c" ID="{8F7BA125-272B-447F-AE82-B0E708D96925}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="NarratorOpeningSpiel1c_03" ID="{3AC9E544-AC4C-494A-B846-F649946B3534}" ShortID="871658870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NarratorOpeningSpiel1c" ID="{60B16C2A-2C4A-4403-AAF3-1327626762FF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.195239867288379"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="20.08536"/>
+														<Property Name="TrimEnd" Type="Real64" Value="22.68036"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>NarratorOpeningSpiel1c.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="552458342"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="NarratorOpeningSpiel1c" ID="{60B16C2A-2C4A-4403-AAF3-1327626762FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="NarratorOpeningSpiel1c" ID="{09BDC6B4-14BD-42A9-BCC8-9B1599B22E2A}"/>
+										<ItemRef Name="NarratorOpeningSpiel1c_01" ID="{4E658449-5504-49FB-BAC2-B6DB2F807CB0}"/>
+										<ItemRef Name="NarratorOpeningSpiel1c_02" ID="{1D0551C5-7CE6-49BC-80D9-493C951A917A}"/>
+										<ItemRef Name="NarratorOpeningSpiel1c_03" ID="{3AC9E544-AC4C-494A-B846-F649946B3534}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<SwitchContainer Name="PrebakedEndings" ID="{6B2DDFC9-86B7-4616-B632-9AC98CFDECB8}" ShortID="649977907">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Endings" ID="{3988505F-5C8B-4650-9F05-DB62CD698F6D}" WorkUnitID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked2_EGO" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}" ShortID="224052352">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked2" ID="{545E53EF-4F3C-4057-B91F-44283E67E225}" ShortID="1034823272">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked2" ID="{31E669AC-8EA4-4253-BAFB-909182CDEEE5}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="406905940"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked2" ID="{31E669AC-8EA4-4253-BAFB-909182CDEEE5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked3_GOD" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}" ShortID="658301093">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked3" ID="{7D3D1A46-219C-4A5A-AA5D-C6BD3BAA8016}" ShortID="30760716">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked3" ID="{DA580058-F9CA-4295-ACAC-F242C7CA368B}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="768576597"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked3" ID="{DA580058-F9CA-4295-ACAC-F242C7CA368B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked4" ID="{821406A0-A732-4A3F-9E37-6532F09495F1}" ShortID="786097749">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked4" ID="{81605311-EAAD-4237-A7E8-7D09B1147339}" ShortID="222373289">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked4" ID="{2E6A4041-1E15-4FCE-8357-2996F5A22E7E}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="478073782"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked4" ID="{2E6A4041-1E15-4FCE-8357-2996F5A22E7E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked8_GO" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}" ShortID="707147978">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked8" ID="{050B9DDF-DC80-4DFE-A58C-5CEDFA0262C9}" ShortID="633583482">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked8" ID="{26F96C7D-1B3C-4D62-9A4F-202BC91F22B9}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="813194355"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked8" ID="{26F96C7D-1B3C-4D62-9A4F-202BC91F22B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked9_NearlyCorrect" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}" ShortID="810147502">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked9" ID="{BE5D5BD9-868A-47D0-949E-42D094F9B46D}" ShortID="660721253">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked9" ID="{9E49B1BA-3528-4D95-9F51-1F0DFC082A37}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked9.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1068931860"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked9" ID="{9E49B1BA-3528-4D95-9F51-1F0DFC082A37}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked10_Idle" ID="{2B151E6E-3EF6-43BC-B2D7-D7B360E9A86A}" ShortID="295664659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked10" ID="{E632F8BE-B8DC-458C-858A-8F9E294380B4}" ShortID="569531856">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked10" ID="{AD42F10C-A57D-4BB0-8C0F-4EB325E004C6}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked10.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="306543635"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked10" ID="{AD42F10C-A57D-4BB0-8C0F-4EB325E004C6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked1_DOG" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}" ShortID="632912724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked1" ID="{CF445DFF-2764-457C-B88A-214787616555}" ShortID="630315529">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked1" ID="{D2469689-5A9C-453C-A01A-9655ADD482F1}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="642462868"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked1" ID="{D2469689-5A9C-453C-A01A-9655ADD482F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked11_EDDO" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}" ShortID="819736436">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked11" ID="{302FE804-D2BC-4EC9-B9BC-798802CC22D8}" ShortID="712160897">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked11" ID="{DBAA29AF-4946-4D2B-B036-85BC7BE77E74}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked11.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1004683757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked11" ID="{DBAA29AF-4946-4D2B-B036-85BC7BE77E74}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked12_DOE" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}" ShortID="823583573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked12" ID="{AFE300FA-D7D3-4BFB-97F6-9C84E3D0D407}" ShortID="974829066">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked12" ID="{9226835C-1D01-42C1-A121-58B9599D61AC}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked12.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1024543659"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked12" ID="{9226835C-1D01-42C1-A121-58B9599D61AC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked13_EDO" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}" ShortID="1014768648">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked13" ID="{56A85A48-1414-43B2-8093-07817E0100CF}" ShortID="939068363">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked13" ID="{56F24529-76D3-47A4-9EEF-B5311218DBB4}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked13.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="115055815"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked13" ID="{56F24529-76D3-47A4-9EEF-B5311218DBB4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked5_ODD" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}" ShortID="1039209017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked5" ID="{2513DEDB-439B-4D64-98FB-A9631C12B443}" ShortID="42600195">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked5" ID="{FC6D8247-AE99-4EFE-82F7-2121D0B564D3}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="830168908"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked5" ID="{FC6D8247-AE99-4EFE-82F7-2121D0B564D3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked7_ODE" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}" ShortID="868639984">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked7" ID="{CD984DEE-7449-4859-BA09-D09904681C3C}" ShortID="778254568">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked7" ID="{84F317C2-47EE-436A-8FDF-4888BE367396}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="226385795"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked7" ID="{84F317C2-47EE-436A-8FDF-4888BE367396}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked14_EDD" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}" ShortID="342653864">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked14" ID="{AAA3E43E-ACD4-4C91-9CE5-F23FDBD591DA}" ShortID="111277566">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked14" ID="{52DAAC5F-AF2E-494F-A8EA-0DE8550F7196}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked14.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="388227883"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked14" ID="{52DAAC5F-AF2E-494F-A8EA-0DE8550F7196}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FailstateUniquePrebaked6_DOGE" ID="{C7424121-2725-473E-9242-4BE57AE88548}" ShortID="975020654">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FailstateUniquePrebaked6" ID="{D2A8EBF8-C369-473E-8F8F-4AFDBCB7D8CE}" ShortID="124634202">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FailstateUniquePrebaked6" ID="{396F1AD3-0291-49B1-ADEC-01CA4AA7E5AA}">
+															<Language>SFX</Language>
+															<AudioFile>FailstateUniquePrebaked6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="103482109"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FailstateUniquePrebaked6" ID="{396F1AD3-0291-49B1-ADEC-01CA4AA7E5AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Generic" ID="{7DF35E34-4227-4C09-98A6-514A990100A3}" ShortID="734830360">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="FailstateGenericPrebaked1" ID="{7E781279-944D-472C-A715-0B1964085BDC}" ShortID="1051701885">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FailstateGenericPrebaked1" ID="{52346FE6-D262-4F71-BF9D-63F2EF1FFD57}" ShortID="718619445">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FailstateGenericPrebaked1" ID="{7E43B693-6301-4EC6-B187-EBA1F66D1294}">
+																	<Language>SFX</Language>
+																	<AudioFile>FailstateGenericPrebaked1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="995987127"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="FailstateGenericPrebaked1" ID="{7E43B693-6301-4EC6-B187-EBA1F66D1294}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="FailstateGenericPrebaked2" ID="{D8333DBB-6B5B-44F1-AF82-42BFFE1994C2}" ShortID="264811372">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FailstateGenericPrebaked2" ID="{BB1BBB85-F0C8-4C25-ACF2-69B2570A1688}" ShortID="858849646">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FailstateGenericPrebaked2" ID="{2B2EDC27-5CC7-4799-AD3A-53236EE1EE01}">
+																	<Language>SFX</Language>
+																	<AudioFile>FailstateGenericPrebaked2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="749261521"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="FailstateGenericPrebaked2" ID="{2B2EDC27-5CC7-4799-AD3A-53236EE1EE01}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="FailstateGenericPrebaked3" ID="{2786A393-5FA7-4669-9A21-B4FBDE0DA6D8}" ShortID="900498017">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FailstateGenericPrebaked3" ID="{7C8D0172-5A88-4FC6-B546-BBEA0D375933}" ShortID="693457801">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FailstateGenericPrebaked3" ID="{DA30E4F2-DA3C-4545-9D9D-EF92D5F5DB2B}">
+																	<Language>SFX</Language>
+																	<AudioFile>FailstateGenericPrebaked3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="588490526"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="FailstateGenericPrebaked3" ID="{DA30E4F2-DA3C-4545-9D9D-EF92D5F5DB2B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="FailstateGenericPrebaked4" ID="{7175A6E7-80F4-49CF-AF86-5963185E60FE}" ShortID="160942741">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FailstateGenericPrebaked4" ID="{263F9894-DFCE-4B9E-A474-40801E4A0F00}" ShortID="905775306">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FailstateGenericPrebaked4" ID="{4793FD07-E83C-49C5-8A8E-9196BA06EEA2}">
+																	<Language>SFX</Language>
+																	<AudioFile>FailstateGenericPrebaked4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="540204213"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="FailstateGenericPrebaked4" ID="{4793FD07-E83C-49C5-8A8E-9196BA06EEA2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="FailstateGenericPrebaked5" ID="{82E9D9D9-D8E3-4672-AD3E-4DAA8B335B69}" ShortID="50755399">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FailstateGenericPrebaked5" ID="{CB7D475E-C9E2-4473-B05D-76413F7F507A}" ShortID="445202606">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FailstateGenericPrebaked5" ID="{6EE5FE8E-CECE-43C1-A8D5-9F5930163F3E}">
+																	<Language>SFX</Language>
+																	<AudioFile>FailstateGenericPrebaked5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="176297039"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="FailstateGenericPrebaked5" ID="{6EE5FE8E-CECE-43C1-A8D5-9F5930163F3E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="FailstateGenericPrebaked1" ID="{7E781279-944D-472C-A715-0B1964085BDC}"/>
+												<ItemRef Name="FailstateGenericPrebaked2" ID="{D8333DBB-6B5B-44F1-AF82-42BFFE1994C2}"/>
+												<ItemRef Name="FailstateGenericPrebaked3" ID="{2786A393-5FA7-4669-9A21-B4FBDE0DA6D8}"/>
+												<ItemRef Name="FailstateGenericPrebaked4" ID="{7175A6E7-80F4-49CF-AF86-5963185E60FE}"/>
+												<ItemRef Name="FailstateGenericPrebaked5" ID="{82E9D9D9-D8E3-4672-AD3E-4DAA8B335B69}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked1_DOG" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked8_GO" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked6_DOGE" ID="{C7424121-2725-473E-9242-4BE57AE88548}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Generic" ID="{7DF35E34-4227-4C09-98A6-514A990100A3}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked9_NearlyCorrect" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked12_DOE" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked11_EDDO" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked7_ODE" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked10_Idle" ID="{2B151E6E-3EF6-43BC-B2D7-D7B360E9A86A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked4" ID="{821406A0-A732-4A3F-9E37-6532F09495F1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked3_GOD" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked5_ODD" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked13_EDO" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked14_EDD" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FailstateUniquePrebaked2_EGO" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="EDD" ID="{2D399A11-1FBC-4004-B4EC-3A4E280D1E15}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked14_EDD" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EDDO" ID="{F568E825-63A9-44B2-824B-0BB1F42E53F1}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked11_EDDO" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOG" ID="{C097223A-F39F-41AF-A85C-268C1011AC12}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked1_DOG" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Generic" ID="{2B6DD850-E781-4631-AA94-B6308300E95E}"/>
+												<ItemList>
+													<ItemRef Name="Generic" ID="{7DF35E34-4227-4C09-98A6-514A990100A3}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EDO" ID="{BF070454-EBDB-4194-B683-B53B915B5DD7}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked13_EDO" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOE" ID="{1A715654-63B1-4627-A383-761CBAAB8B19}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked12_DOE" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="DOGE" ID="{DEB6356F-7A5E-47E7-B083-3C57D7D3D0E6}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked6_DOGE" ID="{C7424121-2725-473E-9242-4BE57AE88548}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="EGO" ID="{9BE9807E-C828-4E78-9E75-4B867172B9BF}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked2_EGO" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ODE" ID="{AB1CC482-048C-42B4-BD67-38E3A573DBAB}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked7_ODE" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="ODD" ID="{05E33B85-093F-4410-90CE-4BD0217CE984}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked5_ODD" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="GOD" ID="{3D8D8EAB-0B2F-4409-A750-365D7BDDF154}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked3_GOD" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="GO" ID="{1F854EC0-8F8E-41F3-9B60-FA13BAB1F96F}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked8_GO" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="NearlyCorrect" ID="{7AA3CBFF-2811-4944-A73B-7CBE68F3DDD3}"/>
+												<ItemList>
+													<ItemRef Name="FailstateUniquePrebaked9_NearlyCorrect" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -4291,6 +5472,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="RadioStatic" ID="{2174984C-2E0B-4BEC-8F82-0E90D1F4FA83}" ShortID="382119552">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -4301,6 +5489,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="RadioStatic1" ID="{4FCFF3DA-4328-4532-8CE7-A7DA9992CD56}" ShortID="350273744">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -4311,6 +5506,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="RadioStatic1" ID="{0CC77C09-3912-4C9B-A7E3-FC6F94311473}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.145974653275944"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.109480989956959"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>RadioStatic1.wav</AudioFile>
 													<MediaIDList>
@@ -4334,6 +5534,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="RadioStatic2" ID="{4ACF66CF-ADBB-4E97-BF9C-3CC160FF160F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.55108993902439"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.440871951219513"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>RadioStatic2.wav</AudioFile>
 													<MediaIDList>
@@ -4344,170 +5549,6 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="RadioStatic2" ID="{4ACF66CF-ADBB-4E97-BF9C-3CC160FF160F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RadioOn" ID="{E3B55E94-F169-4D34-B812-DE7C4292979D}" ShortID="966753130">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="RadioOn1" ID="{6239C796-8F0F-4C04-976D-AC48C900469B}" ShortID="19855646">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOn1" ID="{313C0328-7058-410F-A404-2D19C717B0BD}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOn1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="310877649"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOn1" ID="{313C0328-7058-410F-A404-2D19C717B0BD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RadioOn2" ID="{A28AB9E5-8580-46D6-9DCB-ED2B9D0A2738}" ShortID="599353676">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOn2" ID="{97F46636-E5DD-4EA5-84D1-72D463DD2AF4}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOn2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="971269263"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOn2" ID="{97F46636-E5DD-4EA5-84D1-72D463DD2AF4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RadioOn3" ID="{24592084-A333-4F2D-932A-7C8C8E8E3B5B}" ShortID="358330482">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOn3" ID="{6A4FA628-A753-4F33-8D5D-6C7A168F7E96}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOn3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="894102910"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOn3" ID="{6A4FA628-A753-4F33-8D5D-6C7A168F7E96}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RadioOff" ID="{56992DA1-B262-4EEB-B554-6CC289FEDEDF}" ShortID="1042345536">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="RadioOff1" ID="{6B43BEE0-96C6-4222-A9AF-96137C266067}" ShortID="758213583">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOff1" ID="{5A9AAD65-E2DD-458A-A6C0-F3069EA41A90}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOff1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="165277251"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOff1" ID="{5A9AAD65-E2DD-458A-A6C0-F3069EA41A90}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RadioOff2" ID="{C6A1E2D3-98CA-42A4-B914-62E835B037EB}" ShortID="778111894">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOff2" ID="{25F2C984-F797-4D98-B051-F44CF27A9ECB}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOff2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1073336215"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOff2" ID="{25F2C984-F797-4D98-B051-F44CF27A9ECB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RadioOff3" ID="{D0F954A3-B0E6-4EAA-A4A5-2B0D66D57FCA}" ShortID="236505641">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RadioOff3" ID="{5231E630-AF0F-44F4-8DCF-8F39D20D343A}">
-													<Language>SFX</Language>
-													<AudioFile>RadioOff3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="683465239"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="RadioOff3" ID="{5231E630-AF0F-44F4-8DCF-8F39D20D343A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4549,18 +5590,250 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+								<BlendContainer Name="RadioOff" ID="{A3C13539-F50E-47C0-AF02-98F6EDE049D0}" ShortID="800089786">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RadioOff" ID="{56992DA1-B262-4EEB-B554-6CC289FEDEDF}" ShortID="1042345536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RadioOff1" ID="{6B43BEE0-96C6-4222-A9AF-96137C266067}" ShortID="758213583">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioOff1" ID="{5A9AAD65-E2DD-458A-A6C0-F3069EA41A90}">
+															<Language>SFX</Language>
+															<AudioFile>RadioOff1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="165277251"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioOff1" ID="{5A9AAD65-E2DD-458A-A6C0-F3069EA41A90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RadioOff2" ID="{C6A1E2D3-98CA-42A4-B914-62E835B037EB}" ShortID="778111894">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioOff2" ID="{25F2C984-F797-4D98-B051-F44CF27A9ECB}">
+															<Language>SFX</Language>
+															<AudioFile>RadioOff2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1073336215"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioOff2" ID="{25F2C984-F797-4D98-B051-F44CF27A9ECB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RadioOff3" ID="{D0F954A3-B0E6-4EAA-A4A5-2B0D66D57FCA}" ShortID="236505641">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioOff3" ID="{5231E630-AF0F-44F4-8DCF-8F39D20D343A}">
+															<Language>SFX</Language>
+															<AudioFile>RadioOff3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="683465239"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioOff3" ID="{5231E630-AF0F-44F4-8DCF-8F39D20D343A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<Sound Name="RadioStatic2" ID="{90BDA1F0-982A-406E-9552-50668CD518BC}" ShortID="98638609">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RadioStatic2" ID="{94E70694-E983-42A0-9A4B-71C51528CD82}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.55108993902439"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.440871951219513"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RadioStatic2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="496260973"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="RadioStatic2" ID="{94E70694-E983-42A0-9A4B-71C51528CD82}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="RadioOn" ID="{847A1715-DBC0-42AA-B56B-D714BAA30C5D}" ShortID="557070519">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RadioButton" ID="{E3B55E94-F169-4D34-B812-DE7C4292979D}" ShortID="966753130">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RadioOn1" ID="{6239C796-8F0F-4C04-976D-AC48C900469B}" ShortID="19855646">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioOn1" ID="{313C0328-7058-410F-A404-2D19C717B0BD}">
+															<Language>SFX</Language>
+															<AudioFile>RadioOn1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="310877649"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioOn1" ID="{313C0328-7058-410F-A404-2D19C717B0BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RadioOn2" ID="{A28AB9E5-8580-46D6-9DCB-ED2B9D0A2738}" ShortID="599353676">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RadioOn2" ID="{97F46636-E5DD-4EA5-84D1-72D463DD2AF4}">
+															<Language>SFX</Language>
+															<AudioFile>RadioOn2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="971269263"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="RadioOn2" ID="{97F46636-E5DD-4EA5-84D1-72D463DD2AF4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<Sound Name="RadioBeep" ID="{24592084-A333-4F2D-932A-7C8C8E8E3B5B}" ShortID="358330482">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RadioOn3" ID="{6A4FA628-A753-4F33-8D5D-6C7A168F7E96}">
+													<Language>SFX</Language>
+													<AudioFile>RadioOn3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="894102910"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="RadioOn3" ID="{6A4FA628-A753-4F33-8D5D-6C7A168F7E96}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
+										<ItemRef Name="RadioOn" ID="{847A1715-DBC0-42AA-B56B-D714BAA30C5D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RadioOff" ID="{A3C13539-F50E-47C0-AF02-98F6EDE049D0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RadioStatic" ID="{2174984C-2E0B-4BEC-8F82-0E90D1F4FA83}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RadioOn" ID="{E3B55E94-F169-4D34-B812-DE7C4292979D}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="RadioOff" ID="{56992DA1-B262-4EEB-B554-6CC289FEDEDF}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RadioTune" ID="{5ACE01CF-3775-486A-9691-C102D2DFCBFD}"/>
@@ -4574,898 +5847,9 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="RadioOff" ID="{05D8A640-2958-4DB9-8A66-0161801881F4}"/>
-										<ItemList>
-											<ItemRef Name="RadioOff" ID="{56992DA1-B262-4EEB-B554-6CC289FEDEDF}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="RadioOn" ID="{4D8C24A2-895C-4C73-9439-CE4D2E1AB0EF}"/>
-										<ItemList>
-											<ItemRef Name="RadioOn" ID="{E3B55E94-F169-4D34-B812-DE7C4292979D}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
 										<SwitchRef Name="RadioTune" ID="{A98E23F4-B63A-4110-9ABE-01BE7AB73900}"/>
 										<ItemList>
 											<ItemRef Name="RadioTune" ID="{5ACE01CF-3775-486A-9691-C102D2DFCBFD}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-						<SwitchContainer Name="PrebakedEndings" ID="{6B2DDFC9-86B7-4616-B632-9AC98CFDECB8}" ShortID="649977907">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="PrebakedEndings" ID="{3988505F-5C8B-4650-9F05-DB62CD698F6D}" WorkUnitID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked2" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}" ShortID="224052352">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked2" ID="{545E53EF-4F3C-4057-B91F-44283E67E225}" ShortID="1034823272">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked2" ID="{31E669AC-8EA4-4253-BAFB-909182CDEEE5}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="406905940"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked2" ID="{31E669AC-8EA4-4253-BAFB-909182CDEEE5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked3" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}" ShortID="658301093">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked3" ID="{7D3D1A46-219C-4A5A-AA5D-C6BD3BAA8016}" ShortID="30760716">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked3" ID="{DA580058-F9CA-4295-ACAC-F242C7CA368B}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="768576597"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked3" ID="{DA580058-F9CA-4295-ACAC-F242C7CA368B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked4" ID="{821406A0-A732-4A3F-9E37-6532F09495F1}" ShortID="786097749">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked4" ID="{81605311-EAAD-4237-A7E8-7D09B1147339}" ShortID="222373289">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked4" ID="{2E6A4041-1E15-4FCE-8357-2996F5A22E7E}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="478073782"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked4" ID="{2E6A4041-1E15-4FCE-8357-2996F5A22E7E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked8" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}" ShortID="707147978">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked8" ID="{050B9DDF-DC80-4DFE-A58C-5CEDFA0262C9}" ShortID="633583482">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked8" ID="{26F96C7D-1B3C-4D62-9A4F-202BC91F22B9}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked8.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="813194355"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked8" ID="{26F96C7D-1B3C-4D62-9A4F-202BC91F22B9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked9" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}" ShortID="810147502">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked9" ID="{BE5D5BD9-868A-47D0-949E-42D094F9B46D}" ShortID="660721253">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked9" ID="{9E49B1BA-3528-4D95-9F51-1F0DFC082A37}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked9.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1068931860"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked9" ID="{9E49B1BA-3528-4D95-9F51-1F0DFC082A37}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked10" ID="{2B151E6E-3EF6-43BC-B2D7-D7B360E9A86A}" ShortID="295664659">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked10" ID="{E632F8BE-B8DC-458C-858A-8F9E294380B4}" ShortID="569531856">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked10" ID="{AD42F10C-A57D-4BB0-8C0F-4EB325E004C6}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="306543635"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked10" ID="{AD42F10C-A57D-4BB0-8C0F-4EB325E004C6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked1" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}" ShortID="632912724">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked1" ID="{CF445DFF-2764-457C-B88A-214787616555}" ShortID="630315529">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked1" ID="{D2469689-5A9C-453C-A01A-9655ADD482F1}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="642462868"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked1" ID="{D2469689-5A9C-453C-A01A-9655ADD482F1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked11" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}" ShortID="819736436">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked11" ID="{302FE804-D2BC-4EC9-B9BC-798802CC22D8}" ShortID="712160897">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked11" ID="{DBAA29AF-4946-4D2B-B036-85BC7BE77E74}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked11.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1004683757"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked11" ID="{DBAA29AF-4946-4D2B-B036-85BC7BE77E74}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked12" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}" ShortID="823583573">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked12" ID="{AFE300FA-D7D3-4BFB-97F6-9C84E3D0D407}" ShortID="974829066">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked12" ID="{9226835C-1D01-42C1-A121-58B9599D61AC}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked12.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1024543659"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked12" ID="{9226835C-1D01-42C1-A121-58B9599D61AC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked13" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}" ShortID="1014768648">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked13" ID="{56A85A48-1414-43B2-8093-07817E0100CF}" ShortID="939068363">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked13" ID="{56F24529-76D3-47A4-9EEF-B5311218DBB4}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked13.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="115055815"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked13" ID="{56F24529-76D3-47A4-9EEF-B5311218DBB4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked5" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}" ShortID="1039209017">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked5" ID="{2513DEDB-439B-4D64-98FB-A9631C12B443}" ShortID="42600195">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked5" ID="{FC6D8247-AE99-4EFE-82F7-2121D0B564D3}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="830168908"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked5" ID="{FC6D8247-AE99-4EFE-82F7-2121D0B564D3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked7" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}" ShortID="868639984">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked7" ID="{CD984DEE-7449-4859-BA09-D09904681C3C}" ShortID="778254568">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked7" ID="{84F317C2-47EE-436A-8FDF-4888BE367396}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="226385795"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked7" ID="{84F317C2-47EE-436A-8FDF-4888BE367396}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked14" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}" ShortID="342653864">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked14" ID="{AAA3E43E-ACD4-4C91-9CE5-F23FDBD591DA}" ShortID="111277566">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked14" ID="{52DAAC5F-AF2E-494F-A8EA-0DE8550F7196}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked14.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="388227883"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked14" ID="{52DAAC5F-AF2E-494F-A8EA-0DE8550F7196}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateUniquePrebaked6" ID="{C7424121-2725-473E-9242-4BE57AE88548}" ShortID="975020654">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateUniquePrebaked6" ID="{D2A8EBF8-C369-473E-8F8F-4AFDBCB7D8CE}" ShortID="124634202">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateUniquePrebaked6" ID="{396F1AD3-0291-49B1-ADEC-01CA4AA7E5AA}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateUniquePrebaked6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="103482109"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateUniquePrebaked6" ID="{396F1AD3-0291-49B1-ADEC-01CA4AA7E5AA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateGenericPrebaked1" ID="{7E781279-944D-472C-A715-0B1964085BDC}" ShortID="1051701885">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateGenericPrebaked1" ID="{52346FE6-D262-4F71-BF9D-63F2EF1FFD57}" ShortID="718619445">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateGenericPrebaked1" ID="{7E43B693-6301-4EC6-B187-EBA1F66D1294}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateGenericPrebaked1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="995987127"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateGenericPrebaked1" ID="{7E43B693-6301-4EC6-B187-EBA1F66D1294}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateGenericPrebaked2" ID="{D8333DBB-6B5B-44F1-AF82-42BFFE1994C2}" ShortID="264811372">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateGenericPrebaked2" ID="{BB1BBB85-F0C8-4C25-ACF2-69B2570A1688}" ShortID="858849646">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateGenericPrebaked2" ID="{2B2EDC27-5CC7-4799-AD3A-53236EE1EE01}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateGenericPrebaked2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="749261521"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateGenericPrebaked2" ID="{2B2EDC27-5CC7-4799-AD3A-53236EE1EE01}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateGenericPrebaked3" ID="{2786A393-5FA7-4669-9A21-B4FBDE0DA6D8}" ShortID="900498017">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateGenericPrebaked3" ID="{7C8D0172-5A88-4FC6-B546-BBEA0D375933}" ShortID="693457801">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateGenericPrebaked3" ID="{DA30E4F2-DA3C-4545-9D9D-EF92D5F5DB2B}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateGenericPrebaked3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="588490526"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateGenericPrebaked3" ID="{DA30E4F2-DA3C-4545-9D9D-EF92D5F5DB2B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateGenericPrebaked4" ID="{7175A6E7-80F4-49CF-AF86-5963185E60FE}" ShortID="160942741">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateGenericPrebaked4" ID="{263F9894-DFCE-4B9E-A474-40801E4A0F00}" ShortID="905775306">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateGenericPrebaked4" ID="{4793FD07-E83C-49C5-8A8E-9196BA06EEA2}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateGenericPrebaked4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="540204213"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateGenericPrebaked4" ID="{4793FD07-E83C-49C5-8A8E-9196BA06EEA2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="FailstateGenericPrebaked5" ID="{82E9D9D9-D8E3-4672-AD3E-4DAA8B335B69}" ShortID="50755399">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="FailstateGenericPrebaked5" ID="{CB7D475E-C9E2-4473-B05D-76413F7F507A}" ShortID="445202606">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="FailstateGenericPrebaked5" ID="{6EE5FE8E-CECE-43C1-A8D5-9F5930163F3E}">
-													<Language>SFX</Language>
-													<AudioFile>FailstateGenericPrebaked5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="176297039"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="FailstateGenericPrebaked5" ID="{6EE5FE8E-CECE-43C1-A8D5-9F5930163F3E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<ObjectLists/>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked1" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked8" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked6" ID="{C7424121-2725-473E-9242-4BE57AE88548}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked9" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked12" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked11" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked7" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked10" ID="{2B151E6E-3EF6-43BC-B2D7-D7B360E9A86A}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateGenericPrebaked1" ID="{7E781279-944D-472C-A715-0B1964085BDC}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateGenericPrebaked3" ID="{2786A393-5FA7-4669-9A21-B4FBDE0DA6D8}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked4" ID="{821406A0-A732-4A3F-9E37-6532F09495F1}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked3" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateGenericPrebaked2" ID="{D8333DBB-6B5B-44F1-AF82-42BFFE1994C2}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked5" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked13" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked14" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateGenericPrebaked5" ID="{82E9D9D9-D8E3-4672-AD3E-4DAA8B335B69}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateGenericPrebaked4" ID="{7175A6E7-80F4-49CF-AF86-5963185E60FE}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="FailstateUniquePrebaked2" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked11" ID="{165B9F07-7B79-4B3B-B59A-7F4C378AB0A5}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked11" ID="{F20C0348-2510-4BDC-A340-39660C3BDA89}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked14" ID="{BEE0B00B-4445-4F60-8D97-B7E03EACDD7E}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked14" ID="{6AF39BC7-01EC-40DA-82A9-F9DC8636F9A4}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked6" ID="{2D399A11-1FBC-4004-B4EC-3A4E280D1E15}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked6" ID="{C7424121-2725-473E-9242-4BE57AE88548}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked2" ID="{F568E825-63A9-44B2-824B-0BB1F42E53F1}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked2" ID="{46A0E1F6-6B28-4393-94C8-E3D30E178CAB}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateGenericPrebaked1" ID="{C097223A-F39F-41AF-A85C-268C1011AC12}"/>
-										<ItemList>
-											<ItemRef Name="FailstateGenericPrebaked1" ID="{7E781279-944D-472C-A715-0B1964085BDC}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateGenericPrebaked3" ID="{2B6DD850-E781-4631-AA94-B6308300E95E}"/>
-										<ItemList>
-											<ItemRef Name="FailstateGenericPrebaked3" ID="{2786A393-5FA7-4669-9A21-B4FBDE0DA6D8}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked1" ID="{BF070454-EBDB-4194-B683-B53B915B5DD7}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked1" ID="{0120AF0F-1D17-409B-BB9D-4996994DF53A}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked5" ID="{1A715654-63B1-4627-A383-761CBAAB8B19}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked5" ID="{83DE22BF-09AC-41C5-8173-E73BA8088E51}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked12" ID="{A769A06B-00A4-46A1-B8FA-2BA5B7E948B8}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked12" ID="{7D181538-4B6F-43CA-A1E1-DB068657FF55}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked3" ID="{DEB6356F-7A5E-47E7-B083-3C57D7D3D0E6}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked3" ID="{ACACC4A2-EE06-41E3-875A-1CAA7DECF8D3}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateGenericPrebaked4" ID="{9BE9807E-C828-4E78-9E75-4B867172B9BF}"/>
-										<ItemList>
-											<ItemRef Name="FailstateGenericPrebaked4" ID="{7175A6E7-80F4-49CF-AF86-5963185E60FE}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked8" ID="{AB1CC482-048C-42B4-BD67-38E3A573DBAB}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked8" ID="{C2E0C010-8FDC-4AA9-8570-561033BFD987}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked7" ID="{05E33B85-093F-4410-90CE-4BD0217CE984}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked7" ID="{94770D6B-6F74-47C9-B5F1-10E334EF1B33}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked10" ID="{FB766798-445E-4301-869F-8A3E7D72D272}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked10" ID="{2B151E6E-3EF6-43BC-B2D7-D7B360E9A86A}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateGenericPrebaked2" ID="{3D8D8EAB-0B2F-4409-A750-365D7BDDF154}"/>
-										<ItemList>
-											<ItemRef Name="FailstateGenericPrebaked2" ID="{D8333DBB-6B5B-44F1-AF82-42BFFE1994C2}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateGenericPrebaked5" ID="{1F854EC0-8F8E-41F3-9B60-FA13BAB1F96F}"/>
-										<ItemList>
-											<ItemRef Name="FailstateGenericPrebaked5" ID="{82E9D9D9-D8E3-4672-AD3E-4DAA8B335B69}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked13" ID="{003054D3-3B16-4E5A-AE57-BA13FDD5378C}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked13" ID="{FDF752C6-4B75-41F8-B1EE-E89C3B490777}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked9" ID="{973B65F9-B1AF-4DA5-ACA1-A464DE358468}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked9" ID="{92A33536-ADF6-4D79-B39B-FFB3F3F62DCE}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="FailstateUniquePrebaked4" ID="{7AA3CBFF-2811-4944-A73B-7CBE68F3DDD3}"/>
-										<ItemList>
-											<ItemRef Name="FailstateUniquePrebaked4" ID="{821406A0-A732-4A3F-9E37-6532F09495F1}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -5477,7 +5861,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
+									<ObjectRef Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

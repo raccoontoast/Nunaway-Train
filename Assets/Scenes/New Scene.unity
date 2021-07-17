@@ -275,6 +275,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f0506672eb2a44cba7eb67699422b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SignalReplyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f04baec59b5db2341a3d8b2ff6802db6, type: 2}
+  StopRadioFXEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9f3925fbd57972a449a3084457588393, type: 2}
 --- !u!1 &187132002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715329, guid: 4ec3df5875e7347beb6176b545b8fb39, type: 3}
       propertyPath: startNode
-      value: PlayerToEddChat.Intro
+      value: PlayerToEddChat.ODE
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715329, guid: 4ec3df5875e7347beb6176b545b8fb39, type: 3}
       propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -9522,7 +9530,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235809778}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 113e87c7f1738004c9708b92182c162e, type: 3}
   m_Name: 
@@ -9535,7 +9543,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a2eae9140cce16043921eb687069cf7e, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: f04baec59b5db2341a3d8b2ff6802db6, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

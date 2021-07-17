@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_NARRATORFAILSTATES = 2363386339U;
+        static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_NARRATOROPENINGSPIEL = 490760232U;
+        static const AkUniqueID PLAY_NARRATORPREBAKEDENDINGS = 1877704911U;
         static const AkUniqueID PLAY_NARRATORTIMELIMIT = 3557806995U;
         static const AkUniqueID PLAY_NARRATORVICTORY = 2584695725U;
         static const AkUniqueID PLAY_NARRATORVICTORYFIRSTTRY = 1318513612U;
@@ -30,33 +31,33 @@ namespace AK
         static const AkUniqueID PLAY_TRAINAMBIENCE = 3198155892U;
         static const AkUniqueID PLAY_UISOUNDS = 1549268940U;
         static const AkUniqueID PLAY_VICTORYSTATES = 912900294U;
+        static const AkUniqueID STOP_RADIOFX = 1766528991U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
-        namespace NARRATORFAILSTATES
+        namespace ENDINGS
         {
-            static const AkUniqueID GROUP = 2013076008U;
+            static const AkUniqueID GROUP = 1252722655U;
 
             namespace SWITCH
             {
-                static const AkUniqueID NARRATORFAILSTATEGENERIC = 3468136476U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE1 = 2914782953U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE2 = 2914782954U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE3 = 2914782955U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE4 = 2914782956U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE5 = 2914782957U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE6 = 2914782958U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE7 = 2914782959U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE8 = 2914782944U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE9 = 2914782945U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE10 = 1745582331U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE11 = 1745582330U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE12 = 1745582329U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE13 = 1745582328U;
-                static const AkUniqueID NARRATORFAILSTATEUNIQUE14 = 1745582335U;
+                static const AkUniqueID DO = 1836525774U;
+                static const AkUniqueID DOE = 546651183U;
+                static const AkUniqueID DOG = 546651181U;
+                static const AkUniqueID DOGE = 2012068530U;
+                static const AkUniqueID EDD = 697502650U;
+                static const AkUniqueID EDDO = 746288545U;
+                static const AkUniqueID EDO = 697502641U;
+                static const AkUniqueID EGO = 680725028U;
+                static const AkUniqueID GENERIC = 4294388576U;
+                static const AkUniqueID GO = 1786192775U;
+                static const AkUniqueID GOD = 546106849U;
+                static const AkUniqueID NEARLYCORRECT = 44379832U;
+                static const AkUniqueID ODD = 897156792U;
+                static const AkUniqueID ODE = 897156793U;
             } // namespace SWITCH
-        } // namespace NARRATORFAILSTATES
+        } // namespace ENDINGS
 
         namespace PLAYERFX
         {
@@ -71,34 +72,6 @@ namespace AK
             } // namespace SWITCH
         } // namespace PLAYERFX
 
-        namespace PREBAKEDENDINGS
-        {
-            static const AkUniqueID GROUP = 419079691U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID FAILSTATEGENERICPREBAKED1 = 1249851304U;
-                static const AkUniqueID FAILSTATEGENERICPREBAKED2 = 1249851307U;
-                static const AkUniqueID FAILSTATEGENERICPREBAKED3 = 1249851306U;
-                static const AkUniqueID FAILSTATEGENERICPREBAKED4 = 1249851309U;
-                static const AkUniqueID FAILSTATEGENERICPREBAKED5 = 1249851308U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED1 = 2136721070U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED2 = 2136721069U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED3 = 2136721068U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED4 = 2136721067U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED5 = 2136721066U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED6 = 2136721065U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED7 = 2136721064U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED8 = 2136721063U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED9 = 2136721062U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED10 = 729400282U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED11 = 729400283U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED12 = 729400280U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED13 = 729400281U;
-                static const AkUniqueID FAILSTATEUNIQUEPREBAKED14 = 729400286U;
-            } // namespace SWITCH
-        } // namespace PREBAKEDENDINGS
-
         namespace RADIOFX
         {
             static const AkUniqueID GROUP = 68260988U;
@@ -111,6 +84,39 @@ namespace AK
                 static const AkUniqueID RADIOTUNE = 1804927500U;
             } // namespace SWITCH
         } // namespace RADIOFX
+
+        namespace SIGNAKREPLY
+        {
+            static const AkUniqueID GROUP = 1473307414U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace SIGNAKREPLY
+
+        namespace SIGNALREPLY
+        {
+            static const AkUniqueID GROUP = 2976817787U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SIGNALREPLY1 = 3425290128U;
+                static const AkUniqueID SIGNALREPLY2 = 3425290131U;
+                static const AkUniqueID SIGNALREPLY3 = 3425290130U;
+                static const AkUniqueID SIGNALREPLY4 = 3425290133U;
+                static const AkUniqueID SIGNALREPLY5 = 3425290132U;
+                static const AkUniqueID SIGNALREPLY6 = 3425290135U;
+                static const AkUniqueID SIGNALREPLY7 = 3425290134U;
+                static const AkUniqueID SIGNALREPLY8 = 3425290137U;
+                static const AkUniqueID SIGNALREPLY9 = 3425290136U;
+                static const AkUniqueID SIGNALREPLY10 = 4123338624U;
+                static const AkUniqueID SIGNALREPLY11 = 4123338625U;
+                static const AkUniqueID SIGNALREPLY12 = 4123338626U;
+                static const AkUniqueID SIGNALREPLY13 = 4123338627U;
+                static const AkUniqueID SIGNALREPLY14 = 4123338628U;
+                static const AkUniqueID SIGNALREPLY15 = 4123338629U;
+            } // namespace SWITCH
+        } // namespace SIGNALREPLY
 
         namespace SOUNDDESIGNFAILSTATES
         {

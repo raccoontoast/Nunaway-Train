@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4016ef4d03ae8e468304b66f5af8de8e
     GuidInternal: 
-    m_lastTime: -8585750773664775808
+    m_lastTime: -8585750574848939444
     List:
     - name: Dialogue
       guid: 1d559ec0f3e6fe4593d7226f26214d50
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 259fb8ca6136db47b4b25d69a40e4042
     GuidInternal: 
-    m_lastTime: -8585750725854259689
+    m_lastTime: -8585750555236960767
     List:
     - name: Soundbank
       guid: c69a214aca3dd340b1b9238ace1adb1c
@@ -145,11 +145,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585750720173294208
+    m_lastTime: -8585750515917405770
     List:
-    - name: Play_NarratorFailstates
-      guid: ade86c77cf38de46bd4d6d2b618b3feb
-      id: 2363386339
+    - name: Play_InGameMusic
+      guid: e08a28fb87a6e64f8b1645132d0065e7
+      id: 3799629626
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -157,13 +157,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: a0c6a8b259ac844c871ce4db96b481a3
-      - ElementName: Play_NarratorFailstates
+      - ElementName: Play_InGameMusic
         ObjectType: 3
-        guid: ade86c77cf38de46bd4d6d2b618b3feb
-      Path: Events\Default Work Unit\Play_NarratorFailstates
+        guid: e08a28fb87a6e64f8b1645132d0065e7
+      Path: Events\Default Work Unit\Play_InGameMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NarratorOpeningSpiel
       guid: 5d5883ece1b9874ea54b196feb7245d7
       id: 490760232
@@ -179,8 +179,25 @@ MonoBehaviour:
         guid: 5d5883ece1b9874ea54b196feb7245d7
       Path: Events\Default Work Unit\Play_NarratorOpeningSpiel
       maxAttenuation: 0
-      maxDuration: 27.517708
-      minDuration: 27.517708
+      maxDuration: 10.14636
+      minDuration: 2.595
+    - name: Play_NarratorPrebakedEndings
+      guid: ade86c77cf38de46bd4d6d2b618b3feb
+      id: 1877704911
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Play_NarratorPrebakedEndings
+        ObjectType: 3
+        guid: ade86c77cf38de46bd4d6d2b618b3feb
+      Path: Events\Default Work Unit\Play_NarratorPrebakedEndings
+      maxAttenuation: 0
+      maxDuration: 43.882374
+      minDuration: 18.682812
     - name: Play_NarratorTimeLimit
       guid: 30ac9361233d9a4a851d444039629198
       id: 3557806995
@@ -301,7 +318,7 @@ MonoBehaviour:
       maxDuration: 41.882374
       minDuration: 16.682812
     - name: Play_RadioFX
-      guid: 6878c3157f71ef4d961e4a0e34bf3106
+      guid: c7af00b609d09f468c7acd76c23814b2
       id: 3707568345
       PathAndIcons:
       - ElementName: Events
@@ -310,13 +327,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Signal Reply
+        ObjectType: 4
+        guid: d3c40246b0b23541ac37d2b580526aa6
       - ElementName: Play_RadioFX
         ObjectType: 3
-        guid: 6878c3157f71ef4d961e4a0e34bf3106
-      Path: Events\Default Work Unit\Play_RadioFX
+        guid: c7af00b609d09f468c7acd76c23814b2
+      Path: Events\Default Work Unit\Signal Reply\Play_RadioFX
       maxAttenuation: 0
       maxDuration: 38.41097
-      minDuration: 0.142531
+      minDuration: 38.41097
     - name: Play_SignalChat
       guid: 7e06bf7d0e298842a972968f21c46a53
       id: 3660888992
@@ -361,13 +381,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Signal Reply
+        ObjectType: 4
+        guid: d3c40246b0b23541ac37d2b580526aa6
       - ElementName: Play_SignalReply
         ObjectType: 3
         guid: f63bf4818286f14ca6fb135c05d575a7
-      Path: Events\Default Work Unit\Play_SignalReply
+      Path: Events\Default Work Unit\Signal Reply\Play_SignalReply
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 33.436733
+      minDuration: 1.486077
     - name: Play_SoundDesignFailstates
       guid: 4f1603ac2c66764988cc63f0f7e1e188
       id: 1501224847
@@ -400,8 +423,8 @@ MonoBehaviour:
         guid: 1cea2fcb0ab5d6418b3610803affff54
       Path: Events\Default Work Unit\Play_TrainAmbience
       maxAttenuation: 0
-      maxDuration: 65.72556
-      minDuration: 65.72556
+      maxDuration: -1
+      minDuration: -1
     - name: Play_UISounds
       guid: 3cc91fc557c98842bb76e9c2041bfba0
       id: 1549268940
@@ -436,6 +459,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Signal Reply
+      guid: d3c40246b0b23541ac37d2b580526aa6
+      id: 3418949805
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Signal Reply
+        ObjectType: 4
+        guid: d3c40246b0b23541ac37d2b580526aa6
+      Path: Events\Default Work Unit\Signal Reply
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_RadioFX
+      guid: fb7c2ebd85bd8047b67ff604f00c163c
+      id: 1766528991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Signal Reply
+        ObjectType: 4
+        guid: d3c40246b0b23541ac37d2b580526aa6
+      - ElementName: Stop_RadioFX
+        ObjectType: 3
+        guid: fb7c2ebd85bd8047b67ff604f00c163c
+      Path: Events\Default Work Unit\Signal Reply\Stop_RadioFX
+      maxAttenuation: 0
+      maxDuration: 0.216885
+      minDuration: 0.142531
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -476,11 +536,11 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4cfb749d026b32409e090e117fcfee09
     GuidInternal: 
-    m_lastTime: -8585750751887135187
+    m_lastTime: -8585750503093830439
     List:
-    - name: NarratorFailstates
-      guid: 98dedd4b204f88498df2c4fcb6a3862b
-      id: 2013076008
+    - name: Endings
+      guid: 5f5088398b5c50469f05db62cd698f6d
+      id: 1252722655
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -488,14 +548,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4cfb749d026b32409e090e117fcfee09
-      - ElementName: NarratorFailstates
+      - ElementName: Endings
         ObjectType: 11
-        guid: 98dedd4b204f88498df2c4fcb6a3862b
-      Path: Switches\Default Work Unit\NarratorFailstates
+        guid: 5f5088398b5c50469f05db62cd698f6d
+      Path: Switches\Default Work Unit\Endings
       values:
-      - name: NarratorFailstateGeneric
-        guid: c1eb9c6333c6924ab7084e1e2620c4b5
-        id: 3468136476
+      - name: DO
+        guid: 2fef06eae8d84347b5a003fcb615eabf
+        id: 1836525774
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -503,15 +563,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateGeneric
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: DO
           ObjectType: 10
-          guid: c1eb9c6333c6924ab7084e1e2620c4b5
-      - name: NarratorFailstateUnique1
-        guid: d9a454a479efed4ca579d363ac359692
-        id: 2914782953
+          guid: 2fef06eae8d84347b5a003fcb615eabf
+      - name: DOE
+        guid: 5456711ab1632746a383761cbaab8b19
+        id: 546651183
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -519,15 +579,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique1
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: DOE
           ObjectType: 10
-          guid: d9a454a479efed4ca579d363ac359692
-      - name: NarratorFailstateUnique10
-        guid: f17935e551cc944999aaf625d15d55de
-        id: 1745582331
+          guid: 5456711ab1632746a383761cbaab8b19
+      - name: DOG
+        guid: 3a2297c09ff3af41a85c268c1011ac12
+        id: 546651181
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -535,15 +595,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique10
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: DOG
           ObjectType: 10
-          guid: f17935e551cc944999aaf625d15d55de
-      - name: NarratorFailstateUnique11
-        guid: ba132cd4d546c442813e8f015181a5b5
-        id: 1745582330
+          guid: 3a2297c09ff3af41a85c268c1011ac12
+      - name: DOGE
+        guid: 6f35b6de5e7ae747b0833c57d7d3d0e6
+        id: 2012068530
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -551,15 +611,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique11
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: DOGE
           ObjectType: 10
-          guid: ba132cd4d546c442813e8f015181a5b5
-      - name: NarratorFailstateUnique12
-        guid: 3a949b36c3255a4da8eb2e2bd4a3598a
-        id: 1745582329
+          guid: 6f35b6de5e7ae747b0833c57d7d3d0e6
+      - name: EDD
+        guid: 119a392dbc1f0440b4ec3a4e280d1e15
+        id: 697502650
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -567,15 +627,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique12
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: EDD
           ObjectType: 10
-          guid: 3a949b36c3255a4da8eb2e2bd4a3598a
-      - name: NarratorFailstateUnique13
-        guid: 175bfeec4286544995d298f8268bae2b
-        id: 1745582328
+          guid: 119a392dbc1f0440b4ec3a4e280d1e15
+      - name: EDDO
+        guid: 25e868f5a963b244824b0bb1f42e53f1
+        id: 746288545
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -583,15 +643,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique13
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: EDDO
           ObjectType: 10
-          guid: 175bfeec4286544995d298f8268bae2b
-      - name: NarratorFailstateUnique14
-        guid: a6a3802aa4fc3a49a9f34641ee36102d
-        id: 1745582335
+          guid: 25e868f5a963b244824b0bb1f42e53f1
+      - name: EDO
+        guid: 540407bfdbeb9441b683b53b915b5dd7
+        id: 697502641
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -599,15 +659,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique14
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: EDO
           ObjectType: 10
-          guid: a6a3802aa4fc3a49a9f34641ee36102d
-      - name: NarratorFailstateUnique2
-        guid: 1966ed23d37c7345b4470b8c65998291
-        id: 2914782954
+          guid: 540407bfdbeb9441b683b53b915b5dd7
+      - name: EGO
+        guid: 7e80e99b28c8784e9e754b867172b9bf
+        id: 680725028
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -615,15 +675,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique2
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: EGO
           ObjectType: 10
-          guid: 1966ed23d37c7345b4470b8c65998291
-      - name: NarratorFailstateUnique3
-        guid: 51d6a9d71e0e8a43b806121edd4f9257
-        id: 2914782955
+          guid: 7e80e99b28c8784e9e754b867172b9bf
+      - name: Generic
+        guid: 50d86d2b81e73146aa94b6308300e95e
+        id: 4294388576
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -631,15 +691,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique3
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: Generic
           ObjectType: 10
-          guid: 51d6a9d71e0e8a43b806121edd4f9257
-      - name: NarratorFailstateUnique4
-        guid: bd6d240b2cc75a48b60dd47092af1701
-        id: 2914782956
+          guid: 50d86d2b81e73146aa94b6308300e95e
+      - name: GO
+        guid: c04e851f8e8ff3419b60fa13bab1f96f
+        id: 1786192775
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -647,15 +707,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique4
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: GO
           ObjectType: 10
-          guid: bd6d240b2cc75a48b60dd47092af1701
-      - name: NarratorFailstateUnique5
-        guid: a6c28360d2b1544789769ff8226c4129
-        id: 2914782957
+          guid: c04e851f8e8ff3419b60fa13bab1f96f
+      - name: GOD
+        guid: ab8e8d3d2f0b0944a750365d7bddf154
+        id: 546106849
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -663,15 +723,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique5
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: GOD
           ObjectType: 10
-          guid: a6c28360d2b1544789769ff8226c4129
-      - name: NarratorFailstateUnique6
-        guid: 79bdc657ec069e4981c6838237c45c0b
-        id: 2914782958
+          guid: ab8e8d3d2f0b0944a750365d7bddf154
+      - name: NearlyCorrect
+        guid: ffcba37a11284449a73b7cbe68f3ddd3
+        id: 44379832
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -679,15 +739,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique6
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: NearlyCorrect
           ObjectType: 10
-          guid: 79bdc657ec069e4981c6838237c45c0b
-      - name: NarratorFailstateUnique7
-        guid: 7b1a97ad95edcc48a7983f0bb885b928
-        id: 2914782959
+          guid: ffcba37a11284449a73b7cbe68f3ddd3
+      - name: ODD
+        guid: 853be3053f09104490ce4bd0217ce984
+        id: 897156792
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -695,15 +755,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique7
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: ODD
           ObjectType: 10
-          guid: 7b1a97ad95edcc48a7983f0bb885b928
-      - name: NarratorFailstateUnique8
-        guid: 0f47682eac3bea4d950db1fd37057d00
-        id: 2914782944
+          guid: 853be3053f09104490ce4bd0217ce984
+      - name: ODE
+        guid: 82c41cab8c04b442bd6738e3a573dbab
+        id: 897156793
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -711,28 +771,12 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
+        - ElementName: Endings
           ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique8
+          guid: 5f5088398b5c50469f05db62cd698f6d
+        - ElementName: ODE
           ObjectType: 10
-          guid: 0f47682eac3bea4d950db1fd37057d00
-      - name: NarratorFailstateUnique9
-        guid: 2dc15c2cc47ab8419ddd6a4cf72ed3dd
-        id: 2914782945
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: NarratorFailstates
-          ObjectType: 11
-          guid: 98dedd4b204f88498df2c4fcb6a3862b
-        - ElementName: NarratorFailstateUnique9
-          ObjectType: 10
-          guid: 2dc15c2cc47ab8419ddd6a4cf72ed3dd
+          guid: 82c41cab8c04b442bd6738e3a573dbab
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -818,328 +862,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: PrebakedEndings
-      guid: 5f5088398b5c50469f05db62cd698f6d
-      id: 419079691
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 4cfb749d026b32409e090e117fcfee09
-      - ElementName: PrebakedEndings
-        ObjectType: 11
-        guid: 5f5088398b5c50469f05db62cd698f6d
-      Path: Switches\Default Work Unit\PrebakedEndings
-      values:
-      - name: FailstateGenericPrebaked1
-        guid: 3a2297c09ff3af41a85c268c1011ac12
-        id: 1249851304
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateGenericPrebaked1
-          ObjectType: 10
-          guid: 3a2297c09ff3af41a85c268c1011ac12
-      - name: FailstateGenericPrebaked2
-        guid: ab8e8d3d2f0b0944a750365d7bddf154
-        id: 1249851307
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateGenericPrebaked2
-          ObjectType: 10
-          guid: ab8e8d3d2f0b0944a750365d7bddf154
-      - name: FailstateGenericPrebaked3
-        guid: 50d86d2b81e73146aa94b6308300e95e
-        id: 1249851306
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateGenericPrebaked3
-          ObjectType: 10
-          guid: 50d86d2b81e73146aa94b6308300e95e
-      - name: FailstateGenericPrebaked4
-        guid: 7e80e99b28c8784e9e754b867172b9bf
-        id: 1249851309
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateGenericPrebaked4
-          ObjectType: 10
-          guid: 7e80e99b28c8784e9e754b867172b9bf
-      - name: FailstateGenericPrebaked5
-        guid: c04e851f8e8ff3419b60fa13bab1f96f
-        id: 1249851308
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateGenericPrebaked5
-          ObjectType: 10
-          guid: c04e851f8e8ff3419b60fa13bab1f96f
-      - name: FailstateUniquePrebaked1
-        guid: 540407bfdbeb9441b683b53b915b5dd7
-        id: 2136721070
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked1
-          ObjectType: 10
-          guid: 540407bfdbeb9441b683b53b915b5dd7
-      - name: FailstateUniquePrebaked10
-        guid: 986776fb5e440143869f8a3e7d72d272
-        id: 729400282
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked10
-          ObjectType: 10
-          guid: 986776fb5e440143869f8a3e7d72d272
-      - name: FailstateUniquePrebaked11
-        guid: 079f5b16797b3b4bb59a7f4c378ab0a5
-        id: 729400283
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked11
-          ObjectType: 10
-          guid: 079f5b16797b3b4bb59a7f4c378ab0a5
-      - name: FailstateUniquePrebaked12
-        guid: 6ba069a7a400a146b8fa2ba5b7e948b8
-        id: 729400280
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked12
-          ObjectType: 10
-          guid: 6ba069a7a400a146b8fa2ba5b7e948b8
-      - name: FailstateUniquePrebaked13
-        guid: d3543000163b5a4eae57ba13fdd5378c
-        id: 729400281
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked13
-          ObjectType: 10
-          guid: d3543000163b5a4eae57ba13fdd5378c
-      - name: FailstateUniquePrebaked14
-        guid: 0bb0e0be4544604f8d97b7e03eacdd7e
-        id: 729400286
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked14
-          ObjectType: 10
-          guid: 0bb0e0be4544604f8d97b7e03eacdd7e
-      - name: FailstateUniquePrebaked2
-        guid: 25e868f5a963b244824b0bb1f42e53f1
-        id: 2136721069
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked2
-          ObjectType: 10
-          guid: 25e868f5a963b244824b0bb1f42e53f1
-      - name: FailstateUniquePrebaked3
-        guid: 6f35b6de5e7ae747b0833c57d7d3d0e6
-        id: 2136721068
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked3
-          ObjectType: 10
-          guid: 6f35b6de5e7ae747b0833c57d7d3d0e6
-      - name: FailstateUniquePrebaked4
-        guid: ffcba37a11284449a73b7cbe68f3ddd3
-        id: 2136721067
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked4
-          ObjectType: 10
-          guid: ffcba37a11284449a73b7cbe68f3ddd3
-      - name: FailstateUniquePrebaked5
-        guid: 5456711ab1632746a383761cbaab8b19
-        id: 2136721066
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked5
-          ObjectType: 10
-          guid: 5456711ab1632746a383761cbaab8b19
-      - name: FailstateUniquePrebaked6
-        guid: 119a392dbc1f0440b4ec3a4e280d1e15
-        id: 2136721065
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked6
-          ObjectType: 10
-          guid: 119a392dbc1f0440b4ec3a4e280d1e15
-      - name: FailstateUniquePrebaked7
-        guid: 853be3053f09104490ce4bd0217ce984
-        id: 2136721064
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked7
-          ObjectType: 10
-          guid: 853be3053f09104490ce4bd0217ce984
-      - name: FailstateUniquePrebaked8
-        guid: 82c41cab8c04b442bd6738e3a573dbab
-        id: 2136721063
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked8
-          ObjectType: 10
-          guid: 82c41cab8c04b442bd6738e3a573dbab
-      - name: FailstateUniquePrebaked9
-        guid: f9653b97afb1a54daca1a464de358468
-        id: 2136721062
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 4cfb749d026b32409e090e117fcfee09
-        - ElementName: PrebakedEndings
-          ObjectType: 11
-          guid: 5f5088398b5c50469f05db62cd698f6d
-        - ElementName: FailstateUniquePrebaked9
-          ObjectType: 10
-          guid: f9653b97afb1a54daca1a464de358468
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: RadioFX
       guid: 56ee96de9b4d2244a0efabe83fb3596d
       id: 68260988
@@ -1219,6 +941,264 @@ MonoBehaviour:
         - ElementName: RadioTune
           ObjectType: 10
           guid: f4238ea93ab610419abe01be7ab73900
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SignalReply
+      guid: 3ae811d419e76640825f84f6feb1f7fc
+      id: 2976817787
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4cfb749d026b32409e090e117fcfee09
+      - ElementName: SignalReply
+        ObjectType: 11
+        guid: 3ae811d419e76640825f84f6feb1f7fc
+      Path: Switches\Default Work Unit\SignalReply
+      values:
+      - name: SignalReply1
+        guid: b59b6f2e3eb3aa4aa22d87bc8097abd7
+        id: 3425290128
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply1
+          ObjectType: 10
+          guid: b59b6f2e3eb3aa4aa22d87bc8097abd7
+      - name: SignalReply10
+        guid: 3395dd69173aff46863f2ff8ee18b8c4
+        id: 4123338624
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply10
+          ObjectType: 10
+          guid: 3395dd69173aff46863f2ff8ee18b8c4
+      - name: SignalReply11
+        guid: c8bf73e10b8fed41875d17171ea5aeae
+        id: 4123338625
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply11
+          ObjectType: 10
+          guid: c8bf73e10b8fed41875d17171ea5aeae
+      - name: SignalReply12
+        guid: d0da5ba30176b741a16eec401edd1257
+        id: 4123338626
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply12
+          ObjectType: 10
+          guid: d0da5ba30176b741a16eec401edd1257
+      - name: SignalReply13
+        guid: 94f5d78fe22e1245aab6891733266708
+        id: 4123338627
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply13
+          ObjectType: 10
+          guid: 94f5d78fe22e1245aab6891733266708
+      - name: SignalReply14
+        guid: f0556033f7adea429f1667862240dd57
+        id: 4123338628
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply14
+          ObjectType: 10
+          guid: f0556033f7adea429f1667862240dd57
+      - name: SignalReply15
+        guid: c7773cf48b460742a74187dfb8711ba4
+        id: 4123338629
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply15
+          ObjectType: 10
+          guid: c7773cf48b460742a74187dfb8711ba4
+      - name: SignalReply2
+        guid: 6ad79f0217fc8648847f4229e8be03b2
+        id: 3425290131
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply2
+          ObjectType: 10
+          guid: 6ad79f0217fc8648847f4229e8be03b2
+      - name: SignalReply3
+        guid: bd4c61ee3233bf46912f2782c5a0615b
+        id: 3425290130
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply3
+          ObjectType: 10
+          guid: bd4c61ee3233bf46912f2782c5a0615b
+      - name: SignalReply4
+        guid: 5143adc9bd65d24fafc5edc0a8cab6c8
+        id: 3425290133
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply4
+          ObjectType: 10
+          guid: 5143adc9bd65d24fafc5edc0a8cab6c8
+      - name: SignalReply5
+        guid: f6bb7134a59ae9499931ad629aec3f8f
+        id: 3425290132
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply5
+          ObjectType: 10
+          guid: f6bb7134a59ae9499931ad629aec3f8f
+      - name: SignalReply6
+        guid: d5d1c0fc74bbbe4fa21c8e00dabc9924
+        id: 3425290135
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply6
+          ObjectType: 10
+          guid: d5d1c0fc74bbbe4fa21c8e00dabc9924
+      - name: SignalReply7
+        guid: ec71dbc423f6154ca95a0c4277b0b43b
+        id: 3425290134
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply7
+          ObjectType: 10
+          guid: ec71dbc423f6154ca95a0c4277b0b43b
+      - name: SignalReply8
+        guid: de33f3b51d9ea244a0826298250bf27a
+        id: 3425290137
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply8
+          ObjectType: 10
+          guid: de33f3b51d9ea244a0826298250bf27a
+      - name: SignalReply9
+        guid: 6782dc7a1dccc247b8e41d6ce92a041c
+        id: 3425290136
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4cfb749d026b32409e090e117fcfee09
+        - ElementName: SignalReply
+          ObjectType: 11
+          guid: 3ae811d419e76640825f84f6feb1f7fc
+        - ElementName: SignalReply9
+          ObjectType: 10
+          guid: 6782dc7a1dccc247b8e41d6ce92a041c
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1495,7 +1475,7 @@ MonoBehaviour:
     m_lastTime: -8585750773664775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000190000001a0000001b0000001e0000001f000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000001700000018000000190000001a0000001b0000001e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

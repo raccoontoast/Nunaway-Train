@@ -72,3 +72,10 @@ crashlytics-build.properties
 
 # Extra
 Devlog/
+# Wwise stuff
+.cache
+*.akd
+*.prof
+*.validationcache
+*/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+/WwiseProject/GeneratedSoundBanks

@@ -8,6 +8,9 @@ public class DialogueManager : MonoBehaviour
 {
     DialogueRunner dialogueRunner;
     int failCounter = 1;
+    public AK.Wwise.Event SignalReplyEvent;
+    public AK.Wwise.Event StopRadioFXEvent;
+    uint CurrentEventID;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +67,33 @@ public class DialogueManager : MonoBehaviour
     [YarnCommand("playAudio")]
     public void playAudio(string WwiseEventName)
     {
+        AkSoundEngine.StopPlayingID(CurrentEventID);
+
+        CurrentEventID = AkSoundEngine.GetIDFromString(WwiseEventName);
+
         AkSoundEngine.PostEvent(WwiseEventName, GameObject.FindGameObjectWithTag("Player"));
         Debug.Log("Playing " + WwiseEventName);
+    }
+
+    [YarnCommand("playSignalReply")]
+    public void playSignalReply()
+    {
+        CurrentEventID = SignalReplyEvent.Id;
+
+        SignalReplyEvent.Post(GameObject.FindGameObjectWithTag("Player"), (uint)AkCallbackType.AK_EndOfEvent, SignalReplyStop);
+        AkSoundEngine.PostEvent("Play_RadioFX", GameObject.FindGameObjectWithTag("Player"));
+    }
+
+    public void SignalReplyStop(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        //AkSoundEngine.PostEvent("Stop_RadioFX", GameObject.FindGameObjectWithTag("Player"));
+        Debug.Log("Callback function.");
+        StopRadioFXEvent.Post(GameObject.FindGameObjectWithTag("Player"));
+    }
+
+    [YarnCommand("setSwitch")]
+    public void setSwitch(string WwiseSwitchGroup, string WwiseSwitchState)
+    {
+        AkSoundEngine.SetSwitch(WwiseSwitchGroup, WwiseSwitchState, GameObject.FindGameObjectWithTag("Player"));        
     }
 }
