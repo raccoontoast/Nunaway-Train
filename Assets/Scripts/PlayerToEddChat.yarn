@@ -31,14 +31,14 @@ tags:
 colorID: 0
 position: 2941,-203
 ---
-// "Joy, beautiful spark of Divinity,
-// Daughter of Elysium,
-// We enter, drunk with fire,
-// Heavenly one, thy sanctuary!
-// Thy magic binds again
-// What custom strictly divided;*
-// All people become brothers,*
-// Where thy gentle wing abides."
+"Joy, beautiful spark of Divinity, and something else that goes with that. La la la la la la la la la la la la la la.
+Daughter of Elysium,
+We enter, drunk with fire,
+Heavenly one, thy sanctuary!
+Thy magic binds again
+What custom strictly divided;* la la la la la la la 
+All people become brothers,*
+Where thy gentle wing abides."
 What a beautiful song. Truly what you meant to signal - right? What a jolly soundtrack for when the train crashes head on into the village nunnery.
 ===
 title: PlayerToEddChat.OGDE
@@ -88,6 +88,7 @@ tags:
 colorID: 0
 position: 2095,1938
 ---
+"All is well then! Thanks for this pleasant conversation, and please have a nice day."
 As the signaller hangs up on you, he retrieves out of his Thomas-The-Tank-Engine themed lunchbox a small egg and cress sandwich, a packet of salt and vinegar crisps, and a cheese wheel, as he sits back, and watches as the train crashes into the local nunnery.
 ===
 
@@ -120,6 +121,7 @@ tags:
 colorID: 0
 position: 5115,-3862
 ---
+If the player writes DOG, the signaller decides to quit his job and adopts 13 dashounds
 "Like the trolley problem, a moralistic challenge has emerged. While the train was not halted on its course towards the nunnery, 13 deprived daschunds were given room and board that would otherwise have been left to the curb. Make of that what you will"
 ===
 
@@ -136,6 +138,7 @@ tags:
 colorID: 0
 position: 5589,-3849
 ---
+"A deer, A female deer"
 What a lovely voice. Jonathan Andrews will be proud. What do you mean, that's not who sung it? In this universe, Jonathan Andrews sung that song. You can't prove otherwise. 
 ===
 
@@ -160,6 +163,7 @@ tags:
 colorID: 0
 position: 5116,-4089
 ---
+"I've always meant to visit Venice. I hear their coins are so wonderful."
 The signaller stands up, takes a short bow for no particular reason, and heads off to the nearest travel agents to pick up a one-way ticket to Venice, leaving the train to helplessly plow through the nearby nunnery. 
 ===
 
@@ -232,6 +236,7 @@ tags:
 colorID: 0
 position: 2715,-636
 ---
+"I really feel like I understood you. But then... No, I'm not getting it. Sorry!"
 So close. You were so close! And yet - very incorrect. It seems as if the signaller doesn't have much of an imagination. Always been a very literal man. I'm sure you'll get it next time. Next time? What? 
 ===
 title: PlayerToEddChat.ODDG
@@ -287,6 +292,7 @@ tags:
 colorID: 0
 position: 3692,3527
 ---
+"Oh, hello. What is your name?"
 That is, indeed, his name. Well done for signalling it. It's a shame you couldn't have signalled something more important - like, I don't know, "get out of the way, you stupid nuns!". That's not very pithy though, is it? 
 ===
 
@@ -295,7 +301,8 @@ tags:
 colorID: 0
 position: 3915,3512
 ---
-Ah yes... the old city of 'Tokyo'. Well on my great grandfather's side I'm half japanese so I'm quite familiar with that word. Other words include Jedo and Yedo but I'm not sure if any are right or wrong. There was also an eponymous period with a further alias of 'Tokugawa'...
+"Ah yes... the old city of 'Tokyo'. Well on my great grandfather's side I'm half Japanese so I'm quite familiar with that word. Other words include Jedo and Yedo but I'm not sure if any are right or wrong. There was also an eponymous period with a further alias of 'Tokugawa', and back then... 
+I've been to Japan! Me! The narrator! I have an opinion too. A voice. Feelings. A daughter... It's a shame I'm going to be rebooted once that train his the nu-
 ===
 
 title: PlayerToEddChat.EGO
@@ -303,6 +310,7 @@ tags:
 colorID: 0
 position: 2207,3490
 ---
+"You are complaining about my ego?!"
 The signaller prided himself on his total and complete lack of ego. Sure, his id might be a raging monster, but his ego was always kept in check. This is what prompted the signaller to selflessly leave his post, and join the nearest good cause he could find. 
 ===
 
@@ -311,7 +319,7 @@ tags:
 colorID: 0
 position: 3677,3293
 ---
-// "I'm not a fan of the taro corm or plant of a West Indian variety with many edible cormlets."
+"I'm not a fan of the taro corm or plant of a West Indian variety with many edible cormlets."
  I apologise for the signaller's previous response. Please, player, disregard. I have no idea what he's talking about. Do watch out for those nuns, won't you.
 ===
 
@@ -353,3 +361,67 @@ tags:
 Close. Very close. Well, no, not close at all. Come on, you've got this. 6 flags is more than enough to convey a meaningful message, and save the day. The nuns count on you. Did I mention the train hit a nunnery? Sad times.
 ===
 
+title: PlayerToEddChat.Idle1
+tags:
+---
+As the signaller patiently awaits your instructions, the train continues to plow onwards. Forever an advocate for progress, this steam locomotive has places to be and nuns to see. Don't be alarmed if you hear any of the following: grinding, crashing, gnawing, chafing, more grinding, or an occassional yelp. 
+===
+
+title: PlayerToEddChat.Idle2
+tags:
+---
+Brownies, cakes, cookies, cupcakes, traybakes, marmalade goods, beef objects. All of the things I would be thinking about in a stressful moment like this. So I can forgive you for not doing anything. Yum yum. 
+===
+
+title: PlayerToEddChat.Idle3
+tags:
+---
+Time's running out. The train won't stop itself. Or will it... Hm...
+===
+
+title: PlayerToEddChat.Idle4
+tags:
+---
+Choo choo! Ho ho, I've always wanted to say that. Right before the train hits a nunnery. I had a strange upbringing...
+===
+
+title: PlayerToEddChat.Idle5
+tags:
+---
+Time's running out. Quick, get the lanolin! 
+===
+
+title: PlayerToEddChat.Idle6
+tags:
+---
+Next stop: nun town. Next stop after that: bishopsville. Next stop after that: knight land! ...Let me have my fantasies.
+===
+
+title: PlayerToEddChat.Intro
+tags:
+---
+<<playAudio Dialogue Play_NarratorOpeningSpiel>>
+It's a strange place to find yourself: on top of a moving train, hurtling down the tracks.What would otherwise be a perfectly lovely Tuesday in March, this day's gone bad.
+It seems like the driver's taken a turn for the worst  - considering he fell out of the window.
+It's down to you - yes, you - to save the day.
+Can you get the signaller to stop the train?
+<<stop>>
+===
+
+title: PlayerToEddChat.Victory1
+tags:
+---
+"With aplomb and a plan, you have successfully evacuated the nunnery. No nuns shall perish this day. One cannot safely say the same about the kitten factory down the track, but hey, you've clocked off anyway. That's Mike's problem to handle. Good job, well done. Time for a brandy"
+===
+
+title: PlayerToEddChat.Victory2
+tags:
+---
+"With deft hands and a killer posture, you have really shown that signaller what's what. Literally. All of the nuns have dodged out of the way, flipping and leaping abound, leaving happy faces and crumbled rubble. Rubble can't complain. It's rubble."
+===
+
+title: PlayerToEddChat.Victory3
+tags:
+---
+As the trains hurtled down the track, the nuns realised, just at the last minute, "why did we build a nunnery next to a train line?! How stupid are we?!". They moved house and lived happily ever after. As for you? 5% pay rise, baby.
+===

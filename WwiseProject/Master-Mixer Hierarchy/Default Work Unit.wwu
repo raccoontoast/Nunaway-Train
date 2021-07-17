@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{CFEAE896-9306-48BA-A9F5-AB15772010E3}" WorkUnitID="{C205A196-10F7-4EAE-94C0-8AD18F4E6908}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Sound Design" ID="{BA5119C0-BEC0-47F6-AD8B-5489A87E3E64}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Music" ID="{BE46526E-DF0D-41DF-A36A-AC67CDCD32DE}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

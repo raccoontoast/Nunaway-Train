@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{9D74FB4C-6B02-4032-9E09-0E117FCFEE09}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="NarratorFailstates" ID="{4BDDDE98-4F20-4988-8DF2-C4FCB6A3862B}">
+					<ChildrenList>
+						<Switch Name="NarratorFailstateGeneric" ID="{639CEBC1-C633-4A92-B708-4E1E2620C4B5}"/>
+						<Switch Name="NarratorFailstateUnique1" ID="{A454A4D9-EF79-4CED-A579-D363AC359692}"/>
+						<Switch Name="NarratorFailstateUnique2" ID="{23ED6619-7CD3-4573-B447-0B8C65998291}"/>
+						<Switch Name="NarratorFailstateUnique3" ID="{D7A9D651-0E1E-438A-B806-121EDD4F9257}"/>
+						<Switch Name="NarratorFailstateUnique4" ID="{0B246DBD-C72C-485A-B60D-D47092AF1701}"/>
+						<Switch Name="NarratorFailstateUnique5" ID="{6083C2A6-B1D2-4754-8976-9FF8226C4129}"/>
+						<Switch Name="NarratorFailstateUnique6" ID="{57C6BD79-06EC-499E-81C6-838237C45C0B}"/>
+						<Switch Name="NarratorFailstateUnique7" ID="{AD971A7B-ED95-48CC-A798-3F0BB885B928}"/>
+						<Switch Name="NarratorFailstateUnique8" ID="{2E68470F-3BAC-4DEA-950D-B1FD37057D00}"/>
+						<Switch Name="NarratorFailstateUnique9" ID="{2C5CC12D-7AC4-41B8-9DDD-6A4CF72ED3DD}"/>
+						<Switch Name="NarratorFailstateUnique10" ID="{E53579F1-CC51-4994-99AA-F625D15D55DE}"/>
+						<Switch Name="NarratorFailstateUnique11" ID="{D42C13BA-46D5-42C4-813E-8F015181A5B5}"/>
+						<Switch Name="NarratorFailstateUnique12" ID="{369B943A-25C3-4D5A-A8EB-2E2BD4A3598A}"/>
+						<Switch Name="NarratorFailstateUnique13" ID="{ECFE5B17-8642-4954-95D2-98F8268BAE2B}"/>
+						<Switch Name="NarratorFailstateUnique14" ID="{2A80A3A6-FCA4-493A-A9F3-4641EE36102D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SoundDesignFailstates" ID="{94AD7FAA-3563-45FA-ACA2-6AFDF681F274}">
+					<ChildrenList>
+						<Switch Name="SoundDesignFailstateGeneric" ID="{CDD8739F-9B2B-44EB-B5BF-9CFD3E70E3B7}"/>
+						<Switch Name="SoundDesignFailstateUnique1" ID="{60CB6B9D-52E9-4FE7-86A2-BF204AC051AB}"/>
+						<Switch Name="SoundDesignFailstateUnique2" ID="{B5E00D87-F245-4CFA-92C1-6B2CDAD0C12B}"/>
+						<Switch Name="SoundDesignFailstateUnique3" ID="{60CC913B-DE28-44B5-B9CA-B50B83AB434E}"/>
+						<Switch Name="SoundDesignFailstateUnique4" ID="{9352E515-5608-417A-A994-D5489DDE2CE8}"/>
+						<Switch Name="SoundDesignFailstateUnique7" ID="{3E49833B-F4EC-46A5-BA69-948791CA0B90}"/>
+						<Switch Name="SoundDesignFailstateUnique9" ID="{E5384CBE-6523-407B-8669-658CAFB2B401}"/>
+						<Switch Name="SoundDesignFailstateUnique5" ID="{F191BAC8-5BE6-4A7E-9FEA-61FF45CD9A0D}"/>
+						<Switch Name="SoundDesignFailstateUnique11" ID="{61DAEB54-0399-4218-B0B1-D992D7FFF491}"/>
+						<Switch Name="SoundDesignFailstateUnique8" ID="{A6C9DDBC-4EB0-4E36-A81B-9B29FA4AD8BF}"/>
+						<Switch Name="SoundDesignFailstateUnique10" ID="{DBE35B3A-7542-492D-BCA3-A8C70873BDCE}"/>
+						<Switch Name="SoundDesignFailstateUnique6" ID="{95F7A6E8-1A5F-497F-BA5C-B26AF1A59B07}"/>
+						<Switch Name="SoundDesignFailstateUnique12" ID="{1A177F65-34B6-4011-B79C-751C2753907D}"/>
+						<Switch Name="SoundDesignFailstateUnique13" ID="{907EE701-C7E2-45E7-9277-E2F1BD8CBD19}"/>
+						<Switch Name="SoundDesignFailstateUnique14" ID="{ABC69B46-C67E-4A18-80A6-DCBED647F200}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PrebakedEndings" ID="{3988505F-5C8B-4650-9F05-DB62CD698F6D}">
+					<ChildrenList>
+						<Switch Name="FailstateUniquePrebaked1" ID="{BF070454-EBDB-4194-B683-B53B915B5DD7}"/>
+						<Switch Name="FailstateUniquePrebaked2" ID="{F568E825-63A9-44B2-824B-0BB1F42E53F1}"/>
+						<Switch Name="FailstateUniquePrebaked3" ID="{DEB6356F-7A5E-47E7-B083-3C57D7D3D0E6}"/>
+						<Switch Name="FailstateUniquePrebaked4" ID="{7AA3CBFF-2811-4944-A73B-7CBE68F3DDD3}"/>
+						<Switch Name="FailstateUniquePrebaked5" ID="{1A715654-63B1-4627-A383-761CBAAB8B19}"/>
+						<Switch Name="FailstateUniquePrebaked6" ID="{2D399A11-1FBC-4004-B4EC-3A4E280D1E15}"/>
+						<Switch Name="FailstateUniquePrebaked7" ID="{05E33B85-093F-4410-90CE-4BD0217CE984}"/>
+						<Switch Name="FailstateUniquePrebaked8" ID="{AB1CC482-048C-42B4-BD67-38E3A573DBAB}"/>
+						<Switch Name="FailstateUniquePrebaked9" ID="{973B65F9-B1AF-4DA5-ACA1-A464DE358468}"/>
+						<Switch Name="FailstateUniquePrebaked10" ID="{FB766798-445E-4301-869F-8A3E7D72D272}"/>
+						<Switch Name="FailstateUniquePrebaked11" ID="{165B9F07-7B79-4B3B-B59A-7F4C378AB0A5}"/>
+						<Switch Name="FailstateUniquePrebaked12" ID="{A769A06B-00A4-46A1-B8FA-2BA5B7E948B8}"/>
+						<Switch Name="FailstateUniquePrebaked13" ID="{003054D3-3B16-4E5A-AE57-BA13FDD5378C}"/>
+						<Switch Name="FailstateUniquePrebaked14" ID="{BEE0B00B-4445-4F60-8D97-B7E03EACDD7E}"/>
+						<Switch Name="FailstateGenericPrebaked1" ID="{C097223A-F39F-41AF-A85C-268C1011AC12}"/>
+						<Switch Name="FailstateGenericPrebaked2" ID="{3D8D8EAB-0B2F-4409-A750-365D7BDDF154}"/>
+						<Switch Name="FailstateGenericPrebaked3" ID="{2B6DD850-E781-4631-AA94-B6308300E95E}"/>
+						<Switch Name="FailstateGenericPrebaked4" ID="{9BE9807E-C828-4E78-9E75-4B867172B9BF}"/>
+						<Switch Name="FailstateGenericPrebaked5" ID="{1F854EC0-8F8E-41F3-9B60-FA13BAB1F96F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PlayerFX" ID="{DE568630-0DE0-46EE-8B75-A487BCE9C824}">
+					<ChildrenList>
+						<Switch Name="FlagMovement" ID="{0D534FF8-5EE6-4395-8760-B833B2D46576}"/>
+						<Switch Name="FlagNoise" ID="{E844B8B9-D8DE-4041-8E25-8C4F4B9CE91C}"/>
+						<Switch Name="PlayerMovement" ID="{B473B47B-BE6C-42A9-BE98-4E3DB4C82E7E}"/>
+						<Switch Name="PlayerWhistle" ID="{FF0F2C70-7198-449B-B487-74818972615C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="RadioFX" ID="{DE96EE56-4D9B-4422-A0EF-ABE83FB3596D}">
+					<ChildrenList>
+						<Switch Name="RadioOff" ID="{05D8A640-2958-4DB9-8A66-0161801881F4}"/>
+						<Switch Name="RadioOn" ID="{4D8C24A2-895C-4C73-9439-CE4D2E1AB0EF}"/>
+						<Switch Name="RadioStatic" ID="{A1C2D438-B0F7-4C3B-8B48-47E544D5D53C}"/>
+						<Switch Name="RadioTune" ID="{A98E23F4-B63A-4110-9ABE-01BE7AB73900}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

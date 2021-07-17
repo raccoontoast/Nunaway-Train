@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2213506878">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="English(US)" Hash="157871078">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>English(US)\Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2363386339" Name="Play_NarratorFailstates" ObjectPath="\Events\Default Work Unit\Play_NarratorFailstates" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="490760232" Name="Play_NarratorOpeningSpiel" ObjectPath="\Events\Default Work Unit\Play_NarratorOpeningSpiel" DurationType="OneShot" DurationMin="27.517708" DurationMax="27.517708">
+					<IncludedMemoryFiles>
+						<File Id="545023606" Language="English(US)">
+							<ShortName>NarratorOpeningSpiel1.wav</ShortName>
+							<Path>Voices\English(US)\NarratorOpeningSpiel1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3557806995" Name="Play_NarratorTimeLimit" ObjectPath="\Events\Default Work Unit\Play_NarratorTimeLimit" DurationType="OneShot" DurationMin="4.111708" DurationMax="15.375719">
+					<IncludedMemoryFiles>
+						<File Id="72804848" Language="English(US)">
+							<ShortName>NarratorTimeLimitWarning5.wav</ShortName>
+							<Path>Voices\English(US)\NarratorTimeLimitWarning5_10C4C929.wem</Path>
+						</File>
+						<File Id="148402482" Language="English(US)">
+							<ShortName>NarratorTimeLimitWarning1.wav</ShortName>
+							<Path>Voices\English(US)\NarratorTimeLimitWarning1_10C4C929.wem</Path>
+						</File>
+						<File Id="174507317" Language="English(US)">
+							<ShortName>NarratorTimeLimitWarning3.wav</ShortName>
+							<Path>Voices\English(US)\NarratorTimeLimitWarning3_10C4C929.wem</Path>
+						</File>
+						<File Id="622274977" Language="English(US)">
+							<ShortName>NarratorTimeLimitWarning2.wav</ShortName>
+							<Path>Voices\English(US)\NarratorTimeLimitWarning2_10C4C929.wem</Path>
+						</File>
+						<File Id="713233837" Language="English(US)">
+							<ShortName>NarratorTimeLimitWarning4.wav</ShortName>
+							<Path>Voices\English(US)\NarratorTimeLimitWarning4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2584695725" Name="Play_NarratorVictory" ObjectPath="\Events\Default Work Unit\Play_NarratorVictory" DurationType="OneShot" DurationMin="17.385635" DurationMax="19.760698">
+					<IncludedMemoryFiles>
+						<File Id="458120339" Language="English(US)">
+							<ShortName>NarratorVictory1.wav</ShortName>
+							<Path>Voices\English(US)\NarratorVictory1_10C4C929.wem</Path>
+						</File>
+						<File Id="760615075" Language="English(US)">
+							<ShortName>NarratorVictory3.wav</ShortName>
+							<Path>Voices\English(US)\NarratorVictory3_10C4C929.wem</Path>
+						</File>
+						<File Id="929682994" Language="English(US)">
+							<ShortName>NarratorVictory2.wav</ShortName>
+							<Path>Voices\English(US)\NarratorVictory2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1318513612" Name="Play_NarratorVictoryFirstTry" ObjectPath="\Events\Default Work Unit\Play_NarratorVictoryFirstTry" DurationType="OneShot" DurationMin="26.430073" DurationMax="26.430073">
+					<IncludedMemoryFiles>
+						<File Id="890384280" Language="English(US)">
+							<ShortName>NarratorVictoryFirstTry1.wav</ShortName>
+							<Path>Voices\English(US)\NarratorVictoryFirstTry1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3793605367" Name="Play_NunChat" ObjectPath="\Events\Default Work Unit\Play_NunChat" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="110948076" Language="English(US)">
+							<ShortName>NunChat4.wav</ShortName>
+							<Path>Voices\English(US)\NunChat4_10C4C929.wem</Path>
+						</File>
+						<File Id="294157750" Language="English(US)">
+							<ShortName>NunChat3.wav</ShortName>
+							<Path>Voices\English(US)\NunChat3_10C4C929.wem</Path>
+						</File>
+						<File Id="305784794" Language="English(US)">
+							<ShortName>NunChat6.wav</ShortName>
+							<Path>Voices\English(US)\NunChat6_10C4C929.wem</Path>
+						</File>
+						<File Id="467089774" Language="English(US)">
+							<ShortName>NunChat2.wav</ShortName>
+							<Path>Voices\English(US)\NunChat2_10C4C929.wem</Path>
+						</File>
+						<File Id="707875430" Language="English(US)">
+							<ShortName>NunChat1.wav</ShortName>
+							<Path>Voices\English(US)\NunChat1_10C4C929.wem</Path>
+						</File>
+						<File Id="866172988" Language="English(US)">
+							<ShortName>NunChat7.wav</ShortName>
+							<Path>Voices\English(US)\NunChat7_10C4C929.wem</Path>
+						</File>
+						<File Id="977783055" Language="English(US)">
+							<ShortName>NunChat5.wav</ShortName>
+							<Path>Voices\English(US)\NunChat5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2556779295" Name="Play_OutcomeDetermined" ObjectPath="\Events\Default Work Unit\Play_OutcomeDetermined" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="155877335" Language="SFX">
+							<ShortName>OutcomeDetermined2.wav</ShortName>
+							<Path>SFX\OutcomeDetermined2_10C4C929.wem</Path>
+						</File>
+						<File Id="384261568" Language="SFX">
+							<ShortName>OutcomeDetermined4.wav</ShortName>
+							<Path>SFX\OutcomeDetermined4_10C4C929.wem</Path>
+						</File>
+						<File Id="541873016" Language="SFX">
+							<ShortName>OutcomeDetermined5.wav</ShortName>
+							<Path>SFX\OutcomeDetermined5_10C4C929.wem</Path>
+						</File>
+						<File Id="625079767" Language="SFX">
+							<ShortName>OutcomeDetermined3.wav</ShortName>
+							<Path>SFX\OutcomeDetermined3_10C4C929.wem</Path>
+						</File>
+						<File Id="999686759" Language="SFX">
+							<ShortName>OutcomeDetermined1.wav</ShortName>
+							<Path>SFX\OutcomeDetermined1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="911575939" Name="Play_PlayerFX" ObjectPath="\Events\Default Work Unit\Play_PlayerFX" DurationType="OneShot" DurationMin="0.202348" DurationMax="30.756708">
+					<IncludedMemoryFiles>
+						<File Id="23948566" Language="SFX">
+							<ShortName>FlagMovement8.wav</ShortName>
+							<Path>SFX\FlagMovement8_10C4C929.wem</Path>
+						</File>
+						<File Id="83533422" Language="SFX">
+							<ShortName>PlayerMovement8.wav</ShortName>
+							<Path>SFX\PlayerMovement8_10C4C929.wem</Path>
+						</File>
+						<File Id="150508987" Language="SFX">
+							<ShortName>FlagMovement1.wav</ShortName>
+							<Path>SFX\FlagMovement1_10C4C929.wem</Path>
+						</File>
+						<File Id="174572845" Language="SFX">
+							<ShortName>FlagMovement3.wav</ShortName>
+							<Path>SFX\FlagMovement3_10C4C929.wem</Path>
+						</File>
+						<File Id="183220083" Language="SFX">
+							<ShortName>FlagMovement10.wav</ShortName>
+							<Path>SFX\FlagMovement10_10C4C929.wem</Path>
+						</File>
+						<File Id="202951857" Language="SFX">
+							<ShortName>PlayerWhistle6.wav</ShortName>
+							<Path>SFX\PlayerWhistle6_10C4C929.wem</Path>
+						</File>
+						<File Id="233088943" Language="SFX">
+							<ShortName>PlayerWhistle4.wav</ShortName>
+							<Path>SFX\PlayerWhistle4_10C4C929.wem</Path>
+						</File>
+						<File Id="238523552" Language="SFX">
+							<ShortName>PlayerMovement1.wav</ShortName>
+							<Path>SFX\PlayerMovement1_10C4C929.wem</Path>
+						</File>
+						<File Id="264092101" Language="SFX">
+							<ShortName>FlagNoise2.wav</ShortName>
+							<Path>SFX\FlagNoise2_10C4C929.wem</Path>
+						</File>
+						<File Id="361281825" Language="SFX">
+							<ShortName>PlayerMovement7.wav</ShortName>
+							<Path>SFX\PlayerMovement7_10C4C929.wem</Path>
+						</File>
+						<File Id="384018611" Language="SFX">
+							<ShortName>PlayerWhistle8.wav</ShortName>
+							<Path>SFX\PlayerWhistle8_10C4C929.wem</Path>
+						</File>
+						<File Id="422972581" Language="SFX">
+							<ShortName>PlayerWhistle1.wav</ShortName>
+							<Path>SFX\PlayerWhistle1_10C4C929.wem</Path>
+						</File>
+						<File Id="430236266" Language="SFX">
+							<ShortName>PlayerWhistle3.wav</ShortName>
+							<Path>SFX\PlayerWhistle3_10C4C929.wem</Path>
+						</File>
+						<File Id="432044913" Language="SFX">
+							<ShortName>FlagMovement6.wav</ShortName>
+							<Path>SFX\FlagMovement6_10C4C929.wem</Path>
+						</File>
+						<File Id="471606773" Language="SFX">
+							<ShortName>PlayerWhistle2.wav</ShortName>
+							<Path>SFX\PlayerWhistle2_10C4C929.wem</Path>
+						</File>
+						<File Id="508745367" Language="SFX">
+							<ShortName>PlayerMovement2.wav</ShortName>
+							<Path>SFX\PlayerMovement2_10C4C929.wem</Path>
+						</File>
+						<File Id="514174235" Language="SFX">
+							<ShortName>FlagMovement7.wav</ShortName>
+							<Path>SFX\FlagMovement7_10C4C929.wem</Path>
+						</File>
+						<File Id="536725108" Language="SFX">
+							<ShortName>PlayerMovement5.wav</ShortName>
+							<Path>SFX\PlayerMovement5_10C4C929.wem</Path>
+						</File>
+						<File Id="607844217" Language="SFX">
+							<ShortName>FlagMovement4.wav</ShortName>
+							<Path>SFX\FlagMovement4_10C4C929.wem</Path>
+						</File>
+						<File Id="614899486" Language="SFX">
+							<ShortName>FlagNoise1.wav</ShortName>
+							<Path>SFX\FlagNoise1_10C4C929.wem</Path>
+						</File>
+						<File Id="644452907" Language="SFX">
+							<ShortName>PlayerWhistle7.wav</ShortName>
+							<Path>SFX\PlayerWhistle7_10C4C929.wem</Path>
+						</File>
+						<File Id="671431742" Language="SFX">
+							<ShortName>PlayerMovement4.wav</ShortName>
+							<Path>SFX\PlayerMovement4_10C4C929.wem</Path>
+						</File>
+						<File Id="691613325" Language="SFX">
+							<ShortName>PlayerMovement6.wav</ShortName>
+							<Path>SFX\PlayerMovement6_10C4C929.wem</Path>
+						</File>
+						<File Id="719030701" Language="SFX">
+							<ShortName>PlayerWhistle5.wav</ShortName>
+							<Path>SFX\PlayerWhistle5_10C4C929.wem</Path>
+						</File>
+						<File Id="815911626" Language="SFX">
+							<ShortName>FlagMovement9.wav</ShortName>
+							<Path>SFX\FlagMovement9_10C4C929.wem</Path>
+						</File>
+						<File Id="870918871" Language="SFX">
+							<ShortName>FlagMovement2.wav</ShortName>
+							<Path>SFX\FlagMovement2_10C4C929.wem</Path>
+						</File>
+						<File Id="915306326" Language="SFX">
+							<ShortName>FlagMovement5.wav</ShortName>
+							<Path>SFX\FlagMovement5_10C4C929.wem</Path>
+						</File>
+						<File Id="929815189" Language="SFX">
+							<ShortName>PlayerMovement3.wav</ShortName>
+							<Path>SFX\PlayerMovement3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0D534FF8-5EE6-4395-8760-B833B2D46576}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B473B47B-BE6C-42A9-BE98-4E3DB4C82E7E}">
+							<Media>
+								<File Id="83533422"/>
+								<File Id="238523552"/>
+								<File Id="361281825"/>
+								<File Id="508745367"/>
+								<File Id="536725108"/>
+								<File Id="671431742"/>
+								<File Id="691613325"/>
+								<File Id="929815189"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FF0F2C70-7198-449B-B487-74818972615C}">
+							<Media>
+								<File Id="202951857"/>
+								<File Id="233088943"/>
+								<File Id="384018611"/>
+								<File Id="422972581"/>
+								<File Id="430236266"/>
+								<File Id="471606773"/>
+								<File Id="644452907"/>
+								<File Id="719030701"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0D534FF8-5EE6-4395-8760-B833B2D46576}">
+							<Media>
+								<File Id="23948566"/>
+								<File Id="150508987"/>
+								<File Id="174572845"/>
+								<File Id="183220083"/>
+								<File Id="432044913"/>
+								<File Id="514174235"/>
+								<File Id="607844217"/>
+								<File Id="815911626"/>
+								<File Id="870918871"/>
+								<File Id="915306326"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E844B8B9-D8DE-4041-8E25-8C4F4B9CE91C}">
+							<Media>
+								<File Id="264092101"/>
+								<File Id="614899486"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1886484130" Name="Play_PrebakedEndings" ObjectPath="\Events\Default Work Unit\Play_PrebakedEndings" DurationType="OneShot" DurationMin="16.682812" DurationMax="41.882374">
+					<IncludedMemoryFiles>
+						<File Id="103482109" Language="SFX">
+							<ShortName>FailstateUniquePrebaked6.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked6_10C4C929.wem</Path>
+						</File>
+						<File Id="115055815" Language="SFX">
+							<ShortName>FailstateUniquePrebaked13.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked13_10C4C929.wem</Path>
+						</File>
+						<File Id="176297039" Language="SFX">
+							<ShortName>FailstateGenericPrebaked5.wav</ShortName>
+							<Path>SFX\FailstateGenericPrebaked5_10C4C929.wem</Path>
+						</File>
+						<File Id="226385795" Language="SFX">
+							<ShortName>FailstateUniquePrebaked7.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked7_10C4C929.wem</Path>
+						</File>
+						<File Id="306543635" Language="SFX">
+							<ShortName>FailstateUniquePrebaked10.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked10_10C4C929.wem</Path>
+						</File>
+						<File Id="388227883" Language="SFX">
+							<ShortName>FailstateUniquePrebaked14.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked14_10C4C929.wem</Path>
+						</File>
+						<File Id="406905940" Language="SFX">
+							<ShortName>FailstateUniquePrebaked2.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked2_10C4C929.wem</Path>
+						</File>
+						<File Id="478073782" Language="SFX">
+							<ShortName>FailstateUniquePrebaked4.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked4_10C4C929.wem</Path>
+						</File>
+						<File Id="540204213" Language="SFX">
+							<ShortName>FailstateGenericPrebaked4.wav</ShortName>
+							<Path>SFX\FailstateGenericPrebaked4_10C4C929.wem</Path>
+						</File>
+						<File Id="588490526" Language="SFX">
+							<ShortName>FailstateGenericPrebaked3.wav</ShortName>
+							<Path>SFX\FailstateGenericPrebaked3_10C4C929.wem</Path>
+						</File>
+						<File Id="642462868" Language="SFX">
+							<ShortName>FailstateUniquePrebaked1.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked1_10C4C929.wem</Path>
+						</File>
+						<File Id="749261521" Language="SFX">
+							<ShortName>FailstateGenericPrebaked2.wav</ShortName>
+							<Path>SFX\FailstateGenericPrebaked2_10C4C929.wem</Path>
+						</File>
+						<File Id="768576597" Language="SFX">
+							<ShortName>FailstateUniquePrebaked3.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked3_10C4C929.wem</Path>
+						</File>
+						<File Id="813194355" Language="SFX">
+							<ShortName>FailstateUniquePrebaked8.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked8_10C4C929.wem</Path>
+						</File>
+						<File Id="830168908" Language="SFX">
+							<ShortName>FailstateUniquePrebaked5.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked5_10C4C929.wem</Path>
+						</File>
+						<File Id="995987127" Language="SFX">
+							<ShortName>FailstateGenericPrebaked1.wav</ShortName>
+							<Path>SFX\FailstateGenericPrebaked1_10C4C929.wem</Path>
+						</File>
+						<File Id="1004683757" Language="SFX">
+							<ShortName>FailstateUniquePrebaked11.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked11_10C4C929.wem</Path>
+						</File>
+						<File Id="1024543659" Language="SFX">
+							<ShortName>FailstateUniquePrebaked12.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked12_10C4C929.wem</Path>
+						</File>
+						<File Id="1068931860" Language="SFX">
+							<ShortName>FailstateUniquePrebaked9.wav</ShortName>
+							<Path>SFX\FailstateUniquePrebaked9_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F568E825-63A9-44B2-824B-0BB1F42E53F1}">
+							<Media>
+								<File Id="406905940"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DEB6356F-7A5E-47E7-B083-3C57D7D3D0E6}">
+							<Media>
+								<File Id="768576597"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7AA3CBFF-2811-4944-A73B-7CBE68F3DDD3}">
+							<Media>
+								<File Id="478073782"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AB1CC482-048C-42B4-BD67-38E3A573DBAB}">
+							<Media>
+								<File Id="813194355"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{973B65F9-B1AF-4DA5-ACA1-A464DE358468}">
+							<Media>
+								<File Id="1068931860"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FB766798-445E-4301-869F-8A3E7D72D272}">
+							<Media>
+								<File Id="306543635"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BF070454-EBDB-4194-B683-B53B915B5DD7}">
+							<Media>
+								<File Id="642462868"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{165B9F07-7B79-4B3B-B59A-7F4C378AB0A5}">
+							<Media>
+								<File Id="1004683757"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A769A06B-00A4-46A1-B8FA-2BA5B7E948B8}">
+							<Media>
+								<File Id="1024543659"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{003054D3-3B16-4E5A-AE57-BA13FDD5378C}">
+							<Media>
+								<File Id="115055815"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1A715654-63B1-4627-A383-761CBAAB8B19}">
+							<Media>
+								<File Id="830168908"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{05E33B85-093F-4410-90CE-4BD0217CE984}">
+							<Media>
+								<File Id="226385795"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEE0B00B-4445-4F60-8D97-B7E03EACDD7E}">
+							<Media>
+								<File Id="388227883"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2D399A11-1FBC-4004-B4EC-3A4E280D1E15}">
+							<Media>
+								<File Id="103482109"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C097223A-F39F-41AF-A85C-268C1011AC12}">
+							<Media>
+								<File Id="995987127"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3D8D8EAB-0B2F-4409-A750-365D7BDDF154}">
+							<Media>
+								<File Id="749261521"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2B6DD850-E781-4631-AA94-B6308300E95E}">
+							<Media>
+								<File Id="588490526"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9BE9807E-C828-4E78-9E75-4B867172B9BF}">
+							<Media>
+								<File Id="540204213"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1F854EC0-8F8E-41F3-9B60-FA13BAB1F96F}">
+							<Media>
+								<File Id="176297039"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3707568345" Name="Play_RadioFX" ObjectPath="\Events\Default Work Unit\Play_RadioFX" DurationType="OneShot" DurationMin="0.142531" DurationMax="38.410969">
+					<IncludedMemoryFiles>
+						<File Id="165277251" Language="SFX">
+							<ShortName>RadioOff1.wav</ShortName>
+							<Path>SFX\RadioOff1_10C4C929.wem</Path>
+						</File>
+						<File Id="310877649" Language="SFX">
+							<ShortName>RadioOn1.wav</ShortName>
+							<Path>SFX\RadioOn1_10C4C929.wem</Path>
+						</File>
+						<File Id="496260973" Language="SFX">
+							<ShortName>RadioStatic2.wav</ShortName>
+							<Path>SFX\RadioStatic2_10C4C929.wem</Path>
+						</File>
+						<File Id="503197257" Language="SFX">
+							<ShortName>RadioStatic1.wav</ShortName>
+							<Path>SFX\RadioStatic1_10C4C929.wem</Path>
+						</File>
+						<File Id="683465239" Language="SFX">
+							<ShortName>RadioOff3.wav</ShortName>
+							<Path>SFX\RadioOff3_10C4C929.wem</Path>
+						</File>
+						<File Id="894102910" Language="SFX">
+							<ShortName>RadioOn3.wav</ShortName>
+							<Path>SFX\RadioOn3_10C4C929.wem</Path>
+						</File>
+						<File Id="971269263" Language="SFX">
+							<ShortName>RadioOn2.wav</ShortName>
+							<Path>SFX\RadioOn2_10C4C929.wem</Path>
+						</File>
+						<File Id="1017639297" Language="SFX">
+							<ShortName>RadioTune1.wav</ShortName>
+							<Path>SFX\RadioTune1_10C4C929.wem</Path>
+						</File>
+						<File Id="1073336215" Language="SFX">
+							<ShortName>RadioOff2.wav</ShortName>
+							<Path>SFX\RadioOff2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{A1C2D438-B0F7-4C3B-8B48-47E544D5D53C}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A1C2D438-B0F7-4C3B-8B48-47E544D5D53C}">
+							<Media>
+								<File Id="496260973"/>
+								<File Id="503197257"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4D8C24A2-895C-4C73-9439-CE4D2E1AB0EF}">
+							<Media>
+								<File Id="310877649"/>
+								<File Id="894102910"/>
+								<File Id="971269263"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{05D8A640-2958-4DB9-8A66-0161801881F4}">
+							<Media>
+								<File Id="165277251"/>
+								<File Id="683465239"/>
+								<File Id="1073336215"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A98E23F4-B63A-4110-9ABE-01BE7AB73900}">
+							<Media>
+								<File Id="1017639297"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3660888992" Name="Play_SignalChat" ObjectPath="\Events\Default Work Unit\Play_SignalChat" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="82612083" Language="English(US)">
+							<ShortName>SignalChat9.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat9_10C4C929.wem</Path>
+						</File>
+						<File Id="111041213" Language="English(US)">
+							<ShortName>SignalChat3.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat3_10C4C929.wem</Path>
+						</File>
+						<File Id="113015840" Language="English(US)">
+							<ShortName>SignalChat4.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat4_10C4C929.wem</Path>
+						</File>
+						<File Id="202809676" Language="English(US)">
+							<ShortName>SignalChat7.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat7_10C4C929.wem</Path>
+						</File>
+						<File Id="296670502" Language="English(US)">
+							<ShortName>SignalChat1.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat1_10C4C929.wem</Path>
+						</File>
+						<File Id="563710268" Language="English(US)">
+							<ShortName>SignalChat6.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat6_10C4C929.wem</Path>
+						</File>
+						<File Id="568542722" Language="English(US)">
+							<ShortName>SignalChat5.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat5_10C4C929.wem</Path>
+						</File>
+						<File Id="683848093" Language="English(US)">
+							<ShortName>SignalChat10.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat10_10C4C929.wem</Path>
+						</File>
+						<File Id="784829686" Language="English(US)">
+							<ShortName>SignalChat8.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat8_10C4C929.wem</Path>
+						</File>
+						<File Id="957437331" Language="English(US)">
+							<ShortName>SignalChat2.wav</ShortName>
+							<Path>Voices\English(US)\SignalChat2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="879350003" Name="Play_SignalEasterEgg" ObjectPath="\Events\Default Work Unit\Play_SignalEasterEgg" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="33054165" Language="English(US)">
+							<ShortName>SignalEasterEgg2.wav</ShortName>
+							<Path>Voices\English(US)\SignalEasterEgg2_10C4C929.wem</Path>
+						</File>
+						<File Id="202548945" Language="English(US)">
+							<ShortName>SignalEasterEgg3.wav</ShortName>
+							<Path>Voices\English(US)\SignalEasterEgg3_10C4C929.wem</Path>
+						</File>
+						<File Id="557642188" Language="English(US)">
+							<ShortName>SignalEasterEgg1.wav</ShortName>
+							<Path>Voices\English(US)\SignalEasterEgg1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3144544310" Name="Play_SignalReply" ObjectPath="\Events\Default Work Unit\Play_SignalReply" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="13945470" Language="English(US)">
+							<ShortName>SignalReply14TimeLimit1.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply14TimeLimit1_10C4C929.wem</Path>
+						</File>
+						<File Id="14625341" Language="English(US)">
+							<ShortName>SignalReply11Ode.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply11Ode_10C4C929.wem</Path>
+						</File>
+						<File Id="211392829" Language="English(US)">
+							<ShortName>SignalReply15TimeLimit2.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply15TimeLimit2_10C4C929.wem</Path>
+						</File>
+						<File Id="358217073" Language="English(US)">
+							<ShortName>SignalReply2Ego.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply2Ego_10C4C929.wem</Path>
+						</File>
+						<File Id="420806633" Language="English(US)">
+							<ShortName>SignalReply10Do.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply10Do_10C4C929.wem</Path>
+						</File>
+						<File Id="477384002" Language="English(US)">
+							<ShortName>SignalReply3Odd_1.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply3Odd_1_10C4C929.wem</Path>
+						</File>
+						<File Id="509659080" Language="English(US)">
+							<ShortName>SignalReply13ExclamationMark.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply13ExclamationMark_10C4C929.wem</Path>
+						</File>
+						<File Id="599864457" Language="English(US)">
+							<ShortName>SignalReply5Go.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply5Go_10C4C929.wem</Path>
+						</File>
+						<File Id="681414363" Language="English(US)">
+							<ShortName>SignalReply7Doe.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply7Doe_10C4C929.wem</Path>
+						</File>
+						<File Id="799626147" Language="English(US)">
+							<ShortName>SignalReply9Edd.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply9Edd_10C4C929.wem</Path>
+						</File>
+						<File Id="840239871" Language="English(US)">
+							<ShortName>SignalReply6Eddo.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply6Eddo_10C4C929.wem</Path>
+						</File>
+						<File Id="937999149" Language="English(US)">
+							<ShortName>SignalReply4Doge.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply4Doge_10C4C929.wem</Path>
+						</File>
+						<File Id="968316968" Language="English(US)">
+							<ShortName>SignalReply12Odged.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply12Odged_10C4C929.wem</Path>
+						</File>
+						<File Id="1060422370" Language="English(US)">
+							<ShortName>SignalReply8Edo.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply8Edo_10C4C929.wem</Path>
+						</File>
+						<File Id="1070585752" Language="English(US)">
+							<ShortName>SignalReply1Dog.wav</ShortName>
+							<Path>Voices\English(US)\SignalReply1Dog_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1501224847" Name="Play_SoundDesignFailstates" ObjectPath="\Events\Default Work Unit\Play_SoundDesignFailstates" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3198155892" Name="Play_TrainAmbience" ObjectPath="\Events\Default Work Unit\Play_TrainAmbience" DurationType="OneShot" DurationMin="65.725563" DurationMax="65.725563">
+					<IncludedMemoryFiles>
+						<File Id="389039213" Language="SFX">
+							<ShortName>TrainAmbience1.wav</ShortName>
+							<Path>SFX\TrainAmbience1_10C4C929.wem</Path>
+						</File>
+						<File Id="438612329" Language="SFX">
+							<ShortName>TrainAmbience3.wav</ShortName>
+							<Path>SFX\TrainAmbience3_10C4C929.wem</Path>
+						</File>
+						<File Id="606514193" Language="SFX">
+							<ShortName>TrainAmbience2.wav</ShortName>
+							<Path>SFX\TrainAmbience2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1549268940" Name="Play_UISounds" ObjectPath="\Events\Default Work Unit\Play_UISounds" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="51756256" Language="SFX">
+							<ShortName>UIButtonHover3.wav</ShortName>
+							<Path>SFX\UIButtonHover3_10C4C929.wem</Path>
+						</File>
+						<File Id="134960275" Language="SFX">
+							<ShortName>UIMenuOpen3.wav</ShortName>
+							<Path>SFX\UIMenuOpen3_10C4C929.wem</Path>
+						</File>
+						<File Id="157856480" Language="SFX">
+							<ShortName>UIButtonPress2.wav</ShortName>
+							<Path>SFX\UIButtonPress2_10C4C929.wem</Path>
+						</File>
+						<File Id="229893250" Language="SFX">
+							<ShortName>UIMenuClose1.wav</ShortName>
+							<Path>SFX\UIMenuClose1_10C4C929.wem</Path>
+						</File>
+						<File Id="289312653" Language="SFX">
+							<ShortName>UIMenuClose2.wav</ShortName>
+							<Path>SFX\UIMenuClose2_10C4C929.wem</Path>
+						</File>
+						<File Id="415075139" Language="SFX">
+							<ShortName>UIMenuClose3.wav</ShortName>
+							<Path>SFX\UIMenuClose3_10C4C929.wem</Path>
+						</File>
+						<File Id="530399101" Language="SFX">
+							<ShortName>UIButtonPress1.wav</ShortName>
+							<Path>SFX\UIButtonPress1_10C4C929.wem</Path>
+						</File>
+						<File Id="693704907" Language="SFX">
+							<ShortName>UIMenuOpen1.wav</ShortName>
+							<Path>SFX\UIMenuOpen1_10C4C929.wem</Path>
+						</File>
+						<File Id="709717928" Language="SFX">
+							<ShortName>UIButtonPress3.wav</ShortName>
+							<Path>SFX\UIButtonPress3_10C4C929.wem</Path>
+						</File>
+						<File Id="980492724" Language="SFX">
+							<ShortName>UIButtonHover2.wav</ShortName>
+							<Path>SFX\UIButtonHover2_10C4C929.wem</Path>
+						</File>
+						<File Id="1012556301" Language="SFX">
+							<ShortName>UIButtonHover1.wav</ShortName>
+							<Path>SFX\UIButtonHover1_10C4C929.wem</Path>
+						</File>
+						<File Id="1037524739" Language="SFX">
+							<ShortName>UIMenuOpen2.wav</ShortName>
+							<Path>SFX\UIMenuOpen2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="912900294" Name="Play_VictoryStates" ObjectPath="\Events\Default Work Unit\Play_VictoryStates" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<IncludedMemoryFiles>
+						<File Id="180923931" Language="SFX">
+							<ShortName>VictoryStates1.wav</ShortName>
+							<Path>SFX\VictoryStates1_10C4C929.wem</Path>
+						</File>
+						<File Id="551735809" Language="SFX">
+							<ShortName>VictoryStates2.wav</ShortName>
+							<Path>SFX\VictoryStates2_10C4C929.wem</Path>
+						</File>
+						<File Id="878405964" Language="SFX">
+							<ShortName>VictoryStates3.wav</ShortName>
+							<Path>SFX\VictoryStates3_10C4C929.wem</Path>
+						</File>
+						<File Id="957998402" Language="SFX">
+							<ShortName>VictoryStates4.wav</ShortName>
+							<Path>SFX\VictoryStates4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="68260988" Name="RadioFX" ObjectPath="\Switches\Default Work Unit\RadioFX">
+					<Switches>
+						<Switch Id="4221175997" Name="RadioOff" ObjectPath="\Switches\Default Work Unit\RadioFX\RadioOff"/>
+						<Switch Id="4245784721" Name="RadioOn" ObjectPath="\Switches\Default Work Unit\RadioFX\RadioOn"/>
+						<Switch Id="366345192" Name="RadioStatic" ObjectPath="\Switches\Default Work Unit\RadioFX\RadioStatic"/>
+						<Switch Id="1804927500" Name="RadioTune" ObjectPath="\Switches\Default Work Unit\RadioFX\RadioTune"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="419079691" Name="PrebakedEndings" ObjectPath="\Switches\Default Work Unit\PrebakedEndings">
+					<Switches>
+						<Switch Id="2136721070" Name="FailstateUniquePrebaked1" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked1"/>
+						<Switch Id="2136721069" Name="FailstateUniquePrebaked2" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked2"/>
+						<Switch Id="2136721068" Name="FailstateUniquePrebaked3" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked3"/>
+						<Switch Id="2136721067" Name="FailstateUniquePrebaked4" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked4"/>
+						<Switch Id="2136721066" Name="FailstateUniquePrebaked5" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked5"/>
+						<Switch Id="2136721065" Name="FailstateUniquePrebaked6" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked6"/>
+						<Switch Id="2136721064" Name="FailstateUniquePrebaked7" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked7"/>
+						<Switch Id="2136721063" Name="FailstateUniquePrebaked8" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked8"/>
+						<Switch Id="2136721062" Name="FailstateUniquePrebaked9" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked9"/>
+						<Switch Id="729400282" Name="FailstateUniquePrebaked10" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked10"/>
+						<Switch Id="729400283" Name="FailstateUniquePrebaked11" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked11"/>
+						<Switch Id="729400280" Name="FailstateUniquePrebaked12" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked12"/>
+						<Switch Id="729400281" Name="FailstateUniquePrebaked13" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked13"/>
+						<Switch Id="729400286" Name="FailstateUniquePrebaked14" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateUniquePrebaked14"/>
+						<Switch Id="1249851304" Name="FailstateGenericPrebaked1" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateGenericPrebaked1"/>
+						<Switch Id="1249851307" Name="FailstateGenericPrebaked2" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateGenericPrebaked2"/>
+						<Switch Id="1249851306" Name="FailstateGenericPrebaked3" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateGenericPrebaked3"/>
+						<Switch Id="1249851309" Name="FailstateGenericPrebaked4" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateGenericPrebaked4"/>
+						<Switch Id="1249851308" Name="FailstateGenericPrebaked5" ObjectPath="\Switches\Default Work Unit\PrebakedEndings\FailstateGenericPrebaked5"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3691462288" Name="PlayerFX" ObjectPath="\Switches\Default Work Unit\PlayerFX">
+					<Switches>
+						<Switch Id="3369297756" Name="FlagMovement" ObjectPath="\Switches\Default Work Unit\PlayerFX\FlagMovement"/>
+						<Switch Id="565266207" Name="FlagNoise" ObjectPath="\Switches\Default Work Unit\PlayerFX\FlagNoise"/>
+						<Switch Id="1350496757" Name="PlayerMovement" ObjectPath="\Switches\Default Work Unit\PlayerFX\PlayerMovement"/>
+						<Switch Id="1332688708" Name="PlayerWhistle" ObjectPath="\Switches\Default Work Unit\PlayerFX\PlayerWhistle"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -60,4 +60,11 @@ public class DialogueManager : MonoBehaviour
             }
         }            
     }
+
+    [YarnCommand("playAudio")]
+    public void playAudio(string WwiseEventName)
+    {
+        AkSoundEngine.PostEvent(WwiseEventName, GameObject.FindGameObjectWithTag("Player"));
+        Debug.Log("Playing " + WwiseEventName);
+    }
 }

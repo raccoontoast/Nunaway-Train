@@ -1,0 +1,180 @@
+Event	ID	Name			Wwise Object Path	Notes
+	490760232	Play_NarratorOpeningSpiel			\Default Work Unit\Play_NarratorOpeningSpiel	
+	879350003	Play_SignalEasterEgg			\Default Work Unit\Play_SignalEasterEgg	
+	911575939	Play_PlayerFX			\Default Work Unit\Play_PlayerFX	
+	912900294	Play_VictoryStates			\Default Work Unit\Play_VictoryStates	
+	1318513612	Play_NarratorVictoryFirstTry			\Default Work Unit\Play_NarratorVictoryFirstTry	
+	1501224847	Play_SoundDesignFailstates			\Default Work Unit\Play_SoundDesignFailstates	
+	1549268940	Play_UISounds			\Default Work Unit\Play_UISounds	
+	1886484130	Play_PrebakedEndings			\Default Work Unit\Play_PrebakedEndings	
+	2363386339	Play_NarratorFailstates			\Default Work Unit\Play_NarratorFailstates	
+	2556779295	Play_OutcomeDetermined			\Default Work Unit\Play_OutcomeDetermined	
+	2584695725	Play_NarratorVictory			\Default Work Unit\Play_NarratorVictory	
+	3144544310	Play_SignalReply			\Default Work Unit\Play_SignalReply	
+	3198155892	Play_TrainAmbience			\Default Work Unit\Play_TrainAmbience	
+	3557806995	Play_NarratorTimeLimit			\Default Work Unit\Play_NarratorTimeLimit	
+	3660888992	Play_SignalChat			\Default Work Unit\Play_SignalChat	
+	3707568345	Play_RadioFX			\Default Work Unit\Play_RadioFX	
+	3793605367	Play_NunChat			\Default Work Unit\Play_NunChat	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	68260988	RadioFX			\Default Work Unit\RadioFX	
+	419079691	PrebakedEndings			\Default Work Unit\PrebakedEndings	
+	3691462288	PlayerFX			\Default Work Unit\PlayerFX	
+
+Switch	ID	Name	Switch Group			Notes
+	366345192	RadioStatic	RadioFX			
+	1804927500	RadioTune	RadioFX			
+	4221175997	RadioOff	RadioFX			
+	4245784721	RadioOn	RadioFX			
+	729400280	FailstateUniquePrebaked12	PrebakedEndings			
+	729400281	FailstateUniquePrebaked13	PrebakedEndings			
+	729400282	FailstateUniquePrebaked10	PrebakedEndings			
+	729400283	FailstateUniquePrebaked11	PrebakedEndings			
+	729400286	FailstateUniquePrebaked14	PrebakedEndings			
+	1249851304	FailstateGenericPrebaked1	PrebakedEndings			
+	1249851306	FailstateGenericPrebaked3	PrebakedEndings			
+	1249851307	FailstateGenericPrebaked2	PrebakedEndings			
+	1249851308	FailstateGenericPrebaked5	PrebakedEndings			
+	1249851309	FailstateGenericPrebaked4	PrebakedEndings			
+	2136721062	FailstateUniquePrebaked9	PrebakedEndings			
+	2136721063	FailstateUniquePrebaked8	PrebakedEndings			
+	2136721064	FailstateUniquePrebaked7	PrebakedEndings			
+	2136721065	FailstateUniquePrebaked6	PrebakedEndings			
+	2136721066	FailstateUniquePrebaked5	PrebakedEndings			
+	2136721067	FailstateUniquePrebaked4	PrebakedEndings			
+	2136721068	FailstateUniquePrebaked3	PrebakedEndings			
+	2136721069	FailstateUniquePrebaked2	PrebakedEndings			
+	2136721070	FailstateUniquePrebaked1	PrebakedEndings			
+	565266207	FlagNoise	PlayerFX			
+	1332688708	PlayerWhistle	PlayerFX			
+	1350496757	PlayerMovement	PlayerFX			
+	3369297756	FlagMovement	PlayerFX			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13945470	SignalReply14TimeLimit1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply14TimeLimit1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply14TimeLimit1		393360
+	14625341	SignalReply11Ode	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply11Ode_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply11Ode		2949264
+	23948566	FlagMovement8	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement8		86824
+	33054165	SignalEasterEgg2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalEasterEgg2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalEasterEgg\SignalEasterEgg2		196752
+	51756256	UIButtonHover3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonHover3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonHover\UIButtonHover3		32814
+	72804848	NarratorTimeLimitWarning5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorTimeLimitWarning5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorTimeLimit\NarratorTimeLimitWarning5		1083240
+	82612083	SignalChat9	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat9		196752
+	83533422	PlayerMovement8	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement8		37438
+	103482109	FailstateUniquePrebaked6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked6\FailstateUniquePrebaked6		8041480
+	110948076	NunChat4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat4		410176
+	111041213	SignalChat3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat3		131216
+	113015840	SignalChat4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat4		131216
+	115055815	FailstateUniquePrebaked13	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked13\FailstateUniquePrebaked13		6062400
+	134960275	UIMenuOpen3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuOpen3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuOpen\UIMenuOpen3		204472
+	148402482	NarratorTimeLimitWarning1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorTimeLimitWarning1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorTimeLimit\NarratorTimeLimitWarning1		1476132
+	150508987	FlagMovement1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement1		75284
+	155877335	OutcomeDetermined2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\OutcomeDetermined2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\OutcomeDetermined\OutcomeDetermined2		1305976
+	157856480	UIButtonPress2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonPress2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonPress\UIButtonPress2		498652
+	165277251	RadioOff1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOff1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOff\RadioOff1		41704
+	174507317	NarratorTimeLimitWarning3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorTimeLimitWarning3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorTimeLimit\NarratorTimeLimitWarning3		994918
+	174572845	FlagMovement3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement3		128048
+	176297039	FailstateGenericPrebaked5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateGenericPrebaked5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateGenericPrebaked5\FailstateGenericPrebaked5		6199444
+	180923931	VictoryStates1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\VictoryStates1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\VictoryStates\VictoryStates1		4784840
+	183220083	FlagMovement10	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement10		145296
+	202548945	SignalEasterEgg3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalEasterEgg3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalEasterEgg\SignalEasterEgg3		196752
+	202809676	SignalChat7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat7		131216
+	202951857	PlayerWhistle6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle6		33614
+	211392829	SignalReply15TimeLimit2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply15TimeLimit2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply15TimeLimit2		458896
+	226385795	FailstateUniquePrebaked7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked7\FailstateUniquePrebaked7		5685824
+	229893250	UIMenuClose1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuClose1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuClose\UIMenuClose1		355844
+	233088943	PlayerWhistle4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle4		37342
+	238523552	PlayerMovement1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement1		43494
+	264092101	FlagNoise2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagNoise2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagNoise\FlagNoise2		5905352
+	289312653	UIMenuClose2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuClose2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuClose\UIMenuClose2		289696
+	294157750	NunChat3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat3		592172
+	296670502	SignalChat1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat1		131216
+	305784794	NunChat6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat6		474668
+	306543635	FailstateUniquePrebaked10	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked10\FailstateUniquePrebaked10		5596060
+	310877649	RadioOn1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOn1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOn\RadioOn1		20884
+	358217073	SignalReply2Ego	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply2Ego_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply2Ego		262288
+	361281825	PlayerMovement7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement7		51626
+	384018611	PlayerWhistle8	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle8		24122
+	384261568	OutcomeDetermined4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\OutcomeDetermined4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\OutcomeDetermined\OutcomeDetermined4		1305976
+	388227883	FailstateUniquePrebaked14	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked14\FailstateUniquePrebaked14		5881404
+	389039213	TrainAmbience1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\TrainAmbience1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\TrainAmbience\TrainAmbience1		12619372
+	406905940	FailstateUniquePrebaked2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked2\FailstateUniquePrebaked2		6048200
+	415075139	UIMenuClose3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuClose3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuClose\UIMenuClose3		237848
+	420806633	SignalReply10Do	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply10Do_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply10Do		131216
+	422972581	PlayerWhistle1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle1		62874
+	430236266	PlayerWhistle3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle3		45810
+	432044913	FlagMovement6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement6		74764
+	438612329	TrainAmbience3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\TrainAmbience3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\TrainAmbience\TrainAmbience3		12619372
+	458120339	NarratorVictory1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorVictory1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorVictory\NarratorVictory1		1897090
+	467089774	NunChat2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat2		400940
+	471606773	PlayerWhistle2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle2		60802
+	477384002	SignalReply3Odd	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply3Odd_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply3Odd		852112
+	478073782	FailstateUniquePrebaked4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked4\FailstateUniquePrebaked4		5760200
+	496260973	RadioStatic2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioStatic2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioStatic\RadioStatic2		7374968
+	503197257	RadioStatic1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioStatic1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioStatic\RadioStatic1		2441928
+	508745367	PlayerMovement2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement2		36392
+	509659080	SignalReply13ExclamationMark	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply13ExclamationMark_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply13ExclamationMark		589968
+	514174235	FlagMovement7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement7		78420
+	530399101	UIButtonPress1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonPress1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonPress\UIButtonPress1		325700
+	536725108	PlayerMovement5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement5		54462
+	540204213	FailstateGenericPrebaked4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateGenericPrebaked4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateGenericPrebaked4\FailstateGenericPrebaked4		6165996
+	541873016	OutcomeDetermined5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\OutcomeDetermined5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\OutcomeDetermined\OutcomeDetermined5		880840
+	545023606	NarratorOpeningSpiel	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorOpeningSpiel1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorOpeningSpiel		2641764
+	551735809	VictoryStates2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\VictoryStates2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\VictoryStates\VictoryStates2		4784840
+	557642188	SignalEasterEgg1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalEasterEgg1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalEasterEgg\SignalEasterEgg1		196752
+	563710268	SignalChat6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat6		131216
+	568542722	SignalChat5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat5		131216
+	588490526	FailstateGenericPrebaked3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateGenericPrebaked3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateGenericPrebaked3\FailstateGenericPrebaked3		6466008
+	599864457	SignalReply5Go	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply5Go_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply5Go		524432
+	606514193	TrainAmbience2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\TrainAmbience2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\TrainAmbience\TrainAmbience2		12619372
+	607844217	FlagMovement4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement4		86824
+	614899486	FlagNoise1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagNoise1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagNoise\FlagNoise1		4625080
+	622274977	NarratorTimeLimitWarning2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorTimeLimitWarning2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorTimeLimit\NarratorTimeLimitWarning2		556218
+	625079767	OutcomeDetermined3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\OutcomeDetermined3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\OutcomeDetermined\OutcomeDetermined3		931452
+	642462868	FailstateUniquePrebaked1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked1\FailstateUniquePrebaked1		6153136
+	644452907	PlayerWhistle7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle7		28382
+	671431742	PlayerMovement4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement4		39262
+	681414363	SignalReply7Doe	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply7Doe_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply7Doe		262288
+	683465239	RadioOff3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOff3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOff\RadioOff3		88108
+	683848093	SignalChat10	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat10		131216
+	691613325	PlayerMovement6	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement6		43262
+	693704907	UIMenuOpen1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuOpen1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuOpen\UIMenuOpen1		503048
+	707875430	NunChat1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat1		258092
+	709717928	UIButtonPress3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonPress3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonPress\UIButtonPress3		207452
+	713233837	NarratorTimeLimitWarning4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorTimeLimitWarning4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorTimeLimit\NarratorTimeLimitWarning4		394788
+	719030701	PlayerWhistle5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerWhistle5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerWhistle\PlayerWhistle5		22210
+	749261521	FailstateGenericPrebaked2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateGenericPrebaked2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateGenericPrebaked2\FailstateGenericPrebaked2		6200172
+	760615075	NarratorVictory3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorVictory3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorVictory\NarratorVictory3		1757080
+	768576597	FailstateUniquePrebaked3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked3\FailstateUniquePrebaked3		4992200
+	784829686	SignalChat8	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat8		262288
+	799626147	SignalReply9Edd	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply9Edd_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply9Edd		327824
+	813194355	FailstateUniquePrebaked8	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked8\FailstateUniquePrebaked8		7817604
+	815911626	FlagMovement9	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement9		174016
+	830168908	FailstateUniquePrebaked5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked5\FailstateUniquePrebaked5		6176180
+	840239871	SignalReply6Eddo	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply6Eddo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply6Eddo		589968
+	866172988	NunChat7	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat7		617516
+	870918871	FlagMovement2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement2		113940
+	878405964	VictoryStates3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\VictoryStates3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\VictoryStates\VictoryStates3		4784840
+	890384280	NarratorVictoryFirstTry1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorVictoryFirstTry1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorVictoryFirstTry1		2537350
+	894102910	RadioOn3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOn3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOn\RadioOn3		44086
+	915306326	FlagMovement5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FlagMovement5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\FlagMovement\FlagMovement5		139016
+	929682994	NarratorVictory2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NarratorVictory2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Narrator\NarratorVictory\NarratorVictory2		1669084
+	929815189	PlayerMovement3	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\PlayerMovement3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PlayerFX\PlayerMovement\PlayerMovement3		39838
+	937999149	SignalReply4Doge	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply4Doge_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply4Doge		524432
+	957437331	SignalChat2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalChat2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalChat\SignalChat2		131216
+	957998402	VictoryStates4	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\VictoryStates4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\VictoryStates\VictoryStates4		5360216
+	968316968	SignalReply12Odged	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply12Odged_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply12Odged		786576
+	971269263	RadioOn2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOn2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOn\RadioOn2		13746
+	977783055	NunChat5	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\NunChat5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Nuns\NunChat\NunChat5		403264
+	980492724	UIButtonHover2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonHover2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonHover\UIButtonHover2		11666
+	995987127	FailstateGenericPrebaked1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateGenericPrebaked1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateGenericPrebaked1\FailstateGenericPrebaked1		5812484
+	999686759	OutcomeDetermined1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\OutcomeDetermined1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\OutcomeDetermined\OutcomeDetermined1		1305976
+	1004683757	FailstateUniquePrebaked11	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked11\FailstateUniquePrebaked11		3203164
+	1012556301	UIButtonHover1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIButtonHover1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIButtonHover\UIButtonHover1		7342
+	1017639297	RadioTune1	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioTune1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioTune\RadioTune1		872048
+	1024543659	FailstateUniquePrebaked12	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked12\FailstateUniquePrebaked12		5583532
+	1037524739	UIMenuOpen2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\UIMenuOpen2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\UISounds\UIMenuOpen\UIMenuOpen2		285524
+	1060422370	SignalReply8Edo	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply8Edo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply8Edo		1900688
+	1068931860	FailstateUniquePrebaked9	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\FailstateUniquePrebaked9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\PrebakedEndings\FailstateUniquePrebaked9\FailstateUniquePrebaked9		5832888
+	1070585752	SignalReply1Dog	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\Voices\English(US)\SignalReply1Dog_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue\Signaller\SignalReply\SignalReply1Dog		458896
+	1073336215	RadioOff2	D:\UnityProjects\GJL Summer Game Parade 2021 2\WwiseProject\.cache\Windows\SFX\RadioOff2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound Design\RadioFX\RadioOff\RadioOff2		27428
+

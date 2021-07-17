@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CAB89F25-3661-47DB-B4B2-5D69A40E4042}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CAB89F25-3661-47DB-B4B2-5D69A40E4042}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank" ID="{4A219AC6-3DCA-40D3-B1B9-238ACE1ADB1C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_NunChat" ID="{B440B0FE-9752-40F1-BE8D-D0DD415B37DE}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TrainAmbience" ID="{CB2FEA1C-B50A-41D6-8B36-10803AFFFF54}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SignalChat" ID="{7DBF067E-290E-4288-A972-968F21C46A53}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UISounds" ID="{C51FC93C-C957-4288-BB76-E9C2041BFBA0}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_VictoryStates" ID="{35DC1572-965E-46AF-9D30-8B10F03C4E9C}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NarratorFailstates" ID="{776CE8AD-38CF-46DE-BD4D-6D2B618B3FEB}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerFX" ID="{E0DC07AF-D025-46F2-B137-73D967E6B3A1}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SignalEasterEgg" ID="{C9C1975D-77C5-47E3-91AC-E9A69148AC06}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_OutcomeDetermined" ID="{0483C22E-0D52-47F1-B697-B0B3AE4F9F8D}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SoundDesignFailstates" ID="{AC03164F-662C-4976-88CC-63F0F7E1E188}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NarratorTimeLimit" ID="{6193AC30-3D23-4A9A-851D-444039629198}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SignalReply" ID="{81F43BF6-8682-4CF1-A6FB-135C05D575A7}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PrebakedEndings" ID="{08CA7850-E8A1-4CF9-A69A-80EF522ECB57}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NarratorVictory" ID="{5C346FAA-52D6-4D32-B2F9-8EFEFE5F1659}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NarratorVictoryFirstTry" ID="{0C2262A8-5928-4DCC-9B4E-96D21763815D}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RadioFX" ID="{15C37868-717F-4DEF-961E-4A0E34BF3106}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_NarratorOpeningSpiel" ID="{EC83585D-B9E1-4E87-A54B-196FEB7245D7}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
