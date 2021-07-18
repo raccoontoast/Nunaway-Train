@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 259fb8ca6136db47b4b25d69a40e4042
     GuidInternal: 
-    m_lastTime: -8585750555236960767
+    m_lastTime: -8585750022391917920
     List:
     - name: Soundbank
       guid: c69a214aca3dd340b1b9238ace1adb1c
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585750515917405770
+    m_lastTime: -8585750007977421464
     List:
     - name: Play_InGameMusic
       guid: e08a28fb87a6e64f8b1645132d0065e7
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: aa6f345cd652324db2f98efefe5f1659
       Path: Events\Default Work Unit\Play_NarratorVictory
       maxAttenuation: 0
-      maxDuration: 19.760698
-      minDuration: 17.385635
+      maxDuration: 24.920708
+      minDuration: 24.920708
     - name: Play_NarratorVictoryFirstTry
       guid: a862220c2859cc4d9b4e96d21763815d
       id: 1318513612
@@ -300,23 +300,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 30.756708
       minDuration: 0.202348
-    - name: Play_PrebakedEndings
-      guid: 5078ca08a1e8f94ca69a80ef522ecb57
-      id: 1886484130
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: a0c6a8b259ac844c871ce4db96b481a3
-      - ElementName: Play_PrebakedEndings
-        ObjectType: 3
-        guid: 5078ca08a1e8f94ca69a80ef522ecb57
-      Path: Events\Default Work Unit\Play_PrebakedEndings
-      maxAttenuation: 0
-      maxDuration: 41.882374
-      minDuration: 16.682812
     - name: Play_RadioFX
       guid: c7af00b609d09f468c7acd76c23814b2
       id: 3707568345
@@ -456,6 +439,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7215dc355e96af469d308b10f03c4e9c
       Path: Events\Default Work Unit\Play_VictoryStates
+      maxAttenuation: 0
+      maxDuration: 24.920708
+      minDuration: 24.920708
+    - name: Resume_InGameSound
+      guid: 129bf4ff01011c48af2ef835607e807b
+      id: 2104573893
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Resume_InGameSound
+        ObjectType: 3
+        guid: 129bf4ff01011c48af2ef835607e807b
+      Path: Events\Default Work Unit\Resume_InGameSound
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1474,9 +1474,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585750773664775808
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000001700000018000000190000001a0000001b0000001e0000001f000000
+  ExpandedFileSystemItemIds: 01000000020000000300000005000000060000000700000017000000180000001b0000001e0000001f000000
+  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000017000000180000001b0000001e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

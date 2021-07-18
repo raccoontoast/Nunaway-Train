@@ -22,7 +22,6 @@ namespace AK
         static const AkUniqueID PLAY_NUNCHAT = 3793605367U;
         static const AkUniqueID PLAY_OUTCOMEDETERMINED = 2556779295U;
         static const AkUniqueID PLAY_PLAYERFX = 911575939U;
-        static const AkUniqueID PLAY_PREBAKEDENDINGS = 1886484130U;
         static const AkUniqueID PLAY_RADIOFX = 3707568345U;
         static const AkUniqueID PLAY_SIGNALCHAT = 3660888992U;
         static const AkUniqueID PLAY_SIGNALEASTEREGG = 879350003U;
@@ -31,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_TRAINAMBIENCE = 3198155892U;
         static const AkUniqueID PLAY_UISOUNDS = 1549268940U;
         static const AkUniqueID PLAY_VICTORYSTATES = 912900294U;
+        static const AkUniqueID RESUME_INGAMESOUND = 2104573893U;
         static const AkUniqueID STOP_RADIOFX = 1766528991U;
     } // namespace EVENTS
 

@@ -2073,6 +2073,11 @@
 									<ChildrenList>
 										<Sound Name="NarratorVictory2" ID="{76D4FB39-E931-4918-9941-1303809211D8}" ShortID="385117568">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -2125,6 +2130,11 @@
 										</Sound>
 										<Sound Name="NarratorVictory3" ID="{57002E4F-7013-4DBB-9982-502772FDA629}" ShortID="923377460">
 											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsVoice" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -3804,6 +3814,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="VictoryStates1" ID="{9C21EAD8-BF2D-4C26-A17F-F2E5BD15F47F}" ShortID="687874688">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3873,6 +3890,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="VictoryStates4" ID="{8C800EF2-25F0-41F6-AEE2-BC69499068A0}" ShortID="600169900">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3897,6 +3921,12 @@
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="VictoryStates1" ID="{9C21EAD8-BF2D-4C26-A17F-F2E5BD15F47F}"/>
+								<ItemRef Name="VictoryStates2" ID="{52EC696D-364B-40AE-8AC1-B5C5051EF6F3}"/>
+								<ItemRef Name="VictoryStates3" ID="{C44C8B02-A0D9-42F3-A155-3B306FE0871C}"/>
+								<ItemRef Name="VictoryStates4" ID="{8C800EF2-25F0-41F6-AEE2-BC69499068A0}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="SoundDesignFailstates" ID="{C690276F-BDDD-48AD-8729-A2B52C8AF71D}" ShortID="836679560">
 							<PropertyList>

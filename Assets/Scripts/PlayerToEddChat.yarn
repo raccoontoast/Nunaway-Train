@@ -5,14 +5,14 @@ position: -1610,4624
 ---
 Hi Player you must now spell a code... But try and work out what that code is:
 ===
-title: PlayerToEddChat.OG
+title: PlayerToEddChat.TooShort1
 tags: 
 colorID: 0
 position: 5246,326
 ---
 Right...
 ===
-title: PlayerToEddChat.OD
+title: PlayerToEddChat.TooShort2
 tags: 
 colorID: 0
 position: 2064,241
@@ -76,14 +76,14 @@ position: 5478,46
 ---
 Right...
 ===
-title: PlayerToEddChat.O
+title: PlayerToEddChat.TooShort3
 tags: 
 colorID: 0
 position: -1578,343
 ---
 Indeed...
 ===
-title: PlayerToEddChat.G
+title: PlayerToEddChat.TooShort4
 tags: 
 colorID: 0
 position: -1569,1931
@@ -125,6 +125,8 @@ tags:
 colorID: 0
 position: 2374,1691
 ---
+<<setSwitch Dialogue Endings GOD>>
+<<playAudio Dialogue Play_NarratorPrebakedEndings>>
 It's a shame that the signaller isn't particularly religious. It's also a shame that he couldn't make the connection between your signal, and the obviously dangerous situation involving the nuns over there. Pity.
 ===
 
@@ -188,7 +190,7 @@ position: 5116,-4089
 The signaller stands up, takes a short bow for no particular reason, and heads off to the nearest travel agents to pick up a one-way ticket to Venice, leaving the train to helplessly plow through the nearby nunnery. 
 ===
 
-title: PlayerToEddChat.ODGDE
+title: PlayerToEddChat.TooShort5
 tags: 
 colorID: 0
 position: 2481,-640
@@ -196,7 +198,7 @@ position: 2481,-640
 Yes...
 ===
 
-title: PlayerToEddChat.ODED
+title: PlayerToEddChat.TooShort6
 tags: 
 colorID: 0
 position: 2946,-428
@@ -204,7 +206,7 @@ position: 2946,-428
 Uh huh...
 ===
 
-title: PlayerToEddChat.ODEG
+title: PlayerToEddChat.TooShort7
 tags: 
 colorID: 0
 position: 3167,-437
@@ -212,7 +214,7 @@ position: 3167,-437
 Yes...
 ===
 
-title: PlayerToEddChat.ODEDG
+title: PlayerToEddChat.TooShort8
 tags: 
 colorID: 0
 position: 2945,-650
@@ -220,20 +222,12 @@ position: 2945,-650
 Yes...
 ===
 
-title: PlayerToEddChat.ODEGD
+title: PlayerToEddChat.TooShort9
 tags: 
 colorID: 0
 position: 3173,-652
 ---
 Yes...
-===
-
-title: PlayerToEddChat.ODGE
-tags: 
-colorID: 0
-position: 2709,-412
----
-Empty Text
 ===
 
 title: PlayerToEddChat.ODGED
@@ -263,7 +257,8 @@ position: 2715,-636
 <<playAudio Dialogue Play_NarratorPrebakedEndings>>
 So close. You were so close! And yet - very incorrect. It seems as if the signaller doesn't have much of an imagination. Always been a very literal man. I'm sure you'll get it next time. Next time? What? 
 ===
-title: PlayerToEddChat.ODDG
+
+title: PlayerToEddChat.TooShort10
 tags: 
 colorID: 0
 position: 2031,-409
@@ -271,7 +266,7 @@ position: 2031,-409
 Right.
 ===
 
-title: PlayerToEddChat.ODDGE
+title: PlayerToEddChat.TooShort11
 tags: 
 colorID: 0
 position: 2039,-643
@@ -279,7 +274,7 @@ position: 2039,-643
 ...
 ===
 
-title: PlayerToEddChat.ODDEG
+title: PlayerToEddChat.TooShort12
 tags: 
 colorID: 0
 position: 2268,-637
@@ -287,7 +282,7 @@ position: 2268,-637
 Indeed.
 ===
 
-title: PlayerToEddChat.OGED
+title: PlayerToEddChat.TooShort13
 tags: 
 colorID: 0
 position: 5240,-192
@@ -457,13 +452,13 @@ It's down to you - yes, you - to save the day.
 
 <<playAudio Dialogue Play_NarratorOpeningSpiel>>
 Can you get the signaller to stop the train?
-<<playAudio Dialogue Play_InGameMusic>>
 <<endCutscene CutsceneCamera>>
 ===
 
 title: PlayerToEddChat.Victory1
 tags:
 ---
+<<playAudio Dialogue Play_NarratorVictory>>
 "With aplomb and a plan, you have successfully evacuated the nunnery. No nuns shall perish this day. One cannot safely say the same about the kitten factory down the track, but hey, you've clocked off anyway. That's Mike's problem to handle. Good job, well done. Time for a brandy"
 ===
 
@@ -477,4 +472,13 @@ title: PlayerToEddChat.Victory3
 tags:
 ---
 As the trains hurtled down the track, the nuns realised, just at the last minute, "why did we build a nunnery next to a train line?! How stupid are we?!". They moved house and lived happily ever after. As for you? 5% pay rise, baby.
+===
+
+title: PlayerToEddChat.EventTest
+tags:
+---
+<<playAudio Dialogue Play_InGameMusic>>
+Text
+<<playAudio Dialogue Play_TrainAmbience>>
+Text
 ===

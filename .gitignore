@@ -78,4 +78,5 @@ Devlog/
 *.prof
 *.validationcache
 */Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
-/WwiseProject/GeneratedSoundBanks
+WwiseProject/GeneratedSoundBanks
+Assets/Samples

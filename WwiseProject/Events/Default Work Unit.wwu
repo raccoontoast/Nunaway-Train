@@ -40,7 +40,40 @@
 						<Action Name="" ID="{5F221A67-11DD-40C7-B7AC-E9F1BBEA09B0}" ShortID="252647595">
 							<ReferenceList>
 								<Reference Name="Target">
+									<ObjectRef Name="VictoryStates" ID="{75A88DBC-546F-47CA-91E9-6B7ACA4FF56B}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3E1FDDD0-2934-4E7A-8CFD-FBE3D1A239D2}" ShortID="97443743">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
 									<ObjectRef Name="NarratorVictory" ID="{DD3E9EF9-F985-4A86-A5D1-9B090A3A4E85}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2F40BA3E-519F-42BE-8D2A-722CB8EC3FA6}" ShortID="670047406">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameMusic" ID="{D2E1081F-173A-408C-8AFC-901FDED7762A}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{78DC59DF-DF7D-4672-B2BD-4ED3A98A804F}" ShortID="131302150">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TrainAmbience" ID="{2EBCCA10-90F7-4626-8EE0-E39538E978E7}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -62,7 +95,6 @@
 						<Action Name="" ID="{CBB22BD2-5218-48F2-B99C-B42FE37BDE54}" ShortID="475348306">
 							<PropertyList>
 								<Property Name="Delay" Type="Real64" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -91,7 +123,8 @@
 						<Action Name="" ID="{2CD68103-A1D2-4F96-931F-92A271B6E511}" ShortID="537273050">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="7"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -189,17 +222,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_PrebakedEndings" ID="{08CA7850-E8A1-4CF9-A69A-80EF522ECB57}">
-					<ChildrenList>
-						<Action Name="" ID="{816440F2-0CAB-4E91-A3EC-A253C741AE4C}" ShortID="656273922">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PrebakedEndings" ID="{6B2DDFC9-86B7-4616-B632-9AC98CFDECB8}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_SoundDesignFailstates" ID="{AC03164F-662C-4976-88CC-63F0F7E1E188}">
 					<ChildrenList>
 						<Action Name="" ID="{2A89B8AB-E211-4B58-BDE9-3B3524B03541}" ShortID="584703487">
@@ -214,6 +236,9 @@
 				<Event Name="Play_InGameMusic" ID="{FB288AE0-A687-4FE6-8B16-45132D0065E7}">
 					<ChildrenList>
 						<Action Name="" ID="{D425D6D5-9EBA-4BD8-9714-1D7F535043DB}" ShortID="53986579">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="InGameMusic" ID="{D2E1081F-173A-408C-8AFC-901FDED7762A}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
@@ -276,6 +301,31 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Resume_InGameSound" ID="{FFF49B12-0101-481C-AF2E-F835607E807B}">
+					<ChildrenList>
+						<Action Name="" ID="{69A4CC70-E6B1-46FC-9896-C4B489B25D91}" ShortID="43688292">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameMusic" ID="{D2E1081F-173A-408C-8AFC-901FDED7762A}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D7691640-39CF-433A-8D33-2E739D3EA3C5}" ShortID="574305502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TrainAmbience" ID="{2EBCCA10-90F7-4626-8EE0-E39538E978E7}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
