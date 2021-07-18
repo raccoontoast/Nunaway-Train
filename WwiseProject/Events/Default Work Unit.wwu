@@ -362,7 +362,7 @@
 						<Action Name="" ID="{D5017031-D44B-4CF6-8777-7EE5B415DCDB}" ShortID="186961949">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="UIButtonHover" ID="{3CBFC9E3-0409-4745-80B9-4862DF8643A2}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+									<ObjectRef Name="PostGameLoop" ID="{31341BED-5003-4147-A1D6-47F4C31564E3}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

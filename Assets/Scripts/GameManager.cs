@@ -50,6 +50,10 @@ public class GameManager : MonoBehaviour
     public int EasyModeEnableAttemptNo = 7;
     public bool EasyModeIsAvailable = false;
     public GameObject PauseMenuCanvas;
+    public GameObject ChurchScene;
+    public GameObject PhysicsTrain;
+    GameObject _churchScene;
+    GameObject _physicsTrain;
 
     public DialogueRunner DialogueRunner;
     public string DebugLettersForDialogue = "";
@@ -80,6 +84,26 @@ public class GameManager : MonoBehaviour
 
         // Set Easymode button to inactive
         EasyModeButton.SetActive(false);
+    }
+
+    public void InstantiateChurchScene()
+    {
+        RailOperatorCamera.SetActive(false);
+        _churchScene = Instantiate(ChurchScene);
+        Invoke("spawnTrain", 2f);
+    }
+
+    void spawnTrain()
+    {
+        _physicsTrain = Instantiate(PhysicsTrain);
+        _physicsTrain.GetComponent<TrainPhysics>().Nuns = GameObject.FindGameObjectsWithTag("Nun");        
+    }
+
+    public void CleanupChurchScene()
+    {
+        Destroy(_churchScene);
+        Destroy(_physicsTrain);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

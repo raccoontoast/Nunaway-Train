@@ -61,7 +61,10 @@ public class DialogueManager : MonoBehaviour
         if (letters == "DODGE") // Win condition
             dialogueRunner.StartDialogue("PlayerToEddChat.Victory1");
         else if (dialogueRunner.NodeExists(node))
-            dialogueRunner.StartDialogue(node);
+        {
+            dialogueRunner.StartDialogue(node);           
+        }
+            
         else if (letters.Length <= 2)
         {
             dialogueRunner.StartDialogue("PlayerToEddChat.TooShort" + tooShortCount.ToString());
@@ -70,7 +73,7 @@ public class DialogueManager : MonoBehaviour
                 tooShortCount = 1;            
         }
         else
-        {
+        {            
             dialogueRunner.StartDialogue("PlayerToEddChat.Fail" + failCounter.ToString());
             failCounter++;
             if (failCounter > 5) // as only 5 fail states
@@ -101,6 +104,11 @@ public class DialogueManager : MonoBehaviour
         // Post the event
         AkSoundEngine.PostEvent(CurrentEventID, player);        
         Debug.Log("Playing " + WwiseEventName);
+
+        if (WwiseEventName == "Play_NarratorPrebakedEndings")
+        {
+            GameManager.Instance.InstantiateChurchScene();
+        }
     }
 
     [YarnCommand("playSignalReply")]
@@ -130,7 +138,22 @@ public class DialogueManager : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
-    
+
+    [YarnCommand("instantiateChurchScene")]
+    public void InstantiateChurchScene()
+    {
+        GameManager.Instance.InstantiateChurchScene();
+    }
+
+    [YarnCommand("cleanupChurchScene")]
+    public void CleanupChurchScene()
+    {
+        if (GameObject.FindGameObjectWithTag("Nun") != null)
+        {
+            GameManager.Instance.CleanupChurchScene();
+        }        
+    }
+
     public void StopDialogue()
     {
         AkSoundEngine.ExecuteActionOnEvent(CurrentEventString, AkActionOnEventType.AkActionOnEventType_Stop, player, 250);

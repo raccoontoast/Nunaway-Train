@@ -1049,7 +1049,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: df7b1c782ab256045a08a9f880604a02, type: 3}
     m_FontSize: 84
     m_FontStyle: 0
     m_BestFit: 0
@@ -1061,7 +1061,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Game Title
+  m_Text: 'Nunaway Train
 
     by
 
@@ -1144,11 +1144,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Music and VO: Rossano
+  m_Text: 'Programming: Duncan Gallagher
 
-    Sound and VO: Nick
+    Music and VO (Signaller): Rossano Cariello
 
-    Programming: Duncan'
+    Sound
+    and VO (Narrator): Nick Harbourne
+
+    Models: Jem Gursoy'
 --- !u!222 &1646504574
 CanvasRenderer:
   m_ObjectHideFlags: 0
