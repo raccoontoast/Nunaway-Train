@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class DialogueManager : MonoBehaviour
@@ -122,6 +123,12 @@ public class DialogueManager : MonoBehaviour
     public void setSwitch(string WwiseSwitchGroup, string WwiseSwitchState)
     {
         AkSoundEngine.SetSwitch(WwiseSwitchGroup, WwiseSwitchState, player);        
+    }
+
+    [YarnCommand("startCredits")]
+    public void StartCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
     
     public void StopDialogue()

@@ -9,8 +9,8 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>D:\Program Files (x86)\Audiokinetic\Wwise 2021.1.1.7601</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../GJL Summer Game Parade 2021 2/WwiseProject/GJL Game Jam.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>E:\Program Files (x86)\Audiokinetic\Wwise 2021.1.1.7601</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../WwiseProject/GJL Game Jam.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

@@ -445,7 +445,7 @@ tags:
 It's a strange place to find yourself: on top of a moving train, hurtling down the tracks. What would otherwise be a perfectly lovely Tuesday in March, this day's gone bad.
 
 <<playAudio Dialogue Play_NarratorOpeningSpiel>>
-It seems like the driver's taken a turn for the worst  - considering he fell out of the window.
+It seems like the driver's taken a turn for the worse  - considering he fell out of the window.
 
 <<playAudio Dialogue Play_NarratorOpeningSpiel>>
 It's down to you - yes, you - to save the day.
@@ -460,6 +460,7 @@ tags:
 ---
 <<playAudio Dialogue Play_NarratorVictory>>
 "With aplomb and a plan, you have successfully evacuated the nunnery. No nuns shall perish this day. One cannot safely say the same about the kitten factory down the track, but hey, you've clocked off anyway. That's Mike's problem to handle. Good job, well done. Time for a brandy"
+<<startCredits Dialogue>>
 ===
 
 title: PlayerToEddChat.Victory2

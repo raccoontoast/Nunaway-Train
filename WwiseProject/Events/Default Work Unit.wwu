@@ -77,6 +77,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{AA1CE58E-C8E5-4B1D-BD3A-2D052A121005}" ShortID="84236114">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryMusic" ID="{2785DBE3-150D-4887-9759-9C6D04BBCD79}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_NarratorVictoryFirstTry" ID="{0C2262A8-5928-4DCC-9B4E-96D21763815D}">
@@ -129,6 +139,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TrainAmbience" ID="{2EBCCA10-90F7-4626-8EE0-E39538E978E7}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{01F51FCE-6365-446A-B489-94DF32FC6767}" ShortID="603333663">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FailMusic" ID="{E056CB63-073A-439F-AD11-F37FDF3ACA52}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -326,6 +346,52 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MainMenu" ID="{85ED05D3-574B-4335-83D8-88A39894DBBD}">
+					<ChildrenList>
+						<Action Name="" ID="{C461A90B-1424-41DD-AF3D-E003032F1C96}" ShortID="92152694">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu" ID="{C8442063-5E81-4F78-9291-8C97D485FCFC}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CreditsMusic" ID="{EE2314EA-37C4-43F2-B7B4-1420AD957ADF}">
+					<ChildrenList>
+						<Action Name="" ID="{D5017031-D44B-4CF6-8777-7EE5B415DCDB}" ShortID="186961949">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIButtonHover" ID="{3CBFC9E3-0409-4745-80B9-4862DF8643A2}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="PauseMenu" ID="{5CF56C0D-75BA-4A98-8BD1-3AC7AB4BD037}" ShortID="980169222">
+					<ChildrenList>
+						<Event Name="PauseAll" ID="{D6B0A19B-4322-44A1-B216-7F0EC9A4CB61}">
+							<ChildrenList>
+								<Action Name="" ID="{BDA021AA-1742-46D3-95AA-388628D15A46}" ShortID="557560588">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ResumeAll" ID="{ADBFB2CB-2887-4CAF-899E-23CCE6A8D360}">
+							<ChildrenList>
+								<Action Name="" ID="{AA46950D-145D-4A59-B977-15B19E35194B}" ShortID="407501638">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="10"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

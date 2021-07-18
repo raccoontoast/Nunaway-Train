@@ -49,9 +49,11 @@ public class GameManager : MonoBehaviour
     public int EasyModeShowAttemptNo = 2;
     public int EasyModeEnableAttemptNo = 7;
     public bool EasyModeIsAvailable = false;
+    public GameObject PauseMenuCanvas;
 
     public DialogueRunner DialogueRunner;
-    public string DebugLettersForDialogue = "";    
+    public string DebugLettersForDialogue = "";
+    bool isPaused = false;
     // To do: backspace button for adding semaphore signs
 
     void Start()
@@ -83,7 +85,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
     }
 
     public void ConfirmTest()
@@ -191,6 +196,36 @@ public class GameManager : MonoBehaviour
         SetUIVisible(true);
 
         AkSoundEngine.PostEvent("Resume_InGameSound", GameObject.FindGameObjectWithTag("Player"));
+    }
+
+    public void PauseGame()
+    {
+        if (!isPaused)
+        {
+            // Stop time
+            Time.timeScale = 0;
+
+            // Pause all playing sounds
+            AkSoundEngine.PostEvent("PauseAll", GameObject.FindGameObjectWithTag("Player"));
+
+            // Show Pause Menu
+            PauseMenuCanvas.SetActive(true);
+
+            isPaused = true;
+        }
+        else
+        {
+            // Resume time
+            Time.timeScale = 1;
+
+            // Resume all playing sounds
+            AkSoundEngine.PostEvent("ResumeAll", GameObject.FindGameObjectWithTag("Player"));
+
+            // Hide Pause menu canvas
+            PauseMenuCanvas.SetActive(false);
+
+            isPaused = false;
+        }
     }
 
 #if UNITY_EDITOR

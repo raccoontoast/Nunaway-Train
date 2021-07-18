@@ -65,6 +65,31 @@
 						<CurrentSwitchRef Name="FlagMovement" ID="{0D534FF8-5EE6-4395-8760-B833B2D46576}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_01" ID="{9249BF40-EFEC-4424-A40A-447700F16127}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_NarratorPrebakedEndings" ID="{776CE8AD-38CF-46DE-BD4D-6D2B618B3FEB}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_NarratorVictory" ID="{5C346FAA-52D6-4D32-B2F9-8EFEFE5F1659}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_NarratorPrebakedEndings" ID="{776CE8AD-38CF-46DE-BD4D-6D2B618B3FEB}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="SignalReply1" ID="{2E6F9BB5-B33E-4AAA-A22D-87BC8097ABD7}"/>
+						<CurrentSwitchRef Name="RadioOff" ID="{05D8A640-2958-4DB9-8A66-0161801881F4}"/>
+						<CurrentSwitchRef Name="SoundDesignFailstateGeneric" ID="{CDD8739F-9B2B-44EB-B5BF-9CFD3E70E3B7}"/>
+						<CurrentSwitchRef Name="DO" ID="{EA06EF2F-D8E8-4743-B5A0-03FCB615EABF}"/>
+						<CurrentSwitchRef Name="FlagMovement" ID="{0D534FF8-5EE6-4395-8760-B833B2D46576}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

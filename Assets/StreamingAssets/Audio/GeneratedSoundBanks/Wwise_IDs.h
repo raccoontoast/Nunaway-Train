@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSEALL = 4091047182U;
+        static const AkUniqueID PLAY_CREDITSMUSIC = 1874751385U;
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
+        static const AkUniqueID PLAY_MAINMENU = 3738780720U;
         static const AkUniqueID PLAY_NARRATOROPENINGSPIEL = 490760232U;
         static const AkUniqueID PLAY_NARRATORPREBAKEDENDINGS = 1877704911U;
         static const AkUniqueID PLAY_NARRATORTIMELIMIT = 3557806995U;
@@ -31,6 +34,7 @@ namespace AK
         static const AkUniqueID PLAY_UISOUNDS = 1549268940U;
         static const AkUniqueID PLAY_VICTORYSTATES = 912900294U;
         static const AkUniqueID RESUME_INGAMESOUND = 2104573893U;
+        static const AkUniqueID RESUMEALL = 3240900869U;
         static const AkUniqueID STOP_RADIOFX = 1766528991U;
     } // namespace EVENTS
 
@@ -147,6 +151,8 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID CREDITS = 2201105581U;
+        static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID SOUNDBANK = 1661994096U;
     } // namespace BANKS
 

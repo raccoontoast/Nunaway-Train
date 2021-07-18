@@ -2062,6 +2062,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="NarratorVictory" ID="{DD3E9EF9-F985-4A86-A5D1-9B090A3A4E85}" ShortID="372529511">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -2165,6 +2172,11 @@
 								<RandomSequenceContainer Name="NarratorOpeningSpiel" ID="{4E0D7387-3DC1-4D88-B7F5-2A0E5169B92F}" ShortID="975110648">
 									<PropertyList>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
