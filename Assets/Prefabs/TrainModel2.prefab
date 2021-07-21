@@ -50,10 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImpulseForce: 500
-  ExplosionForce: 400
+  ExplosionForce: 1000
   ExplosionRadius: 50
   ExplosionPosition: {fileID: 0}
   Nuns: []
+  Church: {fileID: 0}
 --- !u!65 &1644147615364968924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5181,6 +5182,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3cbe8afee72362a40a13c000166a30a4, type: 3}
       propertyPath: m_Name
       value: Rigged Body with Flags (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3cbe8afee72362a40a13c000166a30a4, type: 3}
+      propertyPath: m_TagString
+      value: ChurchScenePlayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cbe8afee72362a40a13c000166a30a4, type: 3}

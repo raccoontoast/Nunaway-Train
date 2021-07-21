@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     public GameObject PhysicsTrain;
     GameObject _churchScene;
     GameObject _physicsTrain;
+    public int ChurchSceneCameraCount = 0;
 
     public DialogueRunner DialogueRunner;
     public string DebugLettersForDialogue = "";
@@ -89,14 +90,20 @@ public class GameManager : MonoBehaviour
     public void InstantiateChurchScene()
     {
         RailOperatorCamera.SetActive(false);
+        
+        if (ChurchSceneCameraCount == 0 || ChurchSceneCameraCount == 2) // normal or side view
+        {
+            Invoke("spawnTrain", 2f);
+        }
+        else
+            spawnTrain(); // first person view
+
         _churchScene = Instantiate(ChurchScene);
-        Invoke("spawnTrain", 2f);
     }
 
     void spawnTrain()
-    {
-        _physicsTrain = Instantiate(PhysicsTrain);
-        _physicsTrain.GetComponent<TrainPhysics>().Nuns = GameObject.FindGameObjectsWithTag("Nun");        
+    {        
+        _physicsTrain = Instantiate(PhysicsTrain);               
     }
 
     public void CleanupChurchScene()
@@ -104,6 +111,7 @@ public class GameManager : MonoBehaviour
         Destroy(_churchScene);
         Destroy(_physicsTrain);
         Time.timeScale = 1f;
+        Time.fixedDeltaTime = 0.02f * Time.timeScale;
     }
 
     // Update is called once per frame

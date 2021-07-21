@@ -10,21 +10,45 @@ public class TrainPhysics : MonoBehaviour
     public float ExplosionRadius = 5f;
     public Transform ExplosionPosition;
     public GameObject[] Nuns;
+    public GameObject Church;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.AddForce(new Vector3(0f, 0f, ImpulseForce), ForceMode.Impulse);
-        Time.timeScale = 0.4f;
+
+        if (GameManager.Instance.ChurchSceneCameraCount == 0 || GameManager.Instance.ChurchSceneCameraCount == 2) // Normal camera view
+        {
+            Time.timeScale = 0.3f;
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        }
+
+        else if (GameManager.Instance.ChurchSceneCameraCount == 1) // First person camera view
+        {
+            Time.timeScale = 0.15f;
+            Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        }
+
+        Church = FindObjectOfType<Church>().gameObject;
+        Nuns = GameObject.FindGameObjectsWithTag("Nun");
     }
 
     public void Explode()
     {
-        Debug.Log("Exlpode");
+        Debug.Log("Explode");
         foreach (var nun in Nuns)
         {
-            nun.GetComponent<Rigidbody>().AddExplosionForce(ExplosionForce, nun.transform.position, ExplosionRadius);
+            // Explode in a random direction byt varying the point of the explosion slightly
+            nun.GetComponent<Rigidbody>().AddExplosionForce(ExplosionForce, nun.transform.position + new Vector3(Random.Range(-2f, 2f), -0.5f, Random.Range(-2f, 2f)), ExplosionRadius);
+        }
+
+        MeshCollider[] churchMeshColliders = Church.GetComponentsInChildren<MeshCollider>();
+
+        foreach(var collider in churchMeshColliders)
+        {
+            collider.enabled = true;
+            collider.GetComponent<Rigidbody>().useGravity = true;
         }
     }
 
