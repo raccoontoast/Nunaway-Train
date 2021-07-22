@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
     public void InstantiateChurchScene()
     {
         RailOperatorCamera.SetActive(false);
+        DialogueRunner.GetComponent<DialogueUI>().textSpeed = 0.005f;
         
         if (ChurchSceneCameraCount == 0 || ChurchSceneCameraCount == 2) // normal or side view
         {
@@ -112,6 +113,7 @@ public class GameManager : MonoBehaviour
         Destroy(_physicsTrain);
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
+        DialogueRunner.GetComponent<DialogueUI>().textSpeed = 0.01f;
     }
 
     // Update is called once per frame
