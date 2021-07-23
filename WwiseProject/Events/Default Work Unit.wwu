@@ -79,7 +79,7 @@
 						</Action>
 						<Action Name="" ID="{AA1CE58E-C8E5-4B1D-BD3A-2D052A121005}" ShortID="84236114">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

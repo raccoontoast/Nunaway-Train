@@ -187,7 +187,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585745514433601279
+    m_lastTime: -8585745492098286968
     List:
     - name: PauseAll
       guid: 9ba1b0d62243a144b2167f0ec9a4cb61
@@ -275,8 +275,8 @@ MonoBehaviour:
         guid: d305ed854b57354383d888a39894dbbd
       Path: Events\Default Work Unit\Play_MainMenu
       maxAttenuation: 0
-      maxDuration: 30.284124
-      minDuration: 30.284124
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NarratorOpeningSpiel
       guid: 5d5883ece1b9874ea54b196feb7245d7
       id: 490760232
@@ -343,8 +343,8 @@ MonoBehaviour:
         guid: aa6f345cd652324db2f98efefe5f1659
       Path: Events\Default Work Unit\Play_NarratorVictory
       maxAttenuation: 0
-      maxDuration: 32.214752
-      minDuration: 32.214752
+      maxDuration: 33.214752
+      minDuration: 33.214752
     - name: Play_NarratorVictoryFirstTry
       guid: a862220c2859cc4d9b4e96d21763815d
       id: 1318513612
@@ -576,8 +576,8 @@ MonoBehaviour:
         guid: 3cc91fc557c98842bb76e9c2041bfba0
       Path: Events\Default Work Unit\Play_UISounds
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_VictoryStates
       guid: 7215dc355e96af469d308b10f03c4e9c
       id: 912900294

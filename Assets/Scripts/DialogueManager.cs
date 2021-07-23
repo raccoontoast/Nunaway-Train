@@ -57,9 +57,14 @@ public class DialogueManager : MonoBehaviour
         string node = "PlayerToEddChat." + letters;
 
 
-            
-        if (letters == "DODGE") // Win condition
+
+        if (letters == "DODGE") { // Win condition
             dialogueRunner.StartDialogue("PlayerToEddChat.Victory1");
+            GameManager.Instance.RailOperatorCamera.SetActive(false);
+            GameManager.Instance.mainCamera.SetActive(false);
+            Instantiate(Resources.Load("Prefabs/ChurchScene_Victory"));
+        }
+            
         else if (dialogueRunner.NodeExists(node))
         {
             dialogueRunner.StartDialogue(node);           
