@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>12</Value>
+										<Value>8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -138,13 +138,16 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Music" ID="{BE46526E-DF0D-41DF-A36A-AC67CDCD32DE}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
@@ -204,7 +207,7 @@
 																				<MusicClip Name="IntroMusic1" ID="{E4330F90-2B12-467F-8839-F489D8163E5B}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="30284.125"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="276.71135637372"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="IntroMusic1" ID="{640A6734-1541-4F27-99B7-E81D52A06520}"/>
@@ -232,7 +235,7 @@
 													<MusicCue Name="Exit Cue" ID="{FED91704-69D5-4057-A13C-CF4CDF601D25}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="30284.125"/>
+															<Property Name="TimeMs" Type="Real64" Value="29754.5842301848"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -257,9 +260,13 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{378BC9AD-3C07-45DE-A5E0-346075D36032}" ShortID="172261415">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{C3268CF6-5D29-4785-BA47-A26F5AA43A59}" ShortID="842746674">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="IntroMusic1" ID="{0FFA0EFB-0E66-42A6-B824-439FBF8E662E}"/>
@@ -299,7 +306,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -315,6 +322,11 @@
 								<MusicSegment Name="VictoryMusic1" ID="{AFC988AE-6CAF-416F-949E-9B3320442B06}" ShortID="599958476">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="31214.75"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
