@@ -85,6 +85,9 @@ public class GameManager : MonoBehaviour
 
         // Set Easymode button to inactive
         EasyModeButton.SetActive(false);
+
+        // Initiate fade in from black
+        Instantiate(Resources.Load("Prefabs/FadeInCanvas") as GameObject);
     }
 
     public void InstantiateChurchScene()
