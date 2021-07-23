@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 259fb8ca6136db47b4b25d69a40e4042
     GuidInternal: 
-    m_lastTime: -8585747112099941311
+    m_lastTime: -8585745503435019417
     List:
     - name: Credits
       guid: 0c4e920fd9245d469a60756cfe71d728
@@ -161,6 +161,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: c69a214aca3dd340b1b9238ace1adb1c
       Path: SoundBanks\Default Work Unit\Soundbank
+    - name: UI
+      guid: 87e4d4a4685ef64c91eb452cce524709
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 259fb8ca6136db47b4b25d69a40e4042
+      - ElementName: UI
+        ObjectType: 7
+        guid: 87e4d4a4685ef64c91eb452cce524709
+      Path: SoundBanks\Default Work Unit\UI
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -173,7 +187,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585747112189945426
+    m_lastTime: -8585745514433601279
     List:
     - name: PauseAll
       guid: 9ba1b0d62243a144b2167f0ec9a4cb61
@@ -193,8 +207,8 @@ MonoBehaviour:
         guid: 9ba1b0d62243a144b2167f0ec9a4cb61
       Path: Events\Default Work Unit\PauseMenu\PauseAll
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.829335
+      minDuration: 0.829335
     - name: PauseMenu
       guid: 0d6cf55cba75984a8bd13ac7ab4bd037
       id: 3494343696
@@ -507,6 +521,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_UIButtonHover
+      guid: ba346ff6d16eaf43b5a0fef457a25121
+      id: 4217241938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: UI
+        ObjectType: 4
+        guid: 70992a26d61b664aa1e84318cac5ca5a
+      - ElementName: Play_UIButtonHover
+        ObjectType: 3
+        guid: ba346ff6d16eaf43b5a0fef457a25121
+      Path: Events\Default Work Unit\UI\Play_UIButtonHover
+      maxAttenuation: 0
+      maxDuration: 0.148165
+      minDuration: 0.074726
+    - name: Play_UIButtonPress
+      guid: e8f525ece369d541b3f2813118b78dee
+      id: 87346073
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: UI
+        ObjectType: 4
+        guid: 70992a26d61b664aa1e84318cac5ca5a
+      - ElementName: Play_UIButtonPress
+        ObjectType: 3
+        guid: e8f525ece369d541b3f2813118b78dee
+      Path: Events\Default Work Unit\UI\Play_UIButtonPress
+      maxAttenuation: 0
+      maxDuration: 1.494769
+      minDuration: 1.494769
     - name: Play_UISounds
       guid: 3cc91fc557c98842bb76e9c2041bfba0
       id: 1549268940
@@ -576,8 +630,8 @@ MonoBehaviour:
         guid: cbb2bfad8728af4c899e23cce6a8d360
       Path: Events\Default Work Unit\PauseMenu\ResumeAll
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.841755
+      minDuration: 1.841755
     - name: Signal Reply
       guid: d3c40246b0b23541ac37d2b580526aa6
       id: 3418949805
@@ -615,6 +669,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.216885
       minDuration: 0.142531
+    - name: UI
+      guid: 70992a26d61b664aa1e84318cac5ca5a
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: UI
+        ObjectType: 4
+        guid: 70992a26d61b664aa1e84318cac5ca5a
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1593,7 +1664,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585747112099542946
     List: []
-  ExpandedFileSystemItemIds: 0100000002000000030000000500000006000000070000000f00000017000000180000001b0000001e0000001f00000055000000560000005700000058000000
+  ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000f00000017000000180000001b0000001e0000001f00000055000000560000005700000058000000
   ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000017000000180000001b0000001e0000001f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

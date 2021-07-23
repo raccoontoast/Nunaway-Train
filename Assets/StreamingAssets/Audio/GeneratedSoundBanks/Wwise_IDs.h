@@ -31,7 +31,8 @@ namespace AK
         static const AkUniqueID PLAY_SIGNALREPLY = 3144544310U;
         static const AkUniqueID PLAY_SOUNDDESIGNFAILSTATES = 1501224847U;
         static const AkUniqueID PLAY_TRAINAMBIENCE = 3198155892U;
-        static const AkUniqueID PLAY_UISOUNDS = 1549268940U;
+        static const AkUniqueID PLAY_UIBUTTONHOVER = 4217241938U;
+        static const AkUniqueID PLAY_UIBUTTONPRESS = 87346073U;
         static const AkUniqueID PLAY_VICTORYSTATES = 912900294U;
         static const AkUniqueID RESUME_INGAMESOUND = 2104573893U;
         static const AkUniqueID RESUMEALL = 3240900869U;
@@ -154,6 +155,7 @@ namespace AK
         static const AkUniqueID CREDITS = 2201105581U;
         static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID SOUNDBANK = 1661994096U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BANKS
 
     namespace BUSSES

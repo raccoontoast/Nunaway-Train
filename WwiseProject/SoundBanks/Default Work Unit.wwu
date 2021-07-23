@@ -8,7 +8,6 @@
 						<ObjectRef Name="Play_NunChat" ID="{B440B0FE-9752-40F1-BE8D-D0DD415B37DE}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TrainAmbience" ID="{CB2FEA1C-B50A-41D6-8B36-10803AFFFF54}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SignalChat" ID="{7DBF067E-290E-4288-A972-968F21C46A53}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_UISounds" ID="{C51FC93C-C957-4288-BB76-E9C2041BFBA0}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PauseAll" ID="{D6B0A19B-4322-44A1-B216-7F0EC9A4CB61}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RadioFX" ID="{B600AFC7-D009-469F-8C7A-CD76C23814B2}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_VictoryStates" ID="{35DC1572-965E-46AF-9D30-8B10F03C4E9C}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
@@ -40,6 +39,14 @@
 				<SoundBank Name="Credits" ID="{0F924E0C-24D9-465D-9A60-756CFE71D728}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_CreditsMusic" ID="{EE2314EA-37C4-43F2-B7B4-1420AD957ADF}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="UI" ID="{A4D4E487-5E68-4CF6-91EB-452CCE524709}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_UIButtonPress" ID="{EC25F5E8-69E3-41D5-B3F2-813118B78DEE}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UIButtonHover" ID="{F66F34BA-6ED1-43AF-B5A0-FEF457A25121}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

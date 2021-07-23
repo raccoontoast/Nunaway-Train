@@ -378,15 +378,65 @@
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
+								<Action Name="" ID="{5BBBEEE4-59A1-4DAB-AE99-1ABA4F13C0AF}" ShortID="193806316">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UIMenuOpen" ID="{C4C0E616-A65A-4D3F-B4D5-06C4BBF03547}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="ResumeAll" ID="{ADBFB2CB-2887-4CAF-899E-23CCE6A8D360}">
 							<ChildrenList>
+								<Action Name="" ID="{17C473EB-F3FF-4706-B25A-8DA37C2C4DB0}" ShortID="4223612">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UIMenuClose" ID="{A752B374-6B07-4E79-874E-076BBF05C23A}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{AA46950D-145D-4A59-B977-15B19E35194B}" ShortID="407501638">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="10"/>
 									</PropertyList>
 									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{262A9970-1BD6-4A66-A1E8-4318CAC5CA5A}" ShortID="630164354">
+					<ChildrenList>
+						<Event Name="Play_UIButtonHover" ID="{F66F34BA-6ED1-43AF-B5A0-FEF457A25121}">
+							<ChildrenList>
+								<Action Name="" ID="{40F6DCC4-CD18-483F-A16A-CD536FA08F83}" ShortID="809377188">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UIButtonHover" ID="{3CBFC9E3-0409-4745-80B9-4862DF8643A2}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4B7F76C1-85BC-4D48-925A-128C83EAF8BB}" ShortID="307768505">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UIButtonHover" ID="{3CBFC9E3-0409-4745-80B9-4862DF8643A2}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UIButtonPress" ID="{EC25F5E8-69E3-41D5-B3F2-813118B78DEE}">
+							<ChildrenList>
+								<Action Name="" ID="{FEEEC623-8284-45EB-A903-D1DA530031FB}" ShortID="172155101">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UIButtonPress" ID="{373E8B92-F75F-4808-AB39-8CD3ADD414A0}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>

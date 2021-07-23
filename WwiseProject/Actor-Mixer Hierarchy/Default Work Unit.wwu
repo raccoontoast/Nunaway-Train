@@ -3489,6 +3489,21 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="UIButtonHover" ID="{3CBFC9E3-0409-4745-80B9-4862DF8643A2}" ShortID="768612982">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{939FAE2D-00C4-4615-938D-9EE6A3FA4826}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
+															<Property Name="Min" Type="Real64" Value="-25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3532,6 +3547,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIButtonHover2" ID="{C1EC9EBD-B51B-46E0-B2E7-0F6147D73B81}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.00328530340963282"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0907781205293276"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIButtonHover2.wav</AudioFile>
 													<MediaIDList>
@@ -3555,6 +3575,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIButtonHover3" ID="{D6448B95-3615-4625-87F0-D16122648DDC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0117131616595136"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.146040812281575"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIButtonHover3.wav</AudioFile>
 													<MediaIDList>
@@ -3581,6 +3606,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="UIButtonPress1" ID="{4BDD0644-02B2-4483-9021-407BF548D8B3}" ShortID="1008574461">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3591,6 +3623,17 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIButtonPress1" ID="{6090AFEC-3F85-4FE0-A9EC-8E44386117C3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0464427611561866"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.288977180527383"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.201251965010142"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIButtonPress1.wav</AudioFile>
 													<MediaIDList>
@@ -3601,52 +3644,6 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="UIButtonPress1" ID="{6090AFEC-3F85-4FE0-A9EC-8E44386117C3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="UIButtonPress2" ID="{088C1048-E4DD-4F6B-9420-66BDF4393C5B}" ShortID="290183718">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="UIButtonPress2" ID="{C72DD3F0-D7BB-4D28-8B7A-8AF21130832F}">
-													<Language>SFX</Language>
-													<AudioFile>UIButtonPress2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="157856480"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="UIButtonPress2" ID="{C72DD3F0-D7BB-4D28-8B7A-8AF21130832F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="UIButtonPress3" ID="{18DA3FD6-7873-42AA-9CEC-7A00E9425B44}" ShortID="174775823">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4DEF1640-AE03-468E-8304-B66F5AF8DE8E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="UIButtonPress3" ID="{2F5319DC-ED2D-4A74-AAEA-A844E8DF8CEC}">
-													<Language>SFX</Language>
-													<AudioFile>UIButtonPress3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="709717928"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="UIButtonPress3" ID="{2F5319DC-ED2D-4A74-AAEA-A844E8DF8CEC}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -3663,6 +3660,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="UIMenuOpen1" ID="{7C4A81FC-1FC2-457D-A066-984A52CD9075}" ShortID="117734477">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3696,6 +3700,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIMenuOpen2" ID="{45FCFBB5-0C17-44EB-B0AB-21DA7799C4FF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0407127915821501"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0301576233941852"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.322686570317782"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.15202121365788"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIMenuOpen2.wav</AudioFile>
 													<MediaIDList>
@@ -3709,6 +3720,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="UIMenuOpen3" ID="{8DCB05EF-E7BE-453E-A102-F281125F9B30}" ShortID="953237901">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3755,6 +3773,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIMenuClose1" ID="{DDE17EC2-17A1-420D-8B08-4C81A18AB5F8}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0112760522312373"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIMenuClose1.wav</AudioFile>
 													<MediaIDList>
@@ -3768,6 +3790,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="UIMenuClose2" ID="{29B61F94-DBA6-4ADD-ADE6-F486AC1A046D}" ShortID="298029726">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3791,6 +3820,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="UIMenuClose3" ID="{822CA170-67DE-4AD6-A198-2F2A95FF73E4}" ShortID="282493292">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
