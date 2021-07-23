@@ -2844,11 +2844,24 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="FailstateUniquePrebaked13" ID="{56F24529-76D3-47A4-9EEF-B5311218DBB4}">
+															<PropertyList>
+																<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>FailstateUniquePrebaked13.wav</AudioFile>
 															<MediaIDList>
 																<MediaID ID="115055815"/>
 															</MediaIDList>
+															<PluginInnerObjectList>
+																<List Name="Markers">
+																	<PluginInnerObject Name="" ID="{49FAA5F8-C081-4BC6-8DBA-1B3BA11C7FD7}" PluginName="Marker" CompanyID="0" PluginID="993">
+																		<PropertyList>
+																			<Property Name="Label" Type="string" Value="Japan"/>
+																			<Property Name="Time" Type="Real64" Value="6.34055172413793"/>
+																		</PropertyList>
+																	</PluginInnerObject>
+																</List>
+															</PluginInnerObjectList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>

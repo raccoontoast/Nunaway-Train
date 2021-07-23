@@ -442,6 +442,65 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_FailstateUniquePrebaked13" ID="{9B0F20DA-5047-492E-B2BA-D3712771E19C}">
+					<Comment>No music here as it's started in the DialogueManager script so we can stop it with a marker.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{71EE6421-A565-45FF-8590-BCCA725C05FB}" ShortID="783835938">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FailstateUniquePrebaked13" ID="{56A85A48-1414-43B2-8093-07817E0100CF}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F1D7297A-386B-41A8-9DAC-9187FE9A155E}" ShortID="823665420">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameMusic" ID="{D2E1081F-173A-408C-8AFC-901FDED7762A}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BE86971C-1C40-44C9-9B04-552EF8E6888A}" ShortID="215657541">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TrainAmbience" ID="{2EBCCA10-90F7-4626-8EE0-E39538E978E7}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0A3C65A9-3515-4981-B17A-963C0F63BDD3}" ShortID="902381161">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OutcomeDetermined1" ID="{84E534BC-C3F4-408F-A991-196BC2E1D583}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FailMusic" ID="{3283F267-379D-4E12-9857-5C83848C7710}">
+					<ChildrenList>
+						<Action Name="" ID="{7D0624DD-99B7-493B-A56F-5617A3D46CF8}" ShortID="994763750">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FailMusic" ID="{E056CB63-073A-439F-AD11-F37FDF3ACA52}" WorkUnitID="{AA2E17EA-7EFB-4C16-8CE0-C6C653BB411A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

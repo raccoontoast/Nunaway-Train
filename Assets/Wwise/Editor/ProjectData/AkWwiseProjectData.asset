@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 259fb8ca6136db47b4b25d69a40e4042
     GuidInternal: 
-    m_lastTime: -8585745503435019417
+    m_lastTime: -8585745435103382434
     List:
     - name: Credits
       guid: 0c4e920fd9245d469a60756cfe71d728
@@ -187,7 +187,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585745492098286968
+    m_lastTime: -8585745425284026714
     List:
     - name: PauseAll
       guid: 9ba1b0d62243a144b2167f0ec9a4cb61
@@ -243,6 +243,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 188.29527
       minDuration: 188.29527
+    - name: Play_FailMusic
+      guid: 67f283329d37124e98575c83848c7710
+      id: 1417376927
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Play_FailMusic
+        ObjectType: 3
+        guid: 67f283329d37124e98575c83848c7710
+      Path: Events\Default Work Unit\Play_FailMusic
+      maxAttenuation: 0
+      maxDuration: 49.74875
+      minDuration: 49.74875
+    - name: Play_FailstateUniquePrebaked13
+      guid: da200f9b47502e49b2bad3712771e19c
+      id: 3035379376
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Play_FailstateUniquePrebaked13
+        ObjectType: 3
+        guid: da200f9b47502e49b2bad3712771e19c
+      Path: Events\Default Work Unit\Play_FailstateUniquePrebaked13
+      maxAttenuation: 0
+      maxDuration: 33.57467
+      minDuration: 33.57467
     - name: Play_InGameMusic
       guid: e08a28fb87a6e64f8b1645132d0065e7
       id: 3799629626

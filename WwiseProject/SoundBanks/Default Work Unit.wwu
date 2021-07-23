@@ -17,12 +17,14 @@
 						<ObjectRef Name="Play_SignalEasterEgg" ID="{C9C1975D-77C5-47E3-91AC-E9A69148AC06}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_OutcomeDetermined" ID="{0483C22E-0D52-47F1-B697-B0B3AE4F9F8D}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Resume_InGameSound" ID="{FFF49B12-0101-481C-AF2E-F835607E807B}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FailstateUniquePrebaked13" ID="{9B0F20DA-5047-492E-B2BA-D3712771E19C}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SoundDesignFailstates" ID="{AC03164F-662C-4976-88CC-63F0F7E1E188}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NarratorTimeLimit" ID="{6193AC30-3D23-4A9A-851D-444039629198}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ResumeAll" ID="{ADBFB2CB-2887-4CAF-899E-23CCE6A8D360}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SignalReply" ID="{81F43BF6-8682-4CF1-A6FB-135C05D575A7}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NarratorVictory" ID="{5C346FAA-52D6-4D32-B2F9-8EFEFE5F1659}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NarratorVictoryFirstTry" ID="{0C2262A8-5928-4DCC-9B4E-96D21763815D}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FailMusic" ID="{3283F267-379D-4E12-9857-5C83848C7710}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NarratorOpeningSpiel" ID="{EC83585D-B9E1-4E87-A54B-196FEB7245D7}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_InGameMusic" ID="{FB288AE0-A687-4FE6-8B16-45132D0065E7}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

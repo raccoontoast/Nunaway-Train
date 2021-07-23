@@ -11,10 +11,13 @@ public class DialogueManager : MonoBehaviour
     int failCounter = 1;
     public AK.Wwise.Event SignalReplyEvent;
     public AK.Wwise.Event StopRadioFXEvent;
+    public AK.Wwise.Event TestEvent;
     uint CurrentEventID;
     string CurrentEventString = "";
     GameObject player;
     int tooShortCount = 1;
+    bool failMusicPlaying = false;
+    [HideInInspector] public bool winStateAchieved = false;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +66,7 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.RailOperatorCamera.SetActive(false);
             GameManager.Instance.mainCamera.SetActive(false);
             Instantiate(Resources.Load("Prefabs/ChurchScene_Victory"));
+            winStateAchieved = true;
         }
             
         else if (dialogueRunner.NodeExists(node))
@@ -116,6 +120,26 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    [YarnCommand("playEDO")] // To do: could probably merge this with the playAudio function
+    public void playAudioWithCallback()
+    {
+        StopPreviousAndReassign("Play_FailstateUniquePrebaked13");
+
+        object obj = new object();
+        AkSoundEngine.PostEvent("Play_FailMusic", player);
+        failMusicPlaying = true;
+
+        AkSoundEngine.PostEvent("Play_FailstateUniquePrebaked13", player, (uint)AkCallbackType.AK_Marker, callbackFunction, obj);
+        GameManager.Instance.InstantiateChurchScene();
+    }
+
+    void callbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        failMusicPlaying = false;
+        Debug.Log("Marker reached");
+        AkSoundEngine.ExecuteActionOnEvent("Play_FailMusic", AkActionOnEventType.AkActionOnEventType_Stop, player, 500, AkCurveInterpolation.AkCurveInterpolation_Linear);
+    }
+
     [YarnCommand("playSignalReply")]
     public void playSignalReply()
     {
@@ -162,5 +186,11 @@ public class DialogueManager : MonoBehaviour
     public void StopDialogue()
     {
         AkSoundEngine.ExecuteActionOnEvent(CurrentEventString, AkActionOnEventType.AkActionOnEventType_Stop, player, 250);
+
+        // Messy but works for now
+        if (failMusicPlaying)
+        {
+            AkSoundEngine.ExecuteActionOnEvent("Play_FailMusic", AkActionOnEventType.AkActionOnEventType_Stop, player, 250);
+        }
     }
 }

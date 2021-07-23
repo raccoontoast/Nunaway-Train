@@ -326,7 +326,7 @@ position: 3915,3512
 <<setSwitch Dialogue Endings EDO>>
 <<playSignalReply Dialogue>>
 "Ah yes... the old city of 'Tokyo'. Well on my great grandfather's side I'm half Japanese so I'm quite familiar with that word. Other words include Jedo and Yedo but I'm not sure if any are right or wrong. There was also an eponymous period with a further alias of 'Tokugawa', and back then... 
-<<playAudio Dialogue Play_NarratorPrebakedEndings>>
+<<playEDO Dialogue>>
 I've been to Japan! Me! The narrator! I have an opinion too. A voice. Feelings. A daughter... It's a shame I'm going to be rebooted once that train hits the nunnery.
 ===
 

@@ -232,6 +232,9 @@ public class GameManager : MonoBehaviour
         GMChosenLetters.Clear(); // Clear the GMs version of the chosen letters (the UI is cleared in the SemaphoreButtonManager)        
         SetUIVisible(true);
 
+        if (FindObjectOfType<DialogueManager>().winStateAchieved)
+            return;
+        
         AkSoundEngine.PostEvent("Resume_InGameSound", GameObject.FindGameObjectWithTag("Player"));
     }
 
