@@ -11,9 +11,16 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Dialogue" ID="{C09E551D-E6F3-45FE-93D7-226F26214D50}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-									<ObjectRef Name="Dialog_Leveler_Soft" ID="{9C1D0FCF-896E-4739-A8E8-B1E908F51CE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+									<ObjectRef Name="Dialog_Leveler_Hard" ID="{865FB36F-8717-4D30-AD05-14E56375CD40}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 							<ObjectLists/>
@@ -42,20 +49,26 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Music" ID="{BE46526E-DF0D-41DF-A36A-AC67CDCD32DE}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ReferenceList/>
 							<ObjectLists/>
 						</Bus>
 					</ChildrenList>
