@@ -61,7 +61,7 @@
 						<CurrentSwitchRef Name="SignalReply1" ID="{2E6F9BB5-B33E-4AAA-A22D-87BC8097ABD7}"/>
 						<CurrentSwitchRef Name="RadioOff" ID="{05D8A640-2958-4DB9-8A66-0161801881F4}"/>
 						<CurrentSwitchRef Name="SoundDesignFailstateGeneric" ID="{CDD8739F-9B2B-44EB-B5BF-9CFD3E70E3B7}"/>
-						<CurrentSwitchRef Name="GOD" ID="{3D8D8EAB-0B2F-4409-A750-365D7BDDF154}"/>
+						<CurrentSwitchRef Name="DO" ID="{EA06EF2F-D8E8-4743-B5A0-03FCB615EABF}"/>
 						<CurrentSwitchRef Name="FlagMovement" ID="{0D534FF8-5EE6-4395-8760-B833B2D46576}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
