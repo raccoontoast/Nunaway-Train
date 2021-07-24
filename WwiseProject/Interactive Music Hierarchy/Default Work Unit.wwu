@@ -623,7 +623,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="188295.270833333"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -671,7 +671,7 @@
 																						<MusicClip Name="Credits theme 2" ID="{C002D8F3-2413-46AF-8882-431632034A5C}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="188295.270833333"/>
-																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeInDuration" Type="Real64" Value="1331.64972300801"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
 																							<AudioSourceRef Name="Credits theme 2" ID="{59DA7083-95B0-4E39-AE83-FC643E978CA0}"/>
