@@ -9,6 +9,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="SignalChat" ID="{AEE47CAC-BA18-4FC2-94B1-4EDE00FB6870}" ShortID="914665060">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -931,9 +936,21 @@
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Nuns" ID="{B45FB263-5224-4373-AF69-6C4CDAC20D6F}" ShortID="186587647">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="NunChat" ID="{400A854A-24D1-4B1E-8D1B-94B5B524E8C2}" ShortID="690701294">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2181,7 +2198,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2359,7 +2376,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="NarratorOpeningSpiel1c" ID="{981BE51D-2E1F-4E9D-9817-A4C3406A85E2}">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.195239867288379"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.4140431668357"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimEnd" Type="Real64" Value="10.14636"/>
 													</PropertyList>
