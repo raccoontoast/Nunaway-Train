@@ -16,6 +16,8 @@ public class MainMenuButtons : MonoBehaviour, IPointerEnterHandler
     {
         // The fade has an event on ending, so subscribe the function here
         OnFadeComplete += LoadGame;
+
+        AkSoundEngine.PostEvent("Play_MainMenu", gameObject);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -31,6 +33,11 @@ public class MainMenuButtons : MonoBehaviour, IPointerEnterHandler
 
         // Audio
         AkSoundEngine.PostEvent("Play_UIButtonPress", gameObject);
+
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            AkSoundEngine.ExecuteActionOnEvent("Play_MainMenu", AkActionOnEventType.AkActionOnEventType_Stop, gameObject, 750);
+        }        
     }
 
     public void LoadGame()
