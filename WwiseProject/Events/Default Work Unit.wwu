@@ -545,6 +545,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CatMeow" ID="{A6D13320-4856-42AD-8094-4024E1523DA0}">
+					<ChildrenList>
+						<Action Name="" ID="{8FF3E478-738B-47E2-B022-928842E4F34C}" ShortID="445344155">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CatMeow" ID="{D84990EE-CB6C-4B67-961A-53E9387FCFB9}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
