@@ -87,6 +87,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{C22C5A3C-D672-4A41-B96B-75C4901D11EC}" ShortID="559570609">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CatMeow" ID="{D84990EE-CB6C-4B67-961A-53E9387FCFB9}" WorkUnitID="{0A40D340-5FED-4B57-AFC3-413F1E6CC8D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_NarratorVictoryFirstTry" ID="{0C2262A8-5928-4DCC-9B4E-96D21763815D}">

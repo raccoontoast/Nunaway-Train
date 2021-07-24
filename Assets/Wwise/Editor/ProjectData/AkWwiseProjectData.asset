@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: b2acb1008a467842a99f7fc262c74438
     GuidInternal: 
-    m_lastTime: -8585747112099532962
+    m_lastTime: -8585744706386525420
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4016ef4d03ae8e468304b66f5af8de8e
     GuidInternal: 
-    m_lastTime: -8585744731094029291
+    m_lastTime: -8585744706051736803
     List:
     - name: Dialogue
       guid: 1d559ec0f3e6fe4593d7226f26214d50
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 259fb8ca6136db47b4b25d69a40e4042
     GuidInternal: 
-    m_lastTime: -8585744743668472846
+    m_lastTime: -8585744706386605352
     List:
     - name: Credits
       guid: 0c4e920fd9245d469a60756cfe71d728
@@ -187,7 +187,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a0c6a8b259ac844c871ce4db96b481a3
     GuidInternal: 
-    m_lastTime: -8585744743668552821
+    m_lastTime: -8585744703329456083
     List:
     - name: PauseAll
       guid: 9ba1b0d62243a144b2167f0ec9a4cb61
@@ -223,6 +223,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 0d6cf55cba75984a8bd13ac7ab4bd037
       Path: Events\Default Work Unit\PauseMenu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_CatMeow
+      guid: 2033d1a65648ad4280944024e1523da0
+      id: 235104698
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a0c6a8b259ac844c871ce4db96b481a3
+      - ElementName: Play_CatMeow
+        ObjectType: 3
+        guid: 2033d1a65648ad4280944024e1523da0
+      Path: Events\Default Work Unit\Play_CatMeow
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -326,8 +343,8 @@ MonoBehaviour:
         guid: d305ed854b57354383d888a39894dbbd
       Path: Events\Default Work Unit\Play_MainMenu
       maxAttenuation: 0
-      maxDuration: 30.284124
-      minDuration: 30.284124
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NarratorOpeningSpiel
       guid: 5d5883ece1b9874ea54b196feb7245d7
       id: 490760232
@@ -591,7 +608,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\UI\Play_UIButtonHover
       maxAttenuation: 0
       maxDuration: 0.148165
-      minDuration: 0.074726
+      minDuration: 0.074574
     - name: Play_UIButtonPress
       guid: e8f525ece369d541b3f2813118b78dee
       id: 87346073
@@ -627,8 +644,8 @@ MonoBehaviour:
         guid: 3cc91fc557c98842bb76e9c2041bfba0
       Path: Events\Default Work Unit\Play_UISounds
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_VictoryStates
       guid: 7215dc355e96af469d308b10f03c4e9c
       id: 912900294
@@ -749,7 +766,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: dd89d1bd18a75e4486a9cc7fa9ef894e
     GuidInternal: 
-    m_lastTime: -8585747112189905435
+    m_lastTime: -8585744706655107595
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -763,7 +780,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 85c615420c58f744962072b3c670ed87
     GuidInternal: 
-    m_lastTime: -8585747112099736361
+    m_lastTime: -8585744706386575383
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -777,7 +794,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4cfb749d026b32409e090e117fcfee09
     GuidInternal: 
-    m_lastTime: -8585744807512602188
+    m_lastTime: -8585744706386555399
     List:
     - name: Endings
       guid: 5f5088398b5c50469f05db62cd698f6d
@@ -1713,10 +1730,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 044127ed88a3844ca9848274716b7a1e
     GuidInternal: 
-    m_lastTime: -8585747112099542946
+    m_lastTime: -8585744706386535412
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000040000000500000006000000070000000f00000017000000180000001b0000001e0000001f00000055000000560000005700000058000000
-  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000017000000180000001b0000001e0000001f000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1
