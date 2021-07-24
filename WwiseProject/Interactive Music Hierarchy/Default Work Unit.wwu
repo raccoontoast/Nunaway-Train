@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>8</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -159,7 +159,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="30284.125"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -207,7 +207,7 @@
 																				<MusicClip Name="IntroMusic1" ID="{E4330F90-2B12-467F-8839-F489D8163E5B}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="30284.125"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="276.71135637372"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="249.442937505367"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="IntroMusic1" ID="{640A6734-1541-4F27-99B7-E81D52A06520}"/>
@@ -313,7 +313,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -621,6 +621,11 @@
 										<MusicSegment Name="Credits theme 2" ID="{5D31A6EF-33D6-441C-8E20-2B96F753B4F1}" ShortID="1035533968">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="188295.270833333"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -795,7 +800,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="110442.479166667"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>9</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

@@ -381,7 +381,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>6</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1893,6 +1893,13 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<RandomSequenceContainer Name="NarratorTimeLimit" ID="{863CACE6-B02D-4EF1-9FAC-C354DA165C4F}" ShortID="665693855">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -2476,7 +2483,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3516,6 +3523,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3537,6 +3549,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UIButtonHover1" ID="{974EAA6C-05DB-4F01-8F63-4C36965C5111}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.000153777890466532"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.000153777890466532"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UIButtonHover1.wav</AudioFile>
 													<MediaIDList>
@@ -3562,7 +3579,9 @@
 												<AudioFileSource Name="UIButtonHover2" ID="{C1EC9EBD-B51B-46E0-B2E7-0F6147D73B81}">
 													<PropertyList>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.00328530340963282"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.00637419709263016"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00441290567951319"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.0907781205293276"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -3609,6 +3628,13 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="UIButtonPress" ID="{373E8B92-F75F-4808-AB39-8CD3ADD414A0}" ShortID="843741397">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3663,6 +3689,13 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="UIMenuOpen" ID="{C4C0E616-A65A-4D3F-B4D5-06C4BBF03547}" ShortID="950134253">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -3766,6 +3799,13 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="UIMenuClose" ID="{A752B374-6B07-4E79-874E-076BBF05C23A}" ShortID="44687433">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
@@ -5959,6 +5999,13 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<RandomSequenceContainer Name="TrainAmbience" ID="{2EBCCA10-90F7-4626-8EE0-E39538E978E7}" ShortID="222050105">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C128038-C7EC-46A3-970C-721F095806C3}"/>
