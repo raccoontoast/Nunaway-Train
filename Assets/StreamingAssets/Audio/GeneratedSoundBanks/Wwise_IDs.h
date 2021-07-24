@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_CREDITSMUSIC = 1874751385U;
         static const AkUniqueID PLAY_FAILMUSIC = 1417376927U;
         static const AkUniqueID PLAY_FAILSTATEUNIQUEPREBAKED13 = 3035379376U;
+        static const AkUniqueID PLAY_GOD = 2455218848U;
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_MAINMENU = 3738780720U;
         static const AkUniqueID PLAY_NARRATOROPENINGSPIEL = 490760232U;
