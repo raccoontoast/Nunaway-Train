@@ -126,7 +126,7 @@ colorID: 0
 position: 2374,1691
 ---
 <<setSwitch Dialogue Endings GOD>>
-<<playAudio Dialogue Play_NarratorPrebakedEndings>>
+<<playGOD Dialogue>>
 It's a shame that the signaller isn't particularly religious. It's also a shame that he couldn't make the connection between your signal, and the obviously dangerous situation involving the nuns over there. Pity.
 ===
 

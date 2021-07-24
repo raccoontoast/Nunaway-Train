@@ -133,6 +133,15 @@ public class DialogueManager : MonoBehaviour
         GameManager.Instance.InstantiateChurchScene();
     }
 
+    [YarnCommand("playGOD")] // To do: could probably merge this with the playAudio function
+    public void playGod()
+    {
+        StopPreviousAndReassign("Play_GOD");
+        AkSoundEngine.PostEvent("Play_GOD", player);
+
+        GameManager.Instance.InstantiateChurchScene();
+    }
+
     void callbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
     {
         failMusicPlaying = false;

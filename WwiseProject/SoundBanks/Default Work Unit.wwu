@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Soundbank" ID="{4A219AC6-3DCA-40D3-B1B9-238ACE1ADB1C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_GOD" ID="{5106F7C8-9A68-4016-8886-56EB10E20EC5}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NunChat" ID="{B440B0FE-9752-40F1-BE8D-D0DD415B37DE}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TrainAmbience" ID="{CB2FEA1C-B50A-41D6-8B36-10803AFFFF54}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SignalChat" ID="{7DBF067E-290E-4288-A972-968F21C46A53}" WorkUnitID="{B2A8C6A0-AC59-4C84-871C-E4DB96B481A3}" Origin="Manual" Filter="7"/>
