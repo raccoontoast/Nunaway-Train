@@ -8,6 +8,7 @@ public class SemaphoreButtonManager : MonoBehaviour
 {
     public Text ChosenLettersText;
     [SerializeField] string chosenLetters;
+    public ColorBlock SelectedColorBlock;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +45,11 @@ public class SemaphoreButtonManager : MonoBehaviour
             // Make sure the Game Manager knows what letters are chosen too
             GameManager.Instance.GMChosenLetters.Add(chosenLetter);
 
-            // Fade Button
-            buttonAnimator.SetTrigger("ButtonPressed");
+            // Fade Button / Change colour to show it's been pressed
+            //buttonAnimator.SetTrigger("ButtonPressed");
+            //semaphoreButton.GetComponent<Button>().colors = SelectedColorBlock;
+            semaphoreButton.GetComponent<Button>().interactable = false;
+
         }
     }
 }

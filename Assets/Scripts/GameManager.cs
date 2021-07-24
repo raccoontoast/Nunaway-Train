@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
             Destroy(attempts[i].gameObject);
         }
 
+        // Make sure the previous attempts prefab has the semaphore font ready
+        GameObject previousAttemptPrefab = Resources.Load("Prefabs/PreviousAttempt") as GameObject;
+        previousAttemptPrefab.GetComponent<Text>().font = Resources.Load("Semaphore Pramuka") as Font;
+
         // Subscribe listeners
         OnSemaphoreAnimationFinish += addPreviousAttemptToScrollView;
         OnSemaphoreAnimationFinish += incrementNumberOfAttempts;
