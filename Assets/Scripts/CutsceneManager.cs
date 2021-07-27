@@ -29,7 +29,8 @@ public class CutsceneManager : MonoBehaviour
         gm.UI.SetActive(true);
 
         cutsceneCamera.gameObject.SetActive(false);
-        GameObject.Find("BlackBarsUI").SetActive(false);
+        //GameObject.Find("BlackBarsUI").SetActive(false);
+        FindObjectOfType<CinematicBlackBars>().Disappear();
         AkSoundEngine.PostEvent("Play_InGameMusic", GameObject.FindGameObjectWithTag("Player"));
     }
 }

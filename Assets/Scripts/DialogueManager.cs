@@ -66,6 +66,7 @@ public class DialogueManager : MonoBehaviour
             GameManager.Instance.RailOperatorCamera.SetActive(false);
             GameManager.Instance.mainCamera.SetActive(false);
             Instantiate(Resources.Load("Prefabs/ChurchScene_Victory"));
+            FindObjectOfType<CinematicBlackBars>().Appear();
             winStateAchieved = true;
         }
             

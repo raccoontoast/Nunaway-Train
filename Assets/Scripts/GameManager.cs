@@ -59,12 +59,14 @@ public class GameManager : MonoBehaviour
     public DialogueRunner DialogueRunner;
     public string DebugLettersForDialogue = "";
     bool isPaused = false;
+    CinematicBlackBars cinematicBlackBars;
     // To do: backspace button for adding semaphore signs
 
     void Start()
     {
         GMChosenLetters = new List<string>();
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        cinematicBlackBars = FindObjectOfType<CinematicBlackBars>();
 
         if (Camera.main != null) // grab a reference for later
         {
@@ -107,6 +109,7 @@ public class GameManager : MonoBehaviour
             spawnTrain(); // first person view
 
         _churchScene = Instantiate(ChurchScene);
+        cinematicBlackBars.Appear();
     }
 
     void spawnTrain()
@@ -121,6 +124,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
         DialogueRunner.GetComponent<DialogueUI>().textSpeed = 0.01f;
+        cinematicBlackBars.Disappear();
     }
 
     // Update is called once per frame
